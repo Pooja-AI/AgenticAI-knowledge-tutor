@@ -1,1891 +1,1327 @@
 import { useState } from "react";
+// import AgentArchitectures from "../assets/docs/AgentArchitectures.md?raw";
+import AgentChallenges from "../assets/docs/AgentChallenges.md?raw";
+import AgentCommunication from "../assets/docs/AgentCommunication.md?raw";
+import AgentComponents from "../assets/docs/AgentComponents.md?raw";
+import AgentDesignPatterns from "../assets/docs/AgentDesignPatterns.md?raw";
+import AgentEcosystem from "../assets/docs/AgentEcosystem.md?raw";
+import AgentEvaluation from "../assets/docs/AgentEvaluation.md?raw";
+import AgentFundamentals from "../assets/docs/AgentFundamentals.md?raw";
+import AgentLifecycle from "../assets/docs/AgentLifecycle.md?raw";
+import AgentMemory from "../assets/docs/AgentMemory.md?raw";
+import AgentObservability from "../assets/docs/AgentObservability.md?raw";
+import AgentPlanning from "../assets/docs/AgentPlanning.md?raw";
+import AgentReasoning from "../assets/docs/AgentReasoning.md?raw";
+import AgentSafety from "../assets/docs/AgentSafety.md?raw";
+import ContextManagement from "../assets/docs/ContextManagement.md?raw";
+import DecisionMaking from "../assets/docs/DecisionMaking.md?raw";
+import ExecutionPatterns from "../assets/docs/ExecutionPatterns.md?raw";
+import IntroductionAgenticAI from "../assets/docs/IntroductionAgenticAI.md?raw";
+import MultiAgentSystems from "../assets/docs/MultiAgentSystems.md?raw";
+import ToolUsage from "../assets/docs/ToolUsage.md?raw";
+import TypesofAIAgents from "../assets/docs/TypesofAIAgents.md?raw";
+import IntroductionAgenticAICode from "../assets/code/IntroductionAgenticAI.py?raw";
+import AgentFundamentalsCode from "../assets/code/AgentFundamentals.py?raw";
+import AgentComponentsCode from "../assets/code/AgentComponents.py?raw";
+import AgentLifecycleCode from "../assets/code/AgentLifecycle.py?raw";
+import TypesOfAIAgentsCode from "../assets/code/TypesofAIAgents.py?raw";
+import AgentReasoningCode from "../assets/code/AgentReasoning.py?raw";
+import AgentPlanningCode from "../assets/code/AgentPlanning.py?raw";
+import AgentMemoryCode from "../assets/code/AgentMemory.py?raw";
+import ToolUsageCode from "../assets/code/ToolUsage.py?raw";
+import ContextManagementCode from "../assets/code/ContextManagement.py?raw";
+import DecisionMakingCode from "../assets/code/DecisionMaking.py?raw";
+import AgentCommunicationCode from "../assets/code/AgentCommunication.py?raw";
+import MultiAgentSystemsCode from "../assets/code/MultiAgentSystems.py?raw";
+import ExecutionPatternsCode from "../assets/code/ExecutionPatterns.py?raw";
+import AgentSafetyCode from "../assets/code/AgentSafety.py?raw";
+import AgentEvaluationCode from "../assets/code/AgentEvaluation.py?raw";
+import AgentObservabilityCode from "../assets/code/AgentObservability.py?raw";
+import AgentDesignPatternsCode from "../assets/code/AgentDesignPatterns.py?raw";
+
+
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const AgenticAICookbook = [
 
   {
-  id: "ai-agent",
+  id: "ai-agents-introduction",
   category: "Core Concepts",
-  title: "AI Agent",
+  title: "AI Agents Introduction",
   difficulty: "Beginner",
   time: "~10 min",
-  description: "An AI Agent is an autonomous software entity that perceives its environment, reasons about information, and takes actions to achieve specific goals.",
-  tags: ["agent", "autonomy", "reasoning", "actions"],
+  description:
+    "Learn what AI Agents are, how they differ from traditional AI systems, and why they are becoming the foundation of modern intelligent applications.",
+
+  tags: [
+    "ai agents",
+    "introduction",
+    "autonomous systems",
+    "agentic ai",
+    "llm"
+  ],
+
+  concept: IntroductionAgenticAI,
+
   steps: [
     {
-      label: "Perceive Environment",
+      label: "What is an AI Agent?",
+      icon: "🤖",
+      detail:
+        "Understand the definition of an AI Agent and how it autonomously performs tasks to achieve specific goals."
+    },
+    {
+      label: "Why AI Agents?",
+      icon: "🎯",
+      detail:
+        "Learn why AI Agents are needed for solving complex problems beyond traditional chatbots and automation."
+    },
+    {
+      label: "Core Characteristics",
+      icon: "⭐",
+      detail:
+        "Explore the essential characteristics of AI Agents, including autonomy, reasoning, planning, memory, and action execution."
+    },
+    {
+      label: "How AI Agents Work",
+      icon: "⚙️",
+      detail:
+        "Understand the high-level workflow from receiving user requests to planning, reasoning, tool usage, and completing tasks."
+    },
+    {
+      label: "Real-World Applications",
+      icon: "🏢",
+      detail:
+        "Discover how AI Agents are used across industries such as banking, healthcare, manufacturing, retail, customer support, and software engineering."
+    },
+    {
+      label: "Future of AI Agents",
+      icon: "🚀",
+      detail:
+        "Understand how AI Agents are evolving toward collaborative, autonomous, and enterprise-scale intelligent systems."
+    }
+  ],
+
+  code: IntroductionAgenticAICode
+},
+{
+  id: "agent-fundamentals",
+  category: "Core Concepts",
+  title: "Agent Fundamentals",
+  difficulty: "Beginner",
+  time: "~12 min",
+  description:
+    "Understand the foundational concepts of AI Agents, including goals, environment, autonomy, perception, reasoning, actions, and the core principles that enable intelligent behavior.",
+
+  tags: [
+    "agent fundamentals",
+    "autonomy",
+    "goals",
+    "environment",
+    "perception",
+    "reasoning",
+    "actions"
+  ],
+
+  concept: AgentFundamentals,
+
+  steps: [
+    {
+      label: "Understand AI Agents",
+      icon: "🤖",
+      detail:
+        "Learn what makes an AI Agent different from traditional software and language models."
+    },
+    {
+      label: "Goals & Objectives",
+      icon: "🎯",
+      detail:
+        "Explore how agents operate with defined goals and continuously work toward achieving desired outcomes."
+    },
+    {
+      label: "Perceive the Environment",
       icon: "👀",
-      detail: "The agent gathers information from its environment through user inputs, APIs, databases, documents, sensors, or other data sources."
+      detail:
+        "Understand how agents collect information from users, documents, APIs, databases, sensors, and other external sources."
+    },
+    {
+      label: "Reason & Decide",
+      icon: "🧠",
+      detail:
+        "Learn how agents analyze available information, evaluate options, and determine the most appropriate action."
+    },
+    {
+      label: "Take Actions",
+      icon: "⚡",
+      detail:
+        "Discover how agents execute actions such as calling tools, querying databases, invoking APIs, or generating responses."
+    },
+    {
+      label: "Adapt & Improve",
+      icon: "📈",
+      detail:
+        "Understand how agents use memory, feedback, and previous experiences to improve future decisions and performance."
+    }
+  ],
+
+  code: AgentFundamentalsCode
+},
+{
+  id: "agent-components",
+  category: "Core Concepts",
+  title: "Agent Components",
+  difficulty: "Beginner",
+  time: "~15 min",
+  description:
+    "Explore the essential building blocks of an AI Agent, including perception, reasoning, planning, memory, tools, actions, and feedback mechanisms that work together to accomplish goals.",
+
+  tags: [
+    "components",
+    "perception",
+    "reasoning",
+    "planning",
+    "memory",
+    "tools",
+    "actions"
+  ],
+
+  concept: AgentComponents,
+
+  steps: [
+    {
+      label: "Perception",
+      icon: "👀",
+      detail:
+        "Collect information from users, documents, APIs, databases, sensors, and other data sources to understand the current environment."
+    },
+    {
+      label: "Reasoning Engine",
+      icon: "🧠",
+      detail:
+        "Analyze the collected information, evaluate possible solutions, and determine the best course of action."
+    },
+    {
+      label: "Planning Module",
+      icon: "📋",
+      detail:
+        "Break complex objectives into smaller, manageable tasks and organize them into an execution plan."
+    },
+    {
+      label: "Memory",
+      icon: "💾",
+      detail:
+        "Store conversations, retrieved knowledge, previous experiences, and intermediate results to maintain continuity across tasks."
+    },
+    {
+      label: "Tool Integration",
+      icon: "🛠️",
+      detail:
+        "Connect with external tools such as APIs, databases, search engines, calculators, and enterprise applications to perform real-world actions."
+    },
+    {
+      label: "Action Execution",
+      icon: "⚡",
+      detail:
+        "Execute planned actions, interact with external systems, and generate responses based on the selected strategy."
+    },
+    {
+      label: "Feedback & Learning",
+      icon: "📈",
+      detail:
+        "Monitor execution results, capture feedback, and use observations to improve future reasoning, planning, and decision making."
+    }
+  ],
+
+  code: AgentComponentsCode
+},
+{
+  id: "agent-lifecycle",
+  category: "Core Concepts",
+  title: "Agent Lifecycle",
+  difficulty: "Beginner",
+  time: "~12 min",
+  description:
+    "Learn the complete lifecycle of an AI Agent, from receiving a request to reasoning, planning, execution, monitoring, and continuous improvement.",
+
+  tags: [
+    "agent lifecycle",
+    "workflow",
+    "execution",
+    "planning",
+    "monitoring",
+    "feedback",
+    "automation"
+  ],
+
+  concept: AgentLifecycle,
+
+  steps: [
+    {
+      label: "Receive Request",
+      icon: "📥",
+      detail:
+        "The AI Agent receives a task, question, or event from a user, application, or external system."
     },
     {
       label: "Understand Context",
       icon: "🧠",
-      detail: "The agent analyzes the collected information and builds an understanding of the current situation."
+      detail:
+        "Analyze the request, retrieve relevant context, and identify the user's intent and objectives."
     },
     {
-      label: "Reason",
-      icon: "🤔",
-      detail: "The agent evaluates available information, identifies objectives, and determines the best course of action."
+      label: "Plan Workflow",
+      icon: "📝",
+      detail:
+        "Create an execution strategy by breaking the objective into smaller tasks and determining the required tools and resources."
     },
     {
-      label: "Plan Actions",
-      icon: "📋",
-      detail: "Complex goals are decomposed into smaller tasks that can be executed sequentially or in parallel."
-    },
-    {
-      label: "Execute",
+      label: "Execute Tasks",
       icon: "⚡",
-      detail: "The agent performs actions such as calling APIs, querying databases, generating content, or interacting with external systems."
+      detail:
+        "Perform the planned actions by invoking tools, querying knowledge sources, interacting with APIs, or collaborating with other agents."
     },
     {
-      label: "Learn & Adapt",
-      icon: "📈",
-      detail: "The agent updates its memory and improves future decisions based on outcomes and feedback."
-    }
-  ],
-  code: `class AIAgent {
-  constructor(goal) {
-    this.goal = goal;
-    this.memory = [];
-  }
-
-  perceive(environment) {
-    console.log("Perceiving environment...");
-    return environment;
-  }
-
-  reason(data) {
-    console.log("Analyzing information...");
-    return \`Best action for: \${this.goal}\`;
-  }
-
-  act(decision) {
-    console.log("Executing:", decision);
-    return "Action completed";
-  }
-
-  learn(result) {
-    this.memory.push(result);
-    console.log("Learning from outcome...");
-  }
-
-  run(environment) {
-    const data = this.perceive(environment);
-    const decision = this.reason(data);
-    const result = this.act(decision);
-    this.learn(result);
-
-    return result;
-  }
-}
-
-// Usage
-const agent = new AIAgent("Book a flight");
-agent.run({
-  destination: "Tokyo",
-  budget: 1000
-});`,
-},
-{
-  id: "react-reason-act",
-  category: "Planning",
-  title: "ReAct (Reason + Act)",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "ReAct combines reasoning and actions in a loop. The agent thinks about the problem, performs an action, observes the result, and continues reasoning until the goal is achieved.",
-  tags: ["react", "reasoning", "tool use", "planning"],
-  steps: [
-    {
-      label: "Reason",
-      icon: "🤔",
-      detail: "Analyze the current state and determine the next best action."
-    },
-    {
-      label: "Act",
-      icon: "⚡",
-      detail: "Execute a tool, API call, database query, or other action."
-    },
-    {
-      label: "Observe",
-      icon: "👀",
-      detail: "Review the outcome of the action."
-    },
-    {
-      label: "Update Reasoning",
-      icon: "🧠",
-      detail: "Incorporate new information into future decisions."
-    },
-    {
-      label: "Repeat",
-      icon: "🔄",
-      detail: "Continue until the goal is completed."
-    }
-  ],
-  code: `async function reactAgent(question) {
-  let observation = "";
-
-  while (true) {
-    const thought = reason(question, observation);
-
-    const action = decideAction(thought);
-
-    observation = await executeTool(action);
-
-    if (goalAchieved(observation)) {
-      return observation;
-    }
-  }
-}`
-},
-{
-  id: "chain-of-thought",
-  category: "Planning",
-  title: "Chain-of-Thought (CoT)",
-  difficulty: "Beginner",
-  time: "~10 min",
-  description: "Chain-of-Thought encourages the agent to reason through a problem step-by-step before generating the final answer.",
-  tags: ["cot", "reasoning", "step-by-step"],
-  steps: [
-    {
-      label: "Understand Problem",
-      icon: "📖",
-      detail: "Analyze the task and identify requirements."
-    },
-    {
-      label: "Generate Steps",
-      icon: "📝",
-      detail: "Break reasoning into sequential logical steps."
-    },
-    {
-      label: "Evaluate",
-      icon: "🔍",
-      detail: "Validate intermediate reasoning."
-    },
-    {
-      label: "Answer",
-      icon: "✅",
-      detail: "Produce the final output."
-    }
-  ],
-  code: `function chainOfThought(problem) {
-  const steps = [
-    "Understand the problem",
-    "Identify relevant facts",
-    "Apply reasoning",
-    "Generate conclusion"
-  ];
-
-  steps.forEach(step => console.log(step));
-
-  return "Final Answer";
-}`
-},
-{
-  id: "tree-of-thoughts",
-  category: "Planning",
-  title: "Tree of Thoughts (ToT)",
-  difficulty: "Advanced",
-  time: "~20 min",
-  description: "Tree of Thoughts explores multiple reasoning paths simultaneously and selects the most promising branch.",
-  tags: ["tot", "search", "reasoning"],
-  steps: [
-    {
-      label: "Generate Branches",
-      icon: "🌳",
-      detail: "Create multiple possible reasoning paths."
-    },
-    {
-      label: "Evaluate Branches",
+      label: "Monitor Progress",
       icon: "📊",
-      detail: "Score each branch based on quality."
-    },
-    {
-      label: "Expand Best Paths",
-      icon: "🚀",
-      detail: "Continue reasoning along promising branches."
-    },
-    {
-      label: "Select Solution",
-      icon: "🏆",
-      detail: "Choose the highest-scoring path."
-    }
-  ],
-  code: `function treeOfThoughts(problem) {
-  const branches = [
-    "Approach A",
-    "Approach B",
-    "Approach C"
-  ];
-
-  const scores = branches.map(branch => ({
-    branch,
-    score: Math.random()
-  }));
-
-  return scores.sort((a, b) => b.score - a.score)[0];
-}`
-},
-{
-  id: "plan-and-execute",
-  category: "Planning",
-  title: "Plan-and-Execute",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "The agent first creates a complete execution plan and then executes each step sequentially.",
-  tags: ["planning", "execution", "workflow"],
-  steps: [
-    {
-      label: "Create Plan",
-      icon: "📋",
-      detail: "Generate all required tasks."
-    },
-    {
-      label: "Prioritize Tasks",
-      icon: "📌",
-      detail: "Determine execution order."
-    },
-    {
-      label: "Execute",
-      icon: "⚙️",
-      detail: "Perform tasks one by one."
-    },
-    {
-      label: "Track Progress",
-      icon: "📈",
-      detail: "Monitor task completion."
-    },
-    {
-      label: "Complete Goal",
-      icon: "🎯",
-      detail: "Deliver final outcome."
-    }
-  ],
-  code: `class PlanAndExecute {
-  createPlan() {
-    return [
-      "Collect Data",
-      "Analyze Data",
-      "Generate Report"
-    ];
-  }
-
-  execute() {
-    const plan = this.createPlan();
-
-    for (const step of plan) {
-      console.log("Executing:", step);
-    }
-
-    console.log("Goal Completed");
-  }
-}`
-},
-{
-  id: "self-reflection",
-  category: "Planning",
-  title: "Self-Reflection / Reflexion",
-  difficulty: "Advanced",
-  time: "~15 min",
-  description: "The agent evaluates its own outputs, identifies mistakes, and improves responses through iterative feedback loops.",
-  tags: ["reflection", "self-correction", "reasoning"],
-  steps: [
-    {
-      label: "Generate Output",
-      icon: "✍️",
-      detail: "Produce an initial response."
-    },
-    {
-      label: "Critique",
-      icon: "🔍",
-      detail: "Analyze weaknesses and errors."
-    },
-    {
-      label: "Improve",
-      icon: "🛠️",
-      detail: "Refine the response."
-    },
-    {
-      label: "Repeat",
-      icon: "🔄",
-      detail: "Continue until quality criteria are met."
-    }
-  ],
-  code: `function reflexion(task) {
-  let answer = generateAnswer(task);
-
-  for (let i = 0; i < 3; i++) {
-    const feedback = critique(answer);
-
-    if (feedback === "Good") {
-      break;
-    }
-
-    answer = improve(answer, feedback);
-  }
-
-  return answer;
-}`
-},
-{
-  id: "scratchpad-reasoning",
-  category: "Planning",
-  title: "Scratchpad Reasoning",
-  difficulty: "Intermediate",
-  time: "~10 min",
-  description: "Scratchpad reasoning provides temporary working memory where the agent stores intermediate thoughts, calculations, and reasoning steps.",
-  tags: ["scratchpad", "memory", "reasoning"],
-  steps: [
-    {
-      label: "Store Thoughts",
-      icon: "📝",
-      detail: "Record intermediate reasoning."
-    },
-    {
-      label: "Track Progress",
-      icon: "📊",
-      detail: "Maintain context throughout execution."
-    },
-    {
-      label: "Reference Notes",
-      icon: "📖",
-      detail: "Use stored information in later steps."
-    },
-    {
-      label: "Generate Output",
-      icon: "✅",
-      detail: "Produce the final result using accumulated reasoning."
-    }
-  ],
-  code: `class ScratchpadAgent {
-  constructor() {
-    this.scratchpad = [];
-  }
-
-  think(thought) {
-    this.scratchpad.push(thought);
-  }
-
-  solve(problem) {
-    this.think("Analyze problem");
-    this.think("Generate solution");
-
-    return {
-      notes: this.scratchpad,
-      answer: "Solution Generated"
-    };
-  }
-}`
-},
-{
-  id: "tool-use",
-  category: "Tools & Actions",
-  title: "Tool Use",
-  difficulty: "Beginner",
-  time: "~10 min",
-  description: "Tool Use enables agents to extend their capabilities by interacting with external tools such as search engines, calculators, APIs, databases, and code interpreters.",
-  tags: ["tools", "actions", "external systems"],
-  steps: [
-    {
-      label: "Receive Task",
-      icon: "📥",
-      detail: "The agent receives a user request."
-    },
-    {
-      label: "Select Tool",
-      icon: "🔧",
-      detail: "Identify the most appropriate tool for the task."
-    },
-    {
-      label: "Execute Tool",
-      icon: "⚙️",
-      detail: "Run the selected tool."
-    },
-    {
-      label: "Process Result",
-      icon: "📊",
-      detail: "Analyze the returned output."
-    },
-    {
-      label: "Generate Response",
-      icon: "✅",
-      detail: "Provide the final answer to the user."
-    }
-  ],
-  code: `async function toolUseAgent(query) {
-  const tool = selectTool(query);
-
-  const result = await executeTool(tool, query);
-
-  return formatResponse(result);
-}`
-},
-{
-  id: "function-calling",
-  category: "Tools & Actions",
-  title: "Function Calling",
-  difficulty: "Beginner",
-  time: "~12 min",
-  description: "Function Calling allows LLMs to invoke predefined functions with structured inputs and outputs, enabling reliable tool execution.",
-  tags: ["function calling", "tools", "llm"],
-  steps: [
-    {
-      label: "Define Function",
-      icon: "📝",
-      detail: "Create a schema describing the function."
-    },
-    {
-      label: "Expose to LLM",
-      icon: "🤖",
-      detail: "Provide available functions to the model."
-    },
-    {
-      label: "Call Function",
-      icon: "📞",
-      detail: "The model selects and invokes the function."
-    },
-    {
-      label: "Execute Logic",
-      icon: "⚙️",
-      detail: "Run the actual implementation."
-    },
-    {
-      label: "Return Result",
-      icon: "📤",
-      detail: "Send structured output back to the model."
-    }
-  ],
-  code: `const functions = [
-  {
-    name: "getWeather",
-    description: "Get weather information"
-  }
-];
-
-async function getWeather(city) {
-  return {
-    city,
-    temperature: "25°C"
-  };
-}
-
-const result = await getWeather("Tokyo");
-console.log(result);`
-},
-{
-  id: "code-execution",
-  category: "Tools & Actions",
-  title: "Code Execution",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "Code Execution enables agents to generate, execute, and evaluate code dynamically to solve problems and perform calculations.",
-  tags: ["code", "execution", "automation"],
-  steps: [
-    {
-      label: "Understand Task",
-      icon: "📖",
-      detail: "Analyze the problem statement."
-    },
-    {
-      label: "Generate Code",
-      icon: "💻",
-      detail: "Create code to solve the task."
-    },
-    {
-      label: "Execute",
-      icon: "▶️",
-      detail: "Run the generated code."
-    },
-    {
-      label: "Validate Output",
-      icon: "🔍",
-      detail: "Check results for correctness."
-    },
-    {
-      label: "Return Solution",
-      icon: "✅",
-      detail: "Provide the final answer."
-    }
-  ],
-  code: `function executeCode() {
-  const numbers = [10, 20, 30];
-
-  const sum = numbers.reduce(
-    (total, num) => total + num,
-    0
-  );
-
-  return sum;
-}
-
-console.log(executeCode());`
-},
-{
-  id: "web-browsing",
-  category: "Tools & Actions",
-  title: "Web Browsing",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "Web Browsing allows agents to search, retrieve, and analyze live information from websites and online resources.",
-  tags: ["web search", "internet", "retrieval"],
-  steps: [
-    {
-      label: "Receive Query",
-      icon: "📥",
-      detail: "User asks for current information."
-    },
-    {
-      label: "Search Web",
-      icon: "🔎",
-      detail: "Find relevant online resources."
-    },
-    {
-      label: "Retrieve Content",
-      icon: "🌐",
-      detail: "Collect information from sources."
-    },
-    {
-      label: "Analyze Results",
-      icon: "🧠",
-      detail: "Extract useful insights."
-    },
-    {
-      label: "Respond",
-      icon: "📤",
-      detail: "Provide summarized findings."
-    }
-  ],
-  code: `async function webBrowsing(query) {
-  const results = await searchWeb(query);
-
-  const content = await fetchPages(results);
-
-  return summarize(content);
-}`
-},
-{
-  id: "api-integration",
-  category: "Tools & Actions",
-  title: "API Integration",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "API Integration enables agents to interact with external services such as weather systems, databases, payment platforms, CRMs, and enterprise applications.",
-  tags: ["api", "integration", "external services"],
-  steps: [
-    {
-      label: "Identify Service",
-      icon: "🎯",
-      detail: "Determine which API is needed."
-    },
-    {
-      label: "Build Request",
-      icon: "📦",
-      detail: "Prepare request parameters."
-    },
-    {
-      label: "Call API",
-      icon: "📡",
-      detail: "Send request to external service."
-    },
-    {
-      label: "Process Response",
-      icon: "📊",
-      detail: "Parse returned data."
-    },
-    {
-      label: "Deliver Result",
-      icon: "✅",
-      detail: "Provide useful information to the user."
-    }
-  ],
-  code: `async function getWeather(city) {
-  const response = await fetch(
-    \`https://api.weather.com/\${city}\`
-  );
-
-  const data = await response.json();
-
-  return data;
-}
-
-getWeather("London")
-  .then(console.log);`
-},
-{
-  id: "computer-use",
-  category: "Tools & Actions",
-  title: "Computer Use",
-  difficulty: "Advanced",
-  time: "~20 min",
-  description: "Computer Use allows agents to interact directly with graphical user interfaces by clicking, typing, scrolling, navigating applications, and completing tasks like a human operator.",
-  tags: ["gui", "automation", "computer use"],
-  steps: [
-    {
-      label: "Observe Screen",
-      icon: "👀",
-      detail: "Analyze the current interface."
-    },
-    {
-      label: "Plan Interaction",
-      icon: "🧠",
-      detail: "Determine required actions."
-    },
-    {
-      label: "Control Interface",
-      icon: "🖱️",
-      detail: "Click, type, scroll, and navigate."
-    },
-    {
-      label: "Verify Outcome",
-      icon: "✔️",
-      detail: "Check whether the task succeeded."
-    },
-    {
-      label: "Continue Workflow",
-      icon: "🔄",
-      detail: "Repeat until the objective is achieved."
-    }
-  ],
-  code: `async function computerUseAgent() {
-  await click("Login Button");
-
-  await type(
-    "username@example.com",
-    "Username Field"
-  );
-
-  await type(
-    "password123",
-    "Password Field"
-  );
-
-  await click("Submit Button");
-
-  console.log("Task Completed");
-}`
-},
-{
-  id: "short-term-memory",
-  category: "Memory",
-  title: "Short-term Memory",
-  difficulty: "Beginner",
-  time: "~10 min",
-  description: "Short-term memory stores information within the current conversation or prompt context. It enables the agent to maintain continuity during an active session.",
-  tags: ["memory", "context", "session"],
-  steps: [
-    {
-      label: "Receive Input",
-      icon: "📥",
-      detail: "The agent receives information from the user."
-    },
-    {
-      label: "Store Context",
-      icon: "🧠",
-      detail: "Relevant information is kept in the active context window."
-    },
-    {
-      label: "Reference Context",
-      icon: "📖",
-      detail: "The agent uses stored information during reasoning."
+      detail:
+        "Track task execution, verify intermediate results, handle errors, and adjust the workflow if necessary."
     },
     {
       label: "Generate Response",
       icon: "💬",
-      detail: "Responses are informed by recent conversation history."
+      detail:
+        "Combine the execution results into a clear, accurate, and complete response for the user or calling system."
     },
     {
-      label: "Session Ends",
-      icon: "🔚",
-      detail: "Memory is discarded unless explicitly persisted."
+      label: "Learn & Improve",
+      icon: "📈",
+      detail:
+        "Store useful information in memory, capture feedback, and use execution outcomes to improve future performance."
     }
   ],
-  code: `class ShortTermMemory {
-  constructor() {
-    this.context = [];
-  }
 
-  remember(message) {
-    this.context.push(message);
-  }
-
-  recall() {
-    return this.context;
-  }
-}
-
-const memory = new ShortTermMemory();
-
-memory.remember("User likes Python");
-memory.remember("User works in AI");
-
-console.log(memory.recall());`
+  code: AgentLifecycleCode
 },
-
 {
-  id: "long-term-memory",
-  category: "Memory",
-  title: "Long-term Memory",
+  id: "types-of-ai-agents",
+  category: "Core Concepts",
+  title: "Types of AI Agents",
+  difficulty: "Beginner",
+  time: "~15 min",
+  description:
+    "Explore the different types of AI Agents, from simple rule-based agents to advanced learning and multi-agent systems, and understand where each type is best suited.",
+
+  tags: [
+    "agent types",
+    "simple reflex",
+    "model-based",
+    "goal-based",
+    "utility-based",
+    "learning agent",
+    "multi-agent"
+  ],
+
+  concept: TypesofAIAgents,
+
+  steps: [
+    {
+      label: "Simple Reflex Agent",
+      icon: "⚡",
+      detail:
+        "Responds to current inputs using predefined rules without considering past experiences or future consequences."
+    },
+    {
+      label: "Model-Based Agent",
+      icon: "🗺️",
+      detail:
+        "Maintains an internal model of the environment to make better decisions even when information is incomplete."
+    },
+    {
+      label: "Goal-Based Agent",
+      icon: "🎯",
+      detail:
+        "Evaluates possible actions based on defined goals and selects the path that best achieves the desired outcome."
+    },
+    {
+      label: "Utility-Based Agent",
+      icon: "📊",
+      detail:
+        "Chooses the action that maximizes overall utility by balancing factors such as cost, risk, quality, and efficiency."
+    },
+    {
+      label: "Learning Agent",
+      icon: "📚",
+      detail:
+        "Continuously improves its behavior by learning from feedback, previous experiences, and newly available information."
+    },
+    {
+      label: "Multi-Agent System",
+      icon: "🤝",
+      detail:
+        "Multiple specialized AI Agents collaborate, coordinate, and communicate to solve complex tasks more effectively."
+    }
+  ],
+
+  code: TypesOfAIAgentsCode
+},
+{
+  id: "agent-reasoning",
+  category: "Core Concepts",
+  title: "Agent Reasoning",
   difficulty: "Intermediate",
   time: "~15 min",
-  description: "Long-term memory persists information across sessions using databases, vector stores, knowledge bases, or other storage systems.",
-  tags: ["memory", "vector database", "persistence"],
+  description:
+    "Learn how AI Agents analyze information, evaluate alternatives, draw conclusions, and make intelligent decisions to solve problems and accomplish goals.",
+
+  tags: [
+    "reasoning",
+    "thinking",
+    "logic",
+    "problem solving",
+    "decision making",
+    "inference",
+    "llm"
+  ],
+
+  concept: AgentReasoning,
+
+  steps: [
+    {
+      label: "Understand the Goal",
+      icon: "🎯",
+      detail:
+        "Interpret the user's request, identify the objective, and determine what needs to be accomplished."
+    },
+    {
+      label: "Collect Information",
+      icon: "📚",
+      detail:
+        "Gather relevant context from memory, retrieved documents, user inputs, APIs, and external knowledge sources."
+    },
+    {
+      label: "Analyze the Situation",
+      icon: "🧠",
+      detail:
+        "Examine the available information, identify relationships, constraints, and possible solutions."
+    },
+    {
+      label: "Evaluate Alternatives",
+      icon: "⚖️",
+      detail:
+        "Compare multiple approaches based on accuracy, feasibility, cost, risk, and business objectives."
+    },
+    {
+      label: "Select the Best Action",
+      icon: "✅",
+      detail:
+        "Choose the most appropriate action or sequence of actions to achieve the desired outcome."
+    },
+    {
+      label: "Refine Through Feedback",
+      icon: "📈",
+      detail:
+        "Review execution results, learn from successes and failures, and improve future reasoning and decision-making."
+    }
+  ],
+
+  code: AgentReasoningCode
+},
+{
+  id: "planning",
+  category: "Core Concepts",
+  title: "Planning",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how AI Agents create structured execution plans by breaking complex goals into smaller tasks, determining dependencies, selecting tools, and organizing workflows for efficient execution.",
+
+  tags: [
+    "planning",
+    "task decomposition",
+    "workflow",
+    "execution",
+    "strategy",
+    "goal planning",
+    "agent planning"
+  ],
+
+  concept: AgentPlanning,
+
+  steps: [
+    {
+      label: "Define the Goal",
+      icon: "🎯",
+      detail:
+        "Understand the user's objective and clearly define the expected outcome before creating a plan."
+    },
+    {
+      label: "Break Down Tasks",
+      icon: "🧩",
+      detail:
+        "Decompose complex objectives into smaller, manageable tasks that are easier to execute."
+    },
+    {
+      label: "Identify Dependencies",
+      icon: "🔗",
+      detail:
+        "Determine the order of execution by identifying which tasks depend on the completion of others."
+    },
+    {
+      label: "Select Resources",
+      icon: "🛠️",
+      detail:
+        "Choose the appropriate tools, APIs, memory, knowledge sources, and external systems required to complete each task."
+    },
+    {
+      label: "Execute the Plan",
+      icon: "⚡",
+      detail:
+        "Carry out the planned tasks sequentially or in parallel while monitoring progress and handling unexpected situations."
+    },
+    {
+      label: "Review & Adjust",
+      icon: "📈",
+      detail:
+        "Evaluate execution results, refine the plan when conditions change, and optimize future planning strategies."
+    }
+  ],
+
+  code: AgentPlanningCode
+},
+{
+  id: "memory",
+  category: "Core Concepts",
+  title: "Memory",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how AI Agents store, retrieve, and utilize information across interactions to maintain context, personalize responses, and support long-running workflows.",
+
+  tags: [
+    "memory",
+    "short-term memory",
+    "long-term memory",
+    "episodic memory",
+    "semantic memory",
+    "working memory",
+    "context"
+  ],
+
+  concept: AgentMemory,
+
   steps: [
     {
       label: "Capture Information",
-      icon: "📥",
-      detail: "Important information is identified."
-    },
-    {
-      label: "Store Permanently",
-      icon: "💾",
-      detail: "Data is saved in persistent storage."
-    },
-    {
-      label: "Retrieve Later",
-      icon: "🔍",
-      detail: "Relevant memories are fetched when needed."
-    },
-    {
-      label: "Use in Reasoning",
-      icon: "🧠",
-      detail: "Retrieved memories influence decisions."
-    },
-    {
-      label: "Update Knowledge",
-      icon: "🔄",
-      detail: "Stored information evolves over time."
-    }
-  ],
-  code: `class LongTermMemory {
-  constructor() {
-    this.database = {};
-  }
-
-  save(key, value) {
-    this.database[key] = value;
-  }
-
-  retrieve(key) {
-    return this.database[key];
-  }
-}
-
-const memory = new LongTermMemory();
-
-memory.save("favorite_language", "Python");
-
-console.log(
-  memory.retrieve("favorite_language")
-);`
-},
-{
-  id: "episodic-memory",
-  category: "Memory",
-  title: "Episodic Memory",
-  difficulty: "Intermediate",
-  time: "~12 min",
-  description: "Episodic memory stores experiences, interactions, and events that occurred during previous agent activities.",
-  tags: ["episodic memory", "experiences", "history"],
-  steps: [
-    {
-      label: "Record Event",
       icon: "📝",
-      detail: "Capture an interaction or experience."
+      detail:
+        "Collect important details from user interactions, retrieved documents, tool outputs, and workflow execution."
     },
     {
-      label: "Store Episode",
-      icon: "📚",
-      detail: "Save event details and outcomes."
-    },
-    {
-      label: "Recall Experience",
-      icon: "🔍",
-      detail: "Retrieve similar past events."
-    },
-    {
-      label: "Apply Lessons",
-      icon: "🎯",
-      detail: "Use past experiences to improve decisions."
-    }
-  ],
-  code: `class EpisodicMemory {
-  constructor() {
-    this.episodes = [];
-  }
-
-  addEpisode(event) {
-    this.episodes.push(event);
-  }
-
-  getEpisodes() {
-    return this.episodes;
-  }
-}
-
-const memory = new EpisodicMemory();
-
-memory.addEpisode({
-  task: "Book Flight",
-  outcome: "Success"
-});
-
-console.log(memory.getEpisodes());`
-},
-
-{
-  id: "semantic-memory",
-  category: "Memory ",
-  title: "Semantic Memory",
-  difficulty: "Intermediate",
-  time: "~12 min",
-  description: "Semantic memory contains facts, concepts, knowledge, and relationships about the world independent of personal experiences.",
-  tags: ["facts", "knowledge", "semantic memory"],
-  steps: [
-    {
-      label: "Acquire Knowledge",
-      icon: "📖",
-      detail: "Learn facts and concepts."
-    },
-    {
-      label: "Organize Knowledge",
+      label: "Organize Memory",
       icon: "🗂️",
-      detail: "Structure information for retrieval."
+      detail:
+        "Classify information into different memory types such as short-term, long-term, episodic, semantic, or working memory."
     },
     {
-      label: "Query Knowledge",
-      icon: "🔎",
-      detail: "Search for relevant facts."
-    },
-    {
-      label: "Apply Knowledge",
-      icon: "💡",
-      detail: "Use facts during reasoning."
-    }
-  ],
-  code: `class SemanticMemory {
-  constructor() {
-    this.knowledgeBase = {
-      Paris: "Capital of France",
-      Tokyo: "Capital of Japan"
-    };
-  }
-
-  query(topic) {
-    return this.knowledgeBase[topic];
-  }
-}
-
-const memory = new SemanticMemory();
-
-console.log(
-  memory.query("Tokyo")
-);`
-},
-{
-  id: "procedural-memory",
-  category: "Memory ",
-  title: "Procedural Memory",
-  difficulty: "Intermediate",
-  time: "~15 min",
-  description: "Procedural memory stores skills, workflows, and learned procedures that help agents perform tasks efficiently.",
-  tags: ["skills", "procedures", "workflows"],
-  steps: [
-    {
-      label: "Learn Procedure",
-      icon: "📚",
-      detail: "Acquire a sequence of actions."
-    },
-    {
-      label: "Store Workflow",
+      label: "Store Knowledge",
       icon: "💾",
-      detail: "Save task execution steps."
+      detail:
+        "Persist valuable information in memory systems, databases, or vector stores for future retrieval."
     },
     {
-      label: "Execute Skill",
-      icon: "⚙️",
-      detail: "Apply the learned procedure."
+      label: "Retrieve Context",
+      icon: "🔍",
+      detail:
+        "Access relevant memories and contextual information to support reasoning, planning, and decision making."
     },
     {
-      label: "Refine Process",
+      label: "Update Memory",
       icon: "🔄",
-      detail: "Improve execution over time."
+      detail:
+        "Modify existing memories by incorporating new experiences, correcting outdated information, and removing irrelevant data."
+    },
+    {
+      label: "Apply Memory",
+      icon: "🧠",
+      detail:
+        "Use stored knowledge and past interactions to provide personalized, consistent, and context-aware responses."
     }
   ],
-  code: `class ProceduralMemory {
-  constructor() {
-    this.skills = {
-      sendEmail: [
-        "Compose Email",
-        "Validate Recipient",
-        "Send Email"
-      ]
-    };
-  }
 
-  execute(skill) {
-    return this.skills[skill];
-  }
-}
-
-const memory = new ProceduralMemory();
-
-console.log(
-  memory.execute("sendEmail")
-);`
+  code: AgentMemoryCode
 },
 {
-  id: "multi-agent-framework",
-  category: "Multi-Agent",
-  title: "Multi-Agent Framework",
+  id: "tool-usage",
+  category: "Core Concepts",
+  title: "Tool Usage",
   difficulty: "Intermediate",
   time: "~15 min",
-  description: "A Multi-Agent Framework consists of multiple specialized AI agents collaborating to solve complex tasks more efficiently than a single agent.",
-  tags: ["multi-agent", "collaboration", "agents"],
+  description:
+    "Learn how AI Agents discover, select, and use external tools such as APIs, databases, search engines, calculators, and enterprise systems to perform real-world tasks beyond language generation.",
+
+  tags: [
+    "tool usage",
+    "apis",
+    "function calling",
+    "external tools",
+    "integrations",
+    "automation",
+    "enterprise systems"
+  ],
+
+  concept: ToolUsage,
+
   steps: [
     {
-      label: "Receive Goal",
+      label: "Identify the Need",
       icon: "🎯",
-      detail: "A complex objective is provided."
+      detail:
+        "Determine whether the user's request requires an external tool or can be answered using the agent's existing knowledge."
     },
     {
-      label: "Assign Agents",
-      icon: "👥",
-      detail: "Specialized agents are selected."
+      label: "Select the Right Tool",
+      icon: "🛠️",
+      detail:
+        "Choose the most appropriate tool based on the task, available capabilities, permissions, and expected outcome."
     },
     {
-      label: "Execute Tasks",
-      icon: "⚙️",
-      detail: "Each agent performs its responsibility."
-    },
-    {
-      label: "Share Results",
-      icon: "📤",
-      detail: "Agents communicate findings."
-    },
-    {
-      label: "Combine Outputs",
-      icon: "✅",
-      detail: "Results are merged into a final solution."
-    }
-  ],
-  code: `class MultiAgentFramework {
-  constructor() {
-    this.agents = [
-      "Research Agent",
-      "Analysis Agent",
-      "Writer Agent"
-    ];
-  }
-
-  executeTask(goal) {
-    this.agents.forEach(agent => {
-      console.log(
-        \`\${agent} working on: \${goal}\`
-      );
-    });
-
-    return "Final Solution Generated";
-  }
-}
-
-const system = new MultiAgentFramework();
-
-console.log(
-  system.executeTask("Create Market Report")
-);`
-},
-
-{
-  id: "working-memory",
-  category: "Memory",
-  title: "Working Memory",
-  difficulty: "Intermediate",
-  time: "~10 min",
-  description: "Working memory temporarily stores intermediate reasoning states, calculations, and information needed during a single problem-solving process.",
-  tags: ["working memory", "reasoning", "temporary state"],
-  steps: [
-    {
-      label: "Receive Problem",
-      icon: "📥",
-      detail: "Accept the task to solve."
-    },
-    {
-      label: "Store Intermediate Data",
-      icon: "📝",
-      detail: "Maintain temporary reasoning information."
-    },
-    {
-      label: "Process Information",
-      icon: "🧠",
-      detail: "Use stored state for calculations and decisions."
-    },
-    {
-      label: "Generate Output",
-      icon: "✅",
-      detail: "Produce the final answer."
-    },
-    {
-      label: "Clear State",
-      icon: "🗑️",
-      detail: "Discard temporary information after completion."
-    }
-  ],
-  code: `class WorkingMemory {
-  constructor() {
-    this.state = [];
-  }
-
-  add(item) {
-    this.state.push(item);
-  }
-
-  solve() {
-    return this.state.join(" -> ");
-  }
-
-  clear() {
-    this.state = [];
-  }
-}
-
-const memory = new WorkingMemory();
-
-memory.add("Analyze");
-memory.add("Calculate");
-memory.add("Answer");
-
-console.log(memory.solve());
-
-memory.clear();`
-},
-{
-  id: "orchestrator-agent",
-  category: "Multi-Agent",
-  title: "Orchestrator Agent",
-  difficulty: "Intermediate",
-  time: "~12 min",
-  description: "An Orchestrator Agent acts as a coordinator that plans work, delegates tasks to specialized agents, and combines their outputs.",
-  tags: ["orchestrator", "coordinator", "delegation"],
-  steps: [
-    {
-      label: "Receive Goal",
-      icon: "📥",
-      detail: "Accept a high-level objective."
-    },
-    {
-      label: "Create Plan",
+      label: "Prepare the Request",
       icon: "📋",
-      detail: "Break the task into subtasks."
+      detail:
+        "Validate inputs, gather required parameters, and format the request according to the tool's interface."
     },
     {
-      label: "Delegate Work",
-      icon: "📤",
-      detail: "Assign tasks to worker agents."
+      label: "Execute the Tool",
+      icon: "⚡",
+      detail:
+        "Invoke APIs, query databases, perform searches, execute code, or interact with enterprise applications."
     },
     {
-      label: "Collect Results",
+      label: "Process the Results",
       icon: "📊",
-      detail: "Gather outputs from agents."
+      detail:
+        "Analyze and validate the tool's output before incorporating it into the workflow or final response."
     },
     {
-      label: "Finalize Output",
+      label: "Respond & Monitor",
       icon: "✅",
-      detail: "Combine responses into a final result."
+      detail:
+        "Return the processed result to the user, monitor execution success, and handle errors or retries when necessary."
     }
   ],
-  code: `class OrchestratorAgent {
-  assignTask(agent, task) {
-    console.log(
-      \`Assigning "\${task}" to \${agent}\`
-    );
-  }
 
-  coordinate() {
-    this.assignTask(
-      "Research Agent",
-      "Collect Information"
-    );
-
-    this.assignTask(
-      "Writer Agent",
-      "Generate Report"
-    );
-  }
-}
-
-const orchestrator =
-  new OrchestratorAgent();
-
-orchestrator.coordinate();`
+  code: ToolUsageCode
 },
 {
-  id: "worker-agent",
-  category: "Multi-Agent",
-  title: "Subagent / Worker Agent",
-  difficulty: "Beginner",
-  time: "~10 min",
-  description: "Worker agents are specialized agents that execute tasks assigned by an orchestrator agent.",
-  tags: ["worker", "specialized agent", "execution"],
+  id: "context-management",
+  category: "Core Concepts",
+  title: "Context Management",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how AI Agents collect, organize, maintain, and optimize context from conversations, memory, retrieved knowledge, and external systems to make accurate and relevant decisions.",
+
+  tags: [
+    "context",
+    "context management",
+    "conversation",
+    "memory",
+    "retrieval",
+    "rag",
+    "token management"
+  ],
+
+  concept: ContextManagement,
+
   steps: [
     {
-      label: "Receive Task",
+      label: "Collect Context",
       icon: "📥",
-      detail: "Accept work from an orchestrator."
+      detail:
+        "Gather relevant information from user inputs, conversation history, memory, retrieved documents, APIs, and external systems."
     },
     {
-      label: "Process Task",
+      label: "Filter Relevant Information",
+      icon: "🔍",
+      detail:
+        "Identify the most useful information while removing duplicate, outdated, or irrelevant content."
+    },
+    {
+      label: "Organize Context",
+      icon: "🗂️",
+      detail:
+        "Structure the collected context into a format that supports efficient reasoning, planning, and decision making."
+    },
+    {
+      label: "Maintain Context",
+      icon: "🧠",
+      detail:
+        "Preserve important information across interactions while updating context as conversations and tasks evolve."
+    },
+    {
+      label: "Optimize Context Window",
       icon: "⚙️",
-      detail: "Apply domain-specific expertise."
+      detail:
+        "Manage token limits by summarizing, compressing, or prioritizing the most relevant information for the LLM."
     },
     {
-      label: "Generate Output",
-      icon: "📄",
-      detail: "Produce task results."
-    },
-    {
-      label: "Return Results",
-      icon: "📤",
-      detail: "Send results back to the orchestrator."
+      label: "Apply Context",
+      icon: "✅",
+      detail:
+        "Use the prepared context to generate accurate, personalized, and context-aware responses and actions."
     }
   ],
-  code: `class WorkerAgent {
-  constructor(role) {
-    this.role = role;
-  }
 
-  execute(task) {
-    return {
-      role: this.role,
-      task,
-      status: "Completed"
-    };
-  }
-}
+  code: ContextManagementCode
+},
+{
+  id: "decision-making",
+  category: "Core Concepts",
+  title: "Decision Making",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how AI Agents evaluate available information, compare multiple alternatives, assess risks, and choose the most appropriate action to achieve their objectives.",
 
-const researcher =
-  new WorkerAgent("Research Agent");
+  tags: [
+    "decision making",
+    "reasoning",
+    "evaluation",
+    "action selection",
+    "risk assessment",
+    "confidence",
+    "optimization"
+  ],
 
-console.log(
-  researcher.execute("Find AI Trends")
-);`
+  concept: DecisionMaking,
+
+  steps: [
+    {
+      label: "Define the Objective",
+      icon: "🎯",
+      detail:
+        "Identify the desired outcome and understand the constraints, priorities, and success criteria for the task."
+    },
+    {
+      label: "Gather Information",
+      icon: "📚",
+      detail:
+        "Collect relevant context from user input, memory, retrieved knowledge, tools, and external systems."
+    },
+    {
+      label: "Evaluate Alternatives",
+      icon: "⚖️",
+      detail:
+        "Analyze multiple possible actions by considering accuracy, feasibility, cost, risk, and business rules."
+    },
+    {
+      label: "Select the Best Option",
+      icon: "✅",
+      detail:
+        "Choose the action that best aligns with the objective while maximizing value and minimizing potential risks."
+    },
+    {
+      label: "Execute the Decision",
+      icon: "⚡",
+      detail:
+        "Perform the selected action through workflows, APIs, tools, or interactions with external systems."
+    },
+    {
+      label: "Review the Outcome",
+      icon: "📈",
+      detail:
+        "Monitor the results, measure success, capture feedback, and use the outcome to improve future decisions."
+    }
+  ],
+
+  code: DecisionMakingCode
 },
 {
   id: "agent-communication",
-  category: "Multi-Agent",
+  category: "Core Concepts",
   title: "Agent Communication",
   difficulty: "Intermediate",
-  time: "~12 min",
-  description: "Agent Communication enables agents to exchange messages, requests, and results while collaborating on tasks.",
-  tags: ["communication", "messages", "coordination"],
-  steps: [
-    {
-      label: "Create Message",
-      icon: "✉️",
-      detail: "Prepare information to share."
-    },
-    {
-      label: "Send Message",
-      icon: "📤",
-      detail: "Transmit data to another agent."
-    },
-    {
-      label: "Receive Message",
-      icon: "📥",
-      detail: "Accept incoming information."
-    },
-    {
-      label: "Process Content",
-      icon: "🧠",
-      detail: "Use received data in reasoning."
-    },
-    {
-      label: "Respond",
-      icon: "🔄",
-      detail: "Return results or follow-up requests."
-    }
-  ],
-  code: `class Agent {
-  constructor(name) {
-    this.name = name;
-  }
-
-  sendMessage(receiver, message) {
-    receiver.receiveMessage(
-      this.name,
-      message
-    );
-  }
-
-  receiveMessage(sender, message) {
-    console.log(
-      \`\${this.name} received from \${sender}: \${message}\`
-    );
-  }
-}
-
-const researcher =
-  new Agent("Research Agent");
-
-const writer =
-  new Agent("Writer Agent");
-
-researcher.sendMessage(
-  writer,
-  "Research completed"
-);`
-},
-{
-  id: "role-based-agents",
-  category: "Multi-Agent",
-  title: "Role-based Agents",
-  difficulty: "Intermediate",
-  time: "~12 min",
-  description: "Role-based agents are assigned specific expertise or responsibilities such as Researcher, Coder, Reviewer, or Critic.",
-  tags: ["roles", "specialization", "experts"],
-  steps: [
-    {
-      label: "Define Roles",
-      icon: "👤",
-      detail: "Assign expertise to agents."
-    },
-    {
-      label: "Assign Tasks",
-      icon: "📋",
-      detail: "Match tasks with roles."
-    },
-    {
-      label: "Execute Work",
-      icon: "⚙️",
-      detail: "Each agent performs specialized tasks."
-    },
-    {
-      label: "Collaborate",
-      icon: "🤝",
-      detail: "Share outputs with other agents."
-    },
-    {
-      label: "Deliver Result",
-      icon: "✅",
-      detail: "Produce a combined solution."
-    }
-  ],
-  code: `const agents = {
-  researcher: "Collect Information",
-  coder: "Develop Solution",
-  critic: "Review Quality"
-};
-
-Object.entries(agents).forEach(
-  ([role, responsibility]) => {
-    console.log(
-      \`\${role}: \${responsibility}\`
-    );
-  }
-);`
-},
-{
-  id: "consensus-mechanisms",
-  category: "Multi-Agent",
-  title: "Consensus Mechanisms",
-  difficulty: "Advanced",
   time: "~15 min",
-  description: "Consensus mechanisms allow multiple agents to evaluate, vote, debate, or rank solutions before selecting the best outcome.",
-  tags: ["consensus", "voting", "debate", "decision-making"],
+  description:
+    "Learn how AI Agents exchange information with users, other agents, tools, and enterprise systems to coordinate tasks, share knowledge, and accomplish complex objectives.",
+
+  tags: [
+    "agent communication",
+    "communication",
+    "coordination",
+    "messaging",
+    "protocols",
+    "collaboration",
+    "a2a"
+  ],
+
+  concept: AgentCommunication,
+
   steps: [
     {
-      label: "Generate Solutions",
-      icon: "💡",
-      detail: "Each agent proposes a solution."
+      label: "Receive Messages",
+      icon: "📥",
+      detail:
+        "Accept requests, events, or instructions from users, applications, or other AI Agents."
     },
     {
-      label: "Evaluate Options",
-      icon: "🔍",
-      detail: "Agents analyze alternatives."
+      label: "Interpret Intent",
+      icon: "🧠",
+      detail:
+        "Understand the purpose of the message, extract relevant information, and determine the required action."
     },
     {
-      label: "Vote or Debate",
-      icon: "🗳️",
-      detail: "Agents compare strengths and weaknesses."
+      label: "Exchange Information",
+      icon: "🔄",
+      detail:
+        "Share context, task updates, intermediate results, and supporting data with other agents or external systems."
     },
     {
-      label: "Select Winner",
-      icon: "🏆",
-      detail: "Choose the highest-ranked solution."
+      label: "Coordinate Tasks",
+      icon: "🤝",
+      detail:
+        "Collaborate with specialized agents by delegating work, synchronizing activities, and tracking progress."
     },
     {
-      label: "Finalize Decision",
+      label: "Handle Responses",
+      icon: "📨",
+      detail:
+        "Receive results from tools, services, or collaborating agents and validate the returned information."
+    },
+    {
+      label: "Complete Communication",
       icon: "✅",
-      detail: "Produce the agreed-upon answer."
+      detail:
+        "Deliver the final response to the user or requesting system while maintaining context and ensuring reliable communication."
     }
   ],
-  code: `const votes = [
-  "Solution A",
-  "Solution B",
-  "Solution A",
-  "Solution A"
-];
 
-const results = votes.reduce(
-  (count, vote) => {
-    count[vote] = (count[vote] || 0) + 1;
-    return count;
-  },
-  {}
-);
-
-const winner =
-  Object.entries(results)
-    .sort((a, b) => b[1] - a[1])[0][0];
-
-console.log(
-  "Selected Solution:",
-  winner
-);`
+  code: AgentCommunicationCode
 },
-
-  {
-    id: "tool-use-agent",
-    category: "Foundations",
-    title: "Tool-Use Agent",
-    difficulty: "Beginner",
-    time: "~15 min",
-    description: "The baseline agentic pattern: give the LLM tools, let it decide when to call them, parse the result, and loop until done.",
-    tags: ["tools", "function calling", "loop"],
-    steps: [
-      { label: "Define Tools", icon: "🔧", detail: "Declare tools as JSON schemas with name, description, and input_schema. Clear descriptions are critical — the model reads them to decide when to call." },
-      { label: "Send to LLM", icon: "💬", detail: "Pass messages + tools to claude.messages.create. Claude returns either a text response or a tool_use block." },
-      { label: "Parse tool_use", icon: "🔍", detail: "Inspect response.content for blocks with type === 'tool_use'. Extract tool name and input JSON." },
-      { label: "Execute Tool", icon: "⚙️", detail: "Run the actual function locally (API call, DB query, shell command, etc.) and capture the result." },
-      { label: "Return tool_result", icon: "📤", detail: "Append the assistant's message and a user message containing the tool_result block back into the conversation." },
-      { label: "Loop Until Done", icon: "🔄", detail: "Repeat until stop_reason === 'end_turn'. The agent may call multiple tools across multiple turns before finishing." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-const tools = [
-  {
-    name: "get_weather",
-    description: "Get current weather for a location.",
-    input_schema: {
-      type: "object",
-      properties: {
-        location: { type: "string", description: "City and country, e.g. 'Tokyo, Japan'" },
-      },
-      required: ["location"],
-    },
-  },
-  {
-    name: "web_search",
-    description: "Search the web for current information.",
-    input_schema: {
-      type: "object",
-      properties: {
-        query: { type: "string", description: "The search query" },
-      },
-      required: ["query"],
-    },
-  },
-];
-
-// Simulated tool implementations
-async function executeTool(name, input) {
-  if (name === "get_weather") {
-    return { temperature: "22°C", condition: "Sunny", location: input.location };
-  }
-  if (name === "web_search") {
-    return { results: ["Result 1 for: " + input.query, "Result 2"] };
-  }
-  throw new Error(\`Unknown tool: \${name}\`);
-}
-
-async function runAgent(userMessage) {
-  const messages = [{ role: "user", content: userMessage }];
-
-  while (true) {
-    const response = await client.messages.create({
-      model: "claude-opus-4-6",
-      max_tokens: 1024,
-      tools,
-      messages,
-    });
-
-    // Append assistant response
-    messages.push({ role: "assistant", content: response.content });
-
-    // Done — no more tool calls
-    if (response.stop_reason === "end_turn") {
-      return response.content.find((b) => b.type === "text")?.text;
-    }
-
-    // Process all tool_use blocks
-    const toolResults = [];
-    for (const block of response.content) {
-      if (block.type === "tool_use") {
-        const result = await executeTool(block.name, block.input);
-        toolResults.push({
-          type: "tool_result",
-          tool_use_id: block.id,
-          content: JSON.stringify(result),
-        });
-      }
-    }
-
-    // Return results to the model
-    messages.push({ role: "user", content: toolResults });
-  }
-}
-
-// Usage
-const answer = await runAgent("What's the weather in Tokyo and any recent news about it?");
-console.log(answer);`,
-  },
-  {
-    id: "react-agent",
-    category: "Foundations",
-    title: "ReAct Agent",
-    difficulty: "Beginner",
-    time: "~20 min",
-    description: "Reason then Act: the model emits explicit Thought → Action → Observation chains before producing a final answer. Improves traceability.",
-    tags: ["reasoning", "chain-of-thought", "structured"],
-    steps: [
-      { label: "System Prompt", icon: "📋", detail: "Instruct the model to always output Thought: / Action: / Observation: blocks before answering. This structures its reasoning visibly." },
-      { label: "Thought", icon: "🤔", detail: "Model reasons about what it knows and what it needs. E.g. 'I need the current stock price before I can compare.'" },
-      { label: "Action", icon: "⚡", detail: "Model outputs a structured action: tool name + arguments, parsed by your loop." },
-      { label: "Observation", icon: "👁️", detail: "Your code executes the action and injects the result as Observation: back into the prompt." },
-      { label: "Repeat or Answer", icon: "🔄", detail: "The model continues Thought → Action → Observation until it has enough to produce a final Answer: block." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-const REACT_SYSTEM = \`You are an agent that thinks step by step before acting.
-Always follow this format:
-Thought: <your reasoning about what to do next>
-Action: <tool_name>(<json_args>)
-Observation: <result will be filled in by the system>
-... repeat as needed ...
-Answer: <your final answer to the user>
-
-Available tools: calculator({"expr": "2+2"}), search({"query": "..."})
-\`;
-
-function parseAction(text) {
-  const match = text.match(/Action:\\s*(\\w+)\\(({[^}]+})\\)/);
-  if (!match) return null;
-  return { tool: match[1], args: JSON.parse(match[2]) };
-}
-
-async function executeTool(tool, args) {
-  if (tool === "calculator") {
-    // eslint-disable-next-line no-eval
-    return String(eval(args.expr));
-  }
-  if (tool === "search") {
-    return \`Search results for "\${args.query}": [mock result 1, mock result 2]\`;
-  }
-  return "Unknown tool";
-}
-
-async function reactAgent(question, maxSteps = 10) {
-  let prompt = \`Question: \${question}\\n\`;
-
-  for (let step = 0; step < maxSteps; step++) {
-    const response = await client.messages.create({
-      model: "claude-opus-4-6",
-      max_tokens: 512,
-      system: REACT_SYSTEM,
-      messages: [{ role: "user", content: prompt }],
-    });
-
-    const output = response.content[0].text;
-    prompt += output;
-
-    // Check for final answer
-    if (output.includes("Answer:")) {
-      const answer = output.split("Answer:")[1].trim();
-      return { answer, trace: prompt };
-    }
-
-    // Parse and execute action
-    const action = parseAction(output);
-    if (action) {
-      const observation = await executeTool(action.tool, action.args);
-      prompt += \`\\nObservation: \${observation}\\n\`;
-    } else {
-      break; // No action found, stop
-    }
-  }
-
-  return { answer: "Max steps reached", trace: prompt };
-}
-
-const { answer, trace } = await reactAgent("What is 1234 * 5678?");
-console.log("Answer:", answer);`,
-  },
-  {
-    id: "plan-execute",
-    category: "Planning",
-    title: "Plan & Execute",
-    difficulty: "Intermediate",
-    time: "~30 min",
-    description: "Separate planning from execution: first generate a full task plan, then execute each step with a smaller model. Reduces token cost and improves reliability.",
-    tags: ["planning", "multi-step", "decomposition"],
-    steps: [
-      { label: "Planner LLM", icon: "🗺️", detail: "A capable model (e.g. claude-opus-4-6) receives the goal and outputs a structured JSON plan: an ordered list of steps with tool assignments." },
-      { label: "Parse Plan", icon: "📋", detail: "Extract the step list. Validate that each step has a clear action, tool, and expected output field." },
-      { label: "Execute Steps", icon: "⚙️", detail: "A smaller executor model (or direct tool calls) runs each step in sequence, passing outputs as inputs to the next step." },
-      { label: "Context Passing", icon: "🔗", detail: "Maintain a shared context dict. Each step reads from and writes to context, so outputs flow naturally to downstream steps." },
-      { label: "Replan on Failure", icon: "🔁", detail: "If a step fails, optionally call the planner again with the error context to generate a revised sub-plan." },
-      { label: "Synthesize", icon: "✨", detail: "After all steps complete, pass the full context to the LLM to synthesize a final coherent answer." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-async function planTask(goal) {
-  const response = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 1024,
-    messages: [{
-      role: "user",
-      content: \`Create a step-by-step plan to accomplish this goal.
-Return ONLY a JSON array of steps, each with: step, action, tool, expected_output.
-Goal: \${goal}\`,
-    }],
-  });
-
-  const text = response.content[0].text;
-  const clean = text.replace(/\`\`\`json|\\n\`\`\`/g, "").trim();
-  return JSON.parse(clean);
-}
-
-async function executeStep(step, context) {
-  // Simulate tool execution based on step.tool
-  const toolResult = await mockToolCall(step.tool, step.action, context);
-  return toolResult;
-}
-
-async function mockToolCall(tool, action, context) {
-  // Replace with real tool implementations
-  return \`Executed [\${tool}]: \${action} — result stored in context.\`;
-}
-
-async function synthesize(goal, context) {
-  const response = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 1024,
-    messages: [{
-      role: "user",
-      content: \`Goal: \${goal}\\n\\nExecution results:\\n\${JSON.stringify(context, null, 2)}\\n\\nSynthesize a final answer.\`,
-    }],
-  });
-  return response.content[0].text;
-}
-
-async function planAndExecute(goal) {
-  // Step 1: Plan
-  const plan = await planTask(goal);
-  console.log("Plan:", plan);
-
-  // Step 2: Execute each step
-  const context = { goal };
-  for (const step of plan) {
-    console.log(\`Executing step \${step.step}: \${step.action}\`);
-    try {
-      context[\`step_\${step.step}_result\`] = await executeStep(step, context);
-    } catch (err) {
-      console.error(\`Step \${step.step} failed: \${err.message}\`);
-      // Optionally replan here
-    }
-  }
-
-  // Step 3: Synthesize
-  return await synthesize(goal, context);
-}
-
-const result = await planAndExecute("Research the latest AI safety papers and summarize key findings");
-console.log(result);`,
-  },
-  {
-    id: "multi-agent",
-    category: "Multi-Agent",
-    title: "Multi-Agent Orchestration",
-    difficulty: "Advanced",
-    time: "~60 min",
-    description: "An orchestrator agent delegates subtasks to specialized sub-agents running in parallel. Each sub-agent has its own tools and system prompt.",
-    tags: ["orchestration", "parallelism", "specialization"],
-    steps: [
-      { label: "Orchestrator", icon: "🎯", detail: "A coordinator LLM receives the high-level goal and decomposes it into subtasks, routing each to the appropriate specialist agent." },
-      { label: "Agent Registry", icon: "📚", detail: "Define a registry of sub-agents: each with a name, system prompt, and tool set. The orchestrator picks agents by name." },
-      { label: "Parallel Dispatch", icon: "⚡", detail: "Use Promise.all to run multiple sub-agents concurrently, dramatically reducing total wall-clock time." },
-      { label: "Sub-Agent Execution", icon: "🤖", detail: "Each sub-agent runs its own tool-use loop independently, returning a structured result when done." },
-      { label: "Result Aggregation", icon: "🔗", detail: "The orchestrator receives all sub-agent outputs and synthesizes them into a coherent final response." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-// Sub-agent definitions
-const AGENTS = {
-  researcher: {
-    system: "You are a research agent. Find and summarize information on the given topic.",
-    tools: [{ name: "web_search", description: "Search the web", input_schema: { type: "object", properties: { query: { type: "string" } }, required: ["query"] } }],
-  },
-  analyst: {
-    system: "You are a data analysis agent. Analyze data and produce structured insights.",
-    tools: [{ name: "run_analysis", description: "Run statistical analysis", input_schema: { type: "object", properties: { data: { type: "string" } }, required: ["data"] } }],
-  },
-  writer: {
-    system: "You are a writing agent. Produce clear, well-structured written content.",
-    tools: [],
-  },
-};
-
-async function runSubAgent(agentName, task, context = "") {
-  const agent = AGENTS[agentName];
-  const messages = [{ role: "user", content: \`Task: \${task}\\nContext: \${context}\` }];
-
-  while (true) {
-    const response = await client.messages.create({
-      model: "claude-opus-4-6",
-      max_tokens: 1024,
-      system: agent.system,
-      tools: agent.tools,
-      messages,
-    });
-
-    messages.push({ role: "assistant", content: response.content });
-
-    if (response.stop_reason === "end_turn") {
-      return response.content.find((b) => b.type === "text")?.text ?? "";
-    }
-
-    const toolResults = [];
-    for (const block of response.content) {
-      if (block.type === "tool_use") {
-        // Mock tool execution
-        toolResults.push({ type: "tool_result", tool_use_id: block.id, content: \`Mock result for \${block.name}\` });
-      }
-    }
-    messages.push({ role: "user", content: toolResults });
-  }
-}
-
-async function orchestrate(goal) {
-  // Orchestrator decides how to split the work
-  const planResponse = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 512,
-    messages: [{
-      role: "user",
-      content: \`Split this goal into subtasks for these agents: researcher, analyst, writer.
-Return JSON: [{"agent": "...", "task": "..."}]
-Goal: \${goal}\`,
-    }],
-  });
-
-  const plan = JSON.parse(planResponse.content[0].text.replace(/\`\`\`json|\\n\`\`\`/g, "").trim());
-
-  // Run all sub-agents in parallel
-  const results = await Promise.all(
-    plan.map(({ agent, task }) => runSubAgent(agent, task))
-  );
-
-  // Synthesize results
-  const synthesis = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 1024,
-    messages: [{
-      role: "user",
-      content: \`Combine these agent outputs into a final answer for: \${goal}\\n\\n\${results.map((r, i) => \`Agent \${i + 1}:\\n\${r}\`).join("\\n\\n")}\`,
-    }],
-  });
-
-  return synthesis.content[0].text;
-}
-
-const result = await orchestrate("Write a competitive analysis report on AI coding assistants");
-console.log(result);`,
-  },
-  {
-    id: "reflection-agent",
-    category: "Advanced",
-    title: "Reflection & Self-Correction",
-    difficulty: "Intermediate",
-    time: "~25 min",
-    description: "The agent critiques its own output, identifies weaknesses, and iteratively improves until a quality threshold is met or max rounds exhausted.",
-    tags: ["self-critique", "iterative", "quality"],
-    steps: [
-      { label: "Initial Generation", icon: "📝", detail: "Generate a first-pass response to the user's request without any external constraints." },
-      { label: "Critic Pass", icon: "🔎", detail: "A separate critic prompt evaluates the output on dimensions like accuracy, completeness, clarity, and tone." },
-      { label: "Parse Score", icon: "📊", detail: "Extract a numeric quality score (1–10) and a list of specific critiques from the critic's response." },
-      { label: "Refine", icon: "✏️", detail: "If score < threshold, pass the original output + critiques back to the generator with instruction to improve." },
-      { label: "Loop / Stop", icon: "🔄", detail: "Repeat up to N rounds. Stop early if score meets threshold or critique indicates no further improvement possible." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-
-const client = new Anthropic();
-
-async function generate(task, previousOutput = null, critiques = null) {
-  const content = previousOutput
-    ? \`Improve this output based on the critiques below.
-Task: \${task}
-Previous output: \${previousOutput}
-Critiques: \${critiques}
-Produce an improved version.\`
-    : task;
-
-  const response = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 1024,
-    messages: [{ role: "user", content }],
-  });
-  return response.content[0].text;
-}
-
-async function critique(task, output) {
-  const response = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 512,
-    messages: [{
-      role: "user",
-      content: \`Evaluate this output for the task below.
-Task: \${task}
-Output: \${output}
-
-Return JSON only:
 {
-  "score": <1-10>,
-  "critiques": ["issue 1", "issue 2"],
-  "strengths": ["strength 1"],
-  "can_improve": true/false
-}\`,
-    }],
-  });
+  id: "multi-agent-systems",
+  category: "Core Concepts",
+  title: "Multi-Agent Systems",
+  difficulty: "Intermediate",
+  time: "~18 min",
+  description:
+    "Learn how multiple AI Agents collaborate, coordinate, and communicate to solve complex problems by leveraging specialized roles, shared knowledge, and distributed execution.",
 
-  const text = response.content[0].text.replace(/\`\`\`json|\\n\`\`\`/g, "").trim();
-  return JSON.parse(text);
-}
+  tags: [
+    "multi-agent",
+    "agent collaboration",
+    "coordination",
+    "distributed systems",
+    "orchestration",
+    "specialized agents",
+    "teamwork"
+  ],
 
-async function reflectionAgent(task, maxRounds = 3, threshold = 8) {
-  let output = await generate(task);
-  const history = [];
+  concept: MultiAgentSystems,
 
-  for (let round = 0; round < maxRounds; round++) {
-    const evaluation = await critique(task, output);
-    history.push({ round: round + 1, score: evaluation.score, critiques: evaluation.critiques });
-
-    console.log(\`Round \${round + 1}: Score \${evaluation.score}/10\`);
-
-    // Stop if quality threshold met or no more improvements possible
-    if (evaluation.score >= threshold || !evaluation.can_improve) {
-      break;
+  steps: [
+    {
+      label: "Define Agent Roles",
+      icon: "👥",
+      detail:
+        "Assign specialized responsibilities to individual agents based on their expertise, such as planning, research, coding, or validation."
+    },
+    {
+      label: "Coordinate Tasks",
+      icon: "📋",
+      detail:
+        "Break complex objectives into smaller tasks and distribute them among the appropriate agents."
+    },
+    {
+      label: "Communicate & Share",
+      icon: "💬",
+      detail:
+        "Exchange context, intermediate results, status updates, and decisions to ensure effective collaboration."
+    },
+    {
+      label: "Execute in Parallel",
+      icon: "⚡",
+      detail:
+        "Allow multiple agents to perform independent tasks simultaneously, improving efficiency and reducing execution time."
+    },
+    {
+      label: "Aggregate Results",
+      icon: "🧩",
+      detail:
+        "Collect outputs from all participating agents, resolve conflicts if necessary, and combine them into a unified solution."
+    },
+    {
+      label: "Deliver Final Outcome",
+      icon: "✅",
+      detail:
+        "Present the consolidated result to the user while ensuring consistency, accuracy, and completion of the overall objective."
     }
+  ],
 
-    // Refine based on critique
-    output = await generate(task, output, evaluation.critiques.join("; "));
-  }
+  code: MultiAgentSystemsCode
+},
+{
+  id: "execution-patterns",
+  category: "Core Concepts",
+  title: "Execution Patterns",
+  difficulty: "Intermediate",
+  time: "~18 min",
+  description:
+    "Learn how AI Agents execute workflows using different execution strategies such as sequential, parallel, routing, pipeline, event-driven, and human-in-the-loop patterns to optimize performance and reliability.",
 
-  return { finalOutput: output, history };
-}
+  tags: [
+    "execution patterns",
+    "workflow",
+    "sequential",
+    "parallel",
+    "pipeline",
+    "routing",
+    "event-driven"
+  ],
 
-const { finalOutput, history } = await reflectionAgent(
-  "Explain the concept of gradient descent to a high school student."
-);
-console.log("Final output:", finalOutput);
-console.log("Improvement history:", history);`,
-  },
-  {
-    id: "memory-agent",
-    category: "Memory",
-    title: "Agent with Long-Term Memory",
-    difficulty: "Advanced",
-    time: "~45 min",
-    description: "Equip an agent with episodic and semantic memory: store past interactions as embeddings, retrieve relevant context at query time.",
-    tags: ["memory", "embeddings", "persistence"],
-    steps: [
-      { label: "Episodic Store", icon: "💾", detail: "After each conversation turn, embed and store the exchange (user msg + agent response) with a timestamp in a vector DB." },
-      { label: "Memory Retrieval", icon: "🔍", detail: "At the start of each turn, embed the current query and retrieve the top-K most semantically similar past episodes." },
-      { label: "Semantic Summary", icon: "📝", detail: "Periodically compress older episodes into a semantic summary to reduce context length without losing key facts." },
-      { label: "Context Assembly", icon: "🧩", detail: "Inject retrieved memories and the semantic summary into the system prompt before the current turn." },
-      { label: "Tool-Use Loop", icon: "🔄", detail: "Run the standard tool-use agent loop with the enriched context, giving the agent access to its own history." },
-      { label: "Prune & Archive", icon: "🗂️", detail: "Implement a TTL or importance score to prune stale memories and archive rarely-accessed episodes." },
-    ],
-    code: `import Anthropic from "@anthropic-ai/sdk";
-import { OpenAI } from "openai";
-import { Pinecone } from "@pinecone-database/pinecone";
+  concept: ExecutionPatterns,
 
-const client = new Anthropic();
-const openai = new OpenAI();
-const pinecone = new Pinecone();
-const memoryIndex = pinecone.index("agent-memory");
+  steps: [
+    {
+      label: "Sequential Execution",
+      icon: "➡️",
+      detail:
+        "Execute tasks one after another, where each task begins only after the previous task has successfully completed."
+    },
+    {
+      label: "Parallel Execution",
+      icon: "⚡",
+      detail:
+        "Run multiple independent tasks simultaneously to reduce overall execution time and improve efficiency."
+    },
+    {
+      label: "Pipeline Processing",
+      icon: "🔄",
+      detail:
+        "Process data through a series of dependent stages, where the output of one stage becomes the input for the next."
+    },
+    {
+      label: "Routing & Delegation",
+      icon: "🛣️",
+      detail:
+        "Dynamically route requests to the most appropriate workflow, specialized agent, or external service based on predefined conditions."
+    },
+    {
+      label: "Event-Driven Execution",
+      icon: "🔔",
+      detail:
+        "Trigger workflows automatically when specific events occur, such as new data arrival, user actions, or system notifications."
+    },
+    {
+      label: "Human-in-the-Loop",
+      icon: "👤",
+      detail:
+        "Pause automated execution when human review, approval, or intervention is required before proceeding."
+    }
+  ],
 
-async function embed(text) {
-  const { data } = await openai.embeddings.create({
-    model: "text-embedding-3-small",
-    input: text,
-  });
-  return data[0].embedding;
-}
+  code: ExecutionPatternsCode
+},
+{
+  id: "agent-safety",
+  category: "Core Concepts",
+  title: "Agent Safety",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how AI Agents operate securely and responsibly by applying guardrails, access controls, validation, human oversight, and risk mitigation techniques to protect users and enterprise systems.",
 
-async function storeMemory(userMsg, agentResponse, sessionId) {
-  const text = \`User: \${userMsg}\\nAgent: \${agentResponse}\`;
-  const vector = await embed(text);
-  await memoryIndex.upsert([{
-    id: \`\${sessionId}-\${Date.now()}\`,
-    values: vector,
-    metadata: { text, timestamp: new Date().toISOString(), session: sessionId },
-  }]);
-}
+  tags: [
+    "agent safety",
+    "security",
+    "guardrails",
+    "privacy",
+    "authorization",
+    "validation",
+    "responsible ai"
+  ],
 
-async function retrieveMemories(query, topK = 3) {
-  const vector = await embed(query);
-  const results = await memoryIndex.query({ vector, topK, includeMetadata: true });
-  return results.matches.map((m) => ({
-    text: m.metadata.text,
-    timestamp: m.metadata.timestamp,
-    score: m.score,
-  }));
-}
+  concept: AgentSafety,
 
-async function buildSystemPrompt(query) {
-  const memories = await retrieveMemories(query);
-  if (memories.length === 0) return "You are a helpful assistant.";
+  steps: [
+    {
+      label: "Identify Risks",
+      icon: "⚠️",
+      detail:
+        "Recognize potential risks such as hallucinations, prompt injection, unauthorized access, data leakage, and unsafe tool usage."
+    },
+    {
+      label: "Apply Guardrails",
+      icon: "🛡️",
+      detail:
+        "Define policies and constraints that control agent behavior and prevent unsafe or unauthorized actions."
+    },
+    {
+      label: "Validate Inputs & Outputs",
+      icon: "✔️",
+      detail:
+        "Verify user inputs, generated responses, and tool outputs to ensure accuracy, security, and policy compliance."
+    },
+    {
+      label: "Control Access",
+      icon: "🔐",
+      detail:
+        "Authenticate users, enforce permissions, and restrict access to sensitive tools, data, and enterprise resources."
+    },
+    {
+      label: "Enable Human Oversight",
+      icon: "👤",
+      detail:
+        "Require human review and approval for critical, high-risk, or business-sensitive decisions before execution."
+    },
+    {
+      label: "Monitor & Improve",
+      icon: "📊",
+      detail:
+        "Continuously monitor agent behavior, log important actions, detect policy violations, and strengthen safety measures over time."
+    }
+  ],
 
-  const memoryText = memories
-    .map((m) => \`[\${m.timestamp}] \${m.text}\`)
-    .join("\\n---\\n");
+  code: AgentSafetyCode
+},
+{
+  id: "agent-evaluation",
+  category: "Core Concepts",
+  title: "Agent Evaluation",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how to measure, analyze, and improve AI Agent performance using evaluation metrics, benchmarking, automated testing, human feedback, and continuous monitoring.",
 
-  return \`You are a helpful assistant with access to past conversation history.
-Relevant memories from past interactions:
-\${memoryText}
+  tags: [
+    "agent evaluation",
+    "metrics",
+    "benchmarking",
+    "testing",
+    "performance",
+    "quality",
+    "feedback"
+  ],
 
-Use these memories to provide consistent, contextually-aware responses.\`;
-}
+  concept: AgentEvaluation,
 
-async function memoryAgent(userMessage, sessionId) {
-  // Build context-aware system prompt
-  const systemPrompt = await buildSystemPrompt(userMessage);
+  steps: [
+    {
+      label: "Define Evaluation Goals",
+      icon: "🎯",
+      detail:
+        "Identify what success looks like by defining objectives, expected outcomes, and performance criteria for the AI Agent."
+    },
+    {
+      label: "Measure Performance",
+      icon: "📏",
+      detail:
+        "Evaluate metrics such as accuracy, task completion, latency, reliability, and tool execution success."
+    },
+    {
+      label: "Test the Agent",
+      icon: "🧪",
+      detail:
+        "Assess the agent using offline datasets, simulated scenarios, automated test cases, and real-world interactions."
+    },
+    {
+      label: "Analyze Results",
+      icon: "📊",
+      detail:
+        "Review successes, failures, reasoning quality, and workflow execution to identify areas for improvement."
+    },
+    {
+      label: "Collect Feedback",
+      icon: "💬",
+      detail:
+        "Gather input from users, human reviewers, monitoring systems, and production logs to evaluate response quality."
+    },
+    {
+      label: "Improve Continuously",
+      icon: "📈",
+      detail:
+        "Refine prompts, workflows, tools, and models based on evaluation insights to improve future performance."
+    }
+  ],
 
-  const response = await client.messages.create({
-    model: "claude-opus-4-6",
-    max_tokens: 1024,
-    system: systemPrompt,
-    messages: [{ role: "user", content: userMessage }],
-  });
+  code: AgentEvaluationCode
+},
+{
+  id: "agent-observability",
+  category: "Core Concepts",
+  title: "Agent Observability",
+  difficulty: "Intermediate",
+  time: "~15 min",
+  description:
+    "Learn how to monitor, trace, and analyze AI Agent behavior in production using logs, metrics, traces, and performance insights to improve reliability and debugging.",
 
-  const agentResponse = response.content[0].text;
+  tags: [
+    "observability",
+    "monitoring",
+    "logging",
+    "tracing",
+    "metrics",
+    "debugging",
+    "performance"
+  ],
 
-  // Store this interaction in memory
-  await storeMemory(userMessage, agentResponse, sessionId);
+  concept: AgentObservability,
 
-  return agentResponse;
-}
+  steps: [
+    {
+      label: "Capture Logs",
+      icon: "📝",
+      detail:
+        "Record important agent activities including requests, decisions, tool usage, responses, errors, and execution events."
+    },
+    {
+      label: "Track Metrics",
+      icon: "📊",
+      detail:
+        "Measure performance indicators such as response time, success rate, failures, token usage, cost, and resource utilization."
+    },
+    {
+      label: "Trace Execution Flow",
+      icon: "🔍",
+      detail:
+        "Follow the complete journey of a request across planning, reasoning, retrieval, tool calls, and final response generation."
+    },
+    {
+      label: "Monitor Tools & Integrations",
+      icon: "🛠️",
+      detail:
+        "Observe external API calls, database interactions, tool execution results, failures, and retry behavior."
+    },
+    {
+      label: "Detect Issues",
+      icon: "🚨",
+      detail:
+        "Identify performance bottlenecks, unexpected behaviors, failures, security risks, and workflow problems."
+    },
+    {
+      label: "Optimize Performance",
+      icon: "📈",
+      detail:
+        "Use monitoring insights to improve prompts, workflows, models, tools, reliability, and operational efficiency."
+    }
+  ],
 
-// Multi-turn conversation with persistent memory
-const SESSION_ID = "user-123";
-console.log(await memoryAgent("My name is Alice and I'm working on a climate model.", SESSION_ID));
-console.log(await memoryAgent("What was I working on again?", SESSION_ID)); // Recalls from memory`,
-  },
+  code: AgentObservabilityCode
+},
+{
+  id: "agent-design-patterns",
+  category: "Core Concepts",
+  title: "Agent Design Patterns",
+  difficulty: "Intermediate",
+  time: "~18 min",
+  description:
+    "Learn reusable architectural patterns for building reliable AI Agents, including reasoning patterns, workflow patterns, collaboration approaches, and strategies for solving common agent design problems.",
+
+  tags: [
+    "design patterns",
+    "react",
+    "planning",
+    "reflection",
+    "router",
+    "rag",
+    "multi-agent",
+    "architecture"
+  ],
+
+  concept: AgentDesignPatterns,
+
+  steps: [
+    {
+      label: "ReAct Pattern",
+      icon: "🤔",
+      detail:
+        "Combine reasoning and action by allowing agents to think, use tools, observe results, and continue solving problems iteratively."
+    },
+    {
+      label: "Plan-and-Execute Pattern",
+      icon: "📋",
+      detail:
+        "Create an execution plan first, then complete tasks step by step according to the defined workflow."
+    },
+    {
+      label: "Reflection Pattern",
+      icon: "🔄",
+      detail:
+        "Enable agents to review their own outputs, identify issues, and improve responses before delivering the final result."
+    },
+    {
+      label: "Router Pattern",
+      icon: "🛣️",
+      detail:
+        "Direct requests to the most suitable agent, model, or workflow based on user intent and task requirements."
+    },
+    {
+      label: "Evaluator-Optimizer Pattern",
+      icon: "⚖️",
+      detail:
+        "Use evaluation and optimization loops where one component generates results and another component reviews and improves them."
+    },
+    {
+      label: "RAG Pattern",
+      icon: "📚",
+      detail:
+        "Combine retrieval systems with LLM reasoning to provide accurate responses using trusted external knowledge sources."
+    },
+    {
+      label: "Human-in-the-Loop Pattern",
+      icon: "👤",
+      detail:
+        "Include human validation and approval steps for critical decisions, sensitive operations, and high-risk workflows."
+    }
+  ],
+
+  code: AgentDesignPatternsCode
+},
+{
+  id: "agent-challenges",
+  category: "Core Concepts",
+  title: "Agent Challenges",
+  difficulty: "Advanced",
+  time: "~18 min",
+  description:
+    "Understand the major technical, operational, security, and scalability challenges involved in designing, deploying, and maintaining reliable AI Agents in real-world environments.",
+
+  tags: [
+    "challenges",
+    "hallucination",
+    "security",
+    "scalability",
+    "latency",
+    "cost",
+    "reliability"
+  ],
+
+  concept: AgentChallenges,
+
+  steps: [
+    {
+      label: "Manage Hallucinations",
+      icon: "⚠️",
+      detail:
+        "Reduce incorrect or fabricated responses by using trusted knowledge sources, retrieval systems, validation, and confidence checks."
+    },
+    {
+      label: "Handle Reasoning Errors",
+      icon: "🧠",
+      detail:
+        "Improve decision quality by evaluating reasoning processes, adding constraints, and refining agent workflows."
+    },
+    {
+      label: "Control Tool Failures",
+      icon: "🛠️",
+      detail:
+        "Manage failures from APIs, databases, and external systems using retries, fallbacks, validation, and error handling."
+    },
+    {
+      label: "Ensure Security & Privacy",
+      icon: "🔐",
+      detail:
+        "Protect sensitive data and systems from risks such as prompt injection, unauthorized access, and data leakage."
+    },
+    {
+      label: "Improve Scalability",
+      icon: "📈",
+      detail:
+        "Design architectures that support increasing users, workloads, agents, tools, and enterprise requirements."
+    },
+    {
+      label: "Optimize Cost & Performance",
+      icon: "⚡",
+      detail:
+        "Balance model usage, latency, infrastructure cost, and response quality for efficient production operations."
+    },
+    {
+      label: "Maintain Reliability",
+      icon: "✅",
+      detail:
+        "Use evaluation, monitoring, observability, and continuous improvement practices to maintain consistent agent behavior."
+    }
+  ],
+
+  code: ""
+},
+{
+  id: "agent-ecosystem",
+  category: "Core Concepts",
+  title: "Agent Ecosystem",
+  difficulty: "Advanced",
+  time: "~20 min",
+  description:
+    "Explore the complete AI Agent ecosystem including foundation models, agent frameworks, communication protocols, memory systems, retrieval technologies, tools, observability platforms, and deployment infrastructure.",
+
+  tags: [
+    "ecosystem",
+    "llm",
+    "frameworks",
+    "protocols",
+    "rag",
+    "vector database",
+    "deployment",
+    "enterprise ai"
+  ],
+
+  concept: AgentEcosystem,
+
+  steps: [
+    {
+      label: "Foundation Models",
+      icon: "🧠",
+      detail:
+        "Understand how Large Language Models provide reasoning, language understanding, generation, and decision-making capabilities for AI Agents."
+    },
+    {
+      label: "Agent Frameworks",
+      icon: "🏗️",
+      detail:
+        "Explore frameworks that simplify agent development by providing orchestration, workflows, memory, tool integration, and multi-agent capabilities."
+    },
+    {
+      label: "Communication Protocols",
+      icon: "🔗",
+      detail:
+        "Learn how agents, tools, and applications communicate using standards and protocols for interoperability."
+    },
+    {
+      label: "Knowledge & Retrieval Systems",
+      icon: "📚",
+      detail:
+        "Understand how RAG systems, search engines, knowledge graphs, and vector databases provide external knowledge to agents."
+    },
+    {
+      label: "Memory Systems",
+      icon: "💾",
+      detail:
+        "Explore short-term and long-term memory mechanisms that help agents maintain context and improve future interactions."
+    },
+    {
+      label: "Tool & System Integration",
+      icon: "🛠️",
+      detail:
+        "Learn how agents connect with APIs, databases, enterprise applications, cloud services, and external systems to perform actions."
+    },
+    {
+      label: "Observability & Governance",
+      icon: "📊",
+      detail:
+        "Understand monitoring, evaluation, security, compliance, and governance capabilities required for production AI Agent systems."
+    },
+    {
+      label: "Deployment Infrastructure",
+      icon: "☁️",
+      detail:
+        "Explore cloud platforms, containers, orchestration systems, and enterprise infrastructure used to deploy scalable AI Agents."
+    }
+  ],
+
+  code: ""
+},
 ];
 
 const CATEGORIES = ["All","Core Concepts", "Planning","Tools & Actions","Memory","Multi-Agent", "Advanced"];
@@ -1930,6 +1366,17 @@ function StepFlow({ steps }) {
           {steps[active].detail}
         </div>
       )}
+    </div>
+  );
+}
+
+
+function ContentViewer({ content }) {
+  return (
+    <div className="prose max-w-none h-[75vh] overflow-y-auto p-6">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        {content}
+      </ReactMarkdown>
     </div>
   );
 }
@@ -2032,7 +1479,7 @@ function RecipeDetail({ recipe }) {
       </p>
 
       <div style={{ display: "flex", gap: 4, marginBottom: 18, borderBottom: "0.5px solid var(--color-border-tertiary)", paddingBottom: 0 }}>
-        {["steps", "code"].map((t) => (
+        {["steps", "code", "concept"].map((t) => (
           <button
             key={t}
             onClick={() => setTab(t)}
@@ -2044,13 +1491,14 @@ function RecipeDetail({ recipe }) {
               marginBottom: -1, transition: "all 0.12s",
             }}
           >
-            {t === "steps" ? "Pipeline Steps" : "Code"}
+            {t === "steps" ? "Pipeline Steps" : t === "code" ? "Code" : "Concept"}
           </button>
         ))}
       </div>
-
+      
       {tab === "steps" && <StepFlow steps={recipe.steps} />}
       {tab === "code" && <CodeBlock code={recipe.code} />}
+      {tab === "concept" && <ContentViewer content={recipe.concept} />}
     </div>
   );
 }
@@ -2116,15 +1564,15 @@ function Header() {
     }}>
       <div style={{
         width: 40, height: 40, borderRadius: 10,
-        background: "#E1F5EE", display: "flex", alignItems: "center", justifyContent: "center",
+        background: "#E6F1FB", display: "flex", alignItems: "center", justifyContent: "center",
         fontSize: 20,
       }}>
-        🤖
+        📚
       </div>
       <div>
-        <h1 style={{ margin: 0, fontSize: 20, fontWeight: 500, letterSpacing: "-0.3px" }}>Agentic AI Cookbook</h1>
+        <h1 style={{ margin: 0, fontSize: 20, fontWeight: 500, letterSpacing: "-0.3px" }}>AgenticAI Cookbook</h1>
         <p style={{ margin: 0, fontSize: 13, color: "var(--color-text-secondary)" }}>
-          End-to-end patterns for building autonomous AI agents
+          End-to-end retrieval-augmented generation recipes
         </p>
       </div>
       <div style={{ marginLeft: "auto", display: "flex", gap: 20 }}>
@@ -2151,6 +1599,7 @@ export default function App() {
     <div style={{
       display: "flex", flexDirection: "column",
       height: "100vh", fontFamily: "var(--font-sans, system-ui, sans-serif)",
+      // background: "var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)",
       background: "var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)",
       color: "var(--color-text-primary)",
     }}>
