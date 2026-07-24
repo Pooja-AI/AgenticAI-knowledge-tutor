@@ -1572,8 +1572,7 @@ function Header() {
       <div>
         <h1 style={{ margin: 0, fontSize: 20, fontWeight: 500, letterSpacing: "-0.3px" }}>AgenticAI Cookbook</h1>
         <p style={{ margin: 0, fontSize: 13, color: "var(--color-text-secondary)" }}>
-          End-to-end retrieval-augmented generation recipes
-        </p>
+          End-to-end Agentic AI   </p>
       </div>
       <div style={{ marginLeft: "auto", display: "flex", gap: 20 }}>
         {[
