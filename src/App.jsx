@@ -36,12 +36,6 @@ function App() {
         <Route path="/AgentDesignPatterns" element={<AgentDesignPatterns/>} />
         <Route path="/ExecutionPatterns" element={<ExecutionPatterns/>} />
         
-
-
-
-         
-
-        
       </Routes>
     </HashRouter>
   );

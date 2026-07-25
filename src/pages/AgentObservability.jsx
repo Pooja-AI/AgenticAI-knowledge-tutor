@@ -33,7 +33,7 @@ const AgentObservability=[
     "observability"
   ],
 
-  concept: "",
+  concept: Logging,
 
   steps: [
     {
@@ -95,7 +95,7 @@ const AgentObservability=[
     "measurement"
   ],
 
-  concept: "",
+  concept: Metrics,
 
   steps: [
     {
@@ -157,7 +157,7 @@ const AgentObservability=[
     "llmops"
   ],
 
-  concept: "",
+  concept: Langfuse,
 
   steps: [
     {
@@ -220,7 +220,7 @@ const AgentObservability=[
     "llmops"
   ],
 
-  concept: "",
+  concept: LangSmith,
 
   steps: [
     {
@@ -282,7 +282,7 @@ const AgentObservability=[
     "observability"
   ],
 
-  concept: "",
+  concept: OpenTelemetry,
 
   steps: [
     {
@@ -345,7 +345,7 @@ const AgentObservability=[
     "optimization"
   ],
 
-  concept: "",
+  concept: CostTracking,
 
   steps: [
     {
@@ -407,7 +407,7 @@ const AgentObservability=[
     "diagnostics"
   ],
 
-  concept: "",
+  concept: Debugging,
 
   steps: [
     {
@@ -469,7 +469,7 @@ const AgentObservability=[
     "production"
   ],
 
-  concept: "",
+  concept: ProductionMonitoring,
 
   steps: [
     {
@@ -509,7 +509,6 @@ const AgentObservability=[
         "Use production insights to optimize reliability, scalability, security, cost, and overall AI Agent performance."
     }
   ],
-
   code: ""
 },
 

@@ -13,7 +13,7 @@ import SafetyEvaluation from "../assets/docs/AgentEvaluation/SafetyEvaluation.md
 import CostEvaluation from "../assets/docs/AgentEvaluation/CostEvaluation.md?raw";
 import LatencyEvaluation from "../assets/docs/AgentEvaluation/LatencyEvaluation.md?raw";
 
-const AgentEvalution=[ 
+const AgentEvaluation=[ 
     {
   id: "offline-evaluation",
   category: "Evaluation",
@@ -33,7 +33,7 @@ const AgentEvalution=[
     "evaluation"
   ],
 
-  concept: "",
+  concept: OfflineEvaluation,
 
   steps: [
     {
@@ -95,7 +95,7 @@ const AgentEvalution=[
     "continuous evaluation"
   ],
 
-  concept: "",
+  concept: OnlineEvaluation,
 
   steps: [
     {
@@ -157,7 +157,7 @@ const AgentEvalution=[
     "evaluation"
   ],
 
-  concept: "",
+  concept: HumanEvaluation,
 
   steps: [
     {
@@ -219,7 +219,7 @@ const AgentEvalution=[
     "evaluation"
   ],
 
-  concept: "",
+  concept: LLMAsAJudge,
 
   steps: [
     {
@@ -281,7 +281,7 @@ const AgentEvalution=[
     "metrics"
   ],
 
-  concept: "",
+  concept: Benchmarks,
 
   steps: [
     {
@@ -343,7 +343,7 @@ const AgentEvalution=[
     "completion"
   ],
 
-  concept: "",
+  concept: TaskSuccessRate,
 
   steps: [
     {
@@ -405,7 +405,7 @@ const AgentEvalution=[
     "validation"
   ],
 
-  concept: "",
+  concept: HallucinationDetection,
 
   steps: [
     {
@@ -467,7 +467,7 @@ const AgentEvalution=[
     "responsible ai"
   ],
 
-  concept: "",
+  concept: SafetyEvaluation,
 
   steps: [
     {
@@ -529,7 +529,7 @@ const AgentEvalution=[
     "evaluation"
   ],
 
-  concept: "",
+  concept: CostEvaluation,
 
   steps: [
     {
@@ -591,7 +591,7 @@ const AgentEvalution=[
     "evaluation"
   ],
 
-  concept: "",
+  concept: LatencyEvaluation,
 
   steps: [
     {
@@ -889,7 +889,7 @@ function Header() {
         </div>
         <div style={{ marginLeft: "auto", display: "flex", gap: 20 }}>
         {[
-            { label: "Recipes", value: AgentEvalution.length },
+            { label: "Recipes", value: AgentEvaluation.length },
             { label: "Patterns", value: CATEGORIES.length - 1 },
         ].map(({ label, value }) => (
             <div key={label} style={{ textAlign: "center" }}>
@@ -903,7 +903,7 @@ function Header() {
 }
 
 export default function App() {
-    const [selected, setSelected] = useState(AgentEvalution[0]);
+    const [selected, setSelected] = useState(AgentEvaluation[0]);
     const [category, setCategory] = useState("All");
     const [search, setSearch] = useState("");
 
@@ -924,7 +924,7 @@ export default function App() {
             overflowY: "auto",
         }}>
             <Sidebar
-            recipes={AgentEvalution}
+            recipes={AgentEvaluation}
             selected={selected}
             onSelect={setSelected}
             category={category}
