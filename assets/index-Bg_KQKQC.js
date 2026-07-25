@@ -40781,4 +40781,3770 @@ In Agentic AI, Context Optimization is an intelligent orchestration process that
 \r
 # Summary\r
 \r
-Context Optimization is the process of intelligently preparing contextual information before it is sent to a Large Language Model. By combining retrieval, filtering, ranking, compression, fusion, and context injection, it ensures that the LLM receives the highest-quality information within its context window. Context Optimization is a foundational capability in modern RAG pipelines and Agentic AI systems, enabling more accurate, efficient, and scalable AI applications.`,steps:[{label:`Collect Context`,icon:`📚`,detail:`Gather all available contextual information.`},{label:`Analyze Quality`,icon:`📊`,detail:`Evaluate relevance, redundancy, and completeness.`},{label:`Optimize Context`,icon:`⚙️`,detail:`Compress, rank, filter, and organize the context.`},{label:`Construct Prompt`,icon:`📝`,detail:`Build an optimized prompt using high-quality context.`},{label:`Generate Response`,icon:`✅`,detail:`Produce accurate and efficient responses with optimized context.`}],code:``}],$p=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],em={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},tm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function nm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function rm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function im({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function am({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:tm[e.difficulty],color:em[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function om({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:tm[e.difficulty],color:em[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(nm,{steps:e.steps}),t===`code`&&(0,G.jsx)(im,{code:e.code}),t===`concept`&&(0,G.jsx)(rm,{content:e.concept})]})}function sm({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:$p.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(am,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function cm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:Qp.length},{label:`Patterns`,value:$p.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function lm(){let[e,t]=(0,v.useState)(Qp[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(cm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(sm,{recipes:Qp,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(om,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var um=[{id:`multi-agent-architecture`,category:`Multi-Agent Systems`,title:`Multi-Agent Architecture`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how multiple AI agents collaborate, communicate, and coordinate to solve complex tasks efficiently.`,tags:[`multi agent`,`architecture`,`coordination`,`agent systems`,`collaboration`],concept:``,steps:[{label:`Define Agents`,icon:`🤖`,detail:`Identify specialized agents for different responsibilities.`},{label:`Communication`,icon:`📡`,detail:`Enable information exchange between agents.`},{label:`Coordination`,icon:`🎯`,detail:`Assign tasks and synchronize execution.`},{label:`Execution`,icon:`⚙️`,detail:`Agents perform assigned tasks independently.`},{label:`Aggregation`,icon:`📊`,detail:`Combine outputs into a final solution.`}],code:``},{id:`coordinator-agent`,category:`Multi-Agent Systems`,title:`Coordinator Agent`,difficulty:`Beginner`,time:`~12 min`,description:`Understand how a Coordinator Agent distributes work, manages communication, and orchestrates multiple AI agents.`,tags:[`coordinator`,`orchestration`,`task allocation`,`workflow`,`agents`],concept:``,steps:[{label:`Receive Task`,icon:`📥`,detail:`Accept the user's request.`},{label:`Split Tasks`,icon:`🧩`,detail:`Break work into smaller subtasks.`},{label:`Assign Agents`,icon:`🤝`,detail:`Allocate subtasks to specialized agents.`},{label:`Monitor`,icon:`👀`,detail:`Track execution progress.`},{label:`Merge Results`,icon:`📄`,detail:`Combine outputs into one response.`}],code:``},{id:`worker-agents`,category:`Multi-Agent Systems`,title:`Worker Agents`,difficulty:`Beginner`,time:`~10 min`,description:`Learn how Worker Agents execute specialized tasks assigned by a coordinator or supervisor.`,tags:[`worker agents`,`execution`,`specialization`,`tasks`,`multi-agent`],concept:``,steps:[{label:`Receive Task`,icon:`📩`,detail:`Accept assigned work.`},{label:`Process`,icon:`⚙️`,detail:`Perform specialized reasoning or tool execution.`},{label:`Validate`,icon:`✅`,detail:`Verify task completion.`},{label:`Return Result`,icon:`📤`,detail:`Send output back to coordinator.`},{label:`Wait`,icon:`⏳`,detail:`Remain idle until the next assignment.`}],code:``},{id:`supervisor-agent`,category:`Multi-Agent Systems`,title:`Supervisor Agent`,difficulty:`Intermediate`,time:`~12 min`,description:`Explore how Supervisor Agents oversee execution, validate outputs, and maintain workflow quality.`,tags:[`supervisor`,`quality control`,`validation`,`monitoring`,`agents`],concept:``,steps:[{label:`Observe`,icon:`👁️`,detail:`Monitor worker agent execution.`},{label:`Review`,icon:`📋`,detail:`Evaluate generated outputs.`},{label:`Detect Issues`,icon:`⚠️`,detail:`Identify failures or inconsistencies.`},{label:`Correct`,icon:`🔄`,detail:`Trigger retries or improvements.`},{label:`Approve`,icon:`✔️`,detail:`Approve final results.`}],code:``},{id:`hierarchical-agents`,category:`Multi-Agent Systems`,title:`Hierarchical Agents`,difficulty:`Intermediate`,time:`~15 min`,description:`Understand hierarchical agent structures where higher-level agents coordinate lower-level specialized agents.`,tags:[`hierarchy`,`manager`,`worker`,`coordination`,`agents`],concept:``,steps:[{label:`Top-Level Goal`,icon:`🎯`,detail:`Manager agent receives the objective.`},{label:`Delegate`,icon:`📤`,detail:`Assign work to subordinate agents.`},{label:`Execute`,icon:`⚙️`,detail:`Worker agents complete assigned tasks.`},{label:`Review`,icon:`📊`,detail:`Manager evaluates outputs.`},{label:`Deliver`,icon:`📦`,detail:`Return the integrated result.`}],code:``},{id:`swarm-agents`,category:`Multi-Agent Systems`,title:`Swarm Agents`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how decentralized AI agents cooperate collectively without a central controller.`,tags:[`swarm`,`distributed`,`collective`,`coordination`,`agents`],concept:``,steps:[{label:`Shared Goal`,icon:`🎯`,detail:`All agents pursue a common objective.`},{label:`Local Decisions`,icon:`🧠`,detail:`Each agent acts independently.`},{label:`Communication`,icon:`📡`,detail:`Exchange local information.`},{label:`Collective Behavior`,icon:`🐝`,detail:`Global intelligence emerges.`},{label:`Goal Achieved`,icon:`🏆`,detail:`Complete the shared objective.`}],code:``},{id:`peer-to-peer-agents`,category:`Multi-Agent Systems`,title:`Peer-to-Peer Agents`,difficulty:`Intermediate`,time:`~12 min`,description:`Explore decentralized agent communication where every agent communicates as an equal without central control.`,tags:[`peer to peer`,`distributed`,`communication`,`decentralized`,`agents`],concept:``,steps:[{label:`Discover Peers`,icon:`🔍`,detail:`Identify available agents.`},{label:`Exchange Messages`,icon:`💬`,detail:`Communicate directly.`},{label:`Share Knowledge`,icon:`📚`,detail:`Exchange intermediate results.`},{label:`Coordinate`,icon:`🤝`,detail:`Collaboratively solve the task.`},{label:`Finalize`,icon:`✅`,detail:`Produce the final outcome.`}],code:``},{id:`agent-collaboration`,category:`Multi-Agent Systems`,title:`Agent Collaboration`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI agents cooperate, exchange knowledge, and jointly solve complex tasks.`,tags:[`collaboration`,`teamwork`,`agents`,`coordination`,`communication`],concept:``,steps:[{label:`Share Goal`,icon:`🎯`,detail:`Establish a common objective.`},{label:`Assign Roles`,icon:`👥`,detail:`Define responsibilities.`},{label:`Communicate`,icon:`📨`,detail:`Exchange information.`},{label:`Integrate`,icon:`🧩`,detail:`Combine intermediate outputs.`},{label:`Deliver`,icon:`🚀`,detail:`Return the collaborative solution.`}],code:``},{id:`agent-negotiation`,category:`Multi-Agent Systems`,title:`Agent Negotiation`,difficulty:`Advanced`,time:`~15 min`,description:`Understand how AI agents negotiate resources, priorities, and decisions to achieve shared objectives.`,tags:[`negotiation`,`decision making`,`coordination`,`multi-agent`,`consensus`],concept:``,steps:[{label:`Propose`,icon:`💡`,detail:`Suggest possible solutions.`},{label:`Evaluate`,icon:`⚖️`,detail:`Assess proposals.`},{label:`Negotiate`,icon:`🤝`,detail:`Resolve conflicts.`},{label:`Agree`,icon:`✅`,detail:`Reach mutual agreement.`},{label:`Execute`,icon:`🚀`,detail:`Implement the negotiated plan.`}],code:``},{id:`agent-consensus`,category:`Multi-Agent Systems`,title:`Agent Consensus`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how multiple AI agents reach a common decision through voting, agreement, or consensus algorithms.`,tags:[`consensus`,`voting`,`agreement`,`decision`,`multi-agent`],concept:``,steps:[{label:`Collect Opinions`,icon:`📝`,detail:`Gather responses from all agents.`},{label:`Compare`,icon:`📊`,detail:`Evaluate different viewpoints.`},{label:`Vote`,icon:`🗳️`,detail:`Determine the preferred solution.`},{label:`Consensus`,icon:`🤝`,detail:`Reach a common agreement.`},{label:`Finalize`,icon:`🏁`,detail:`Publish the agreed result.`}],code:``}],dm=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],fm={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},pm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function mm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function hm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function gm({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function _m({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:pm[e.difficulty],color:fm[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function vm({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:pm[e.difficulty],color:fm[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(mm,{steps:e.steps}),t===`code`&&(0,G.jsx)(gm,{code:e.code}),t===`concept`&&(0,G.jsx)(hm,{content:e.concept})]})}function ym({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:dm.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(_m,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function bm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:um.length},{label:`Patterns`,value:dm.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function xm(){let[e,t]=(0,v.useState)(um[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(bm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(ym,{recipes:um,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(vm,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var Sm=`/AgenticAI-knowledge-tutor/assets/logo-DfeCIHVX.png`;function Cm(){return(0,G.jsxs)(`nav`,{className:`navbar`,children:[(0,G.jsxs)(`div`,{className:`logo`,children:[(0,G.jsx)(`img`,{src:Sm,alt:`IC Logo`,className:`logo-icon`}),(0,G.jsxs)(Pn,{to:`/`,className:`logo-text`,children:[(0,G.jsx)(`span`,{className:`logo-white`,children:`IntelliCatalyst`}),(0,G.jsx)(`span`,{className:`logo-blue`,children:`AI Labs`})]})]}),(0,G.jsxs)(`div`,{className:`menu`,children:[(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/`,children:`Home`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/projects`,children:`Projects`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/books`,children:`Books`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/about`,children:`About`})]})]})}function wm(){return(0,G.jsxs)(Mn,{children:[(0,G.jsx)(Cm,{}),(0,G.jsxs)(Wt,{children:[(0,G.jsx)(Ht,{path:`/`,element:(0,G.jsx)(Nf,{})}),(0,G.jsx)(Ht,{path:`/AgenticAICookbook`,element:(0,G.jsx)(Gf,{})}),(0,G.jsx)(Ht,{path:`/AgenticAIPlanning`,element:(0,G.jsx)(rp,{})}),(0,G.jsx)(Ht,{path:`/AgenticAIMemory`,element:(0,G.jsx)(hp,{})}),(0,G.jsx)(Ht,{path:`/AgentToolUsage`,element:(0,G.jsx)(Dp,{})}),(0,G.jsx)(Ht,{path:`/AgentReasoingTechniques`,element:(0,G.jsx)(zp,{})}),(0,G.jsx)(Ht,{path:`/AgentCommunication`,element:(0,G.jsx)(Zp,{})}),(0,G.jsx)(Ht,{path:`/AgentContextEngineering`,element:(0,G.jsx)(lm,{})}),(0,G.jsx)(Ht,{path:`/MultiAgent`,element:(0,G.jsx)(xm,{})})]})]})}(0,y.createRoot)(document.getElementById(`root`)).render((0,G.jsx)(v.StrictMode,{children:(0,G.jsx)(wm,{})}));
+Context Optimization is the process of intelligently preparing contextual information before it is sent to a Large Language Model. By combining retrieval, filtering, ranking, compression, fusion, and context injection, it ensures that the LLM receives the highest-quality information within its context window. Context Optimization is a foundational capability in modern RAG pipelines and Agentic AI systems, enabling more accurate, efficient, and scalable AI applications.`,steps:[{label:`Collect Context`,icon:`📚`,detail:`Gather all available contextual information.`},{label:`Analyze Quality`,icon:`📊`,detail:`Evaluate relevance, redundancy, and completeness.`},{label:`Optimize Context`,icon:`⚙️`,detail:`Compress, rank, filter, and organize the context.`},{label:`Construct Prompt`,icon:`📝`,detail:`Build an optimized prompt using high-quality context.`},{label:`Generate Response`,icon:`✅`,detail:`Produce accurate and efficient responses with optimized context.`}],code:``}],$p=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],em={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},tm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function nm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function rm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function im({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function am({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:tm[e.difficulty],color:em[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function om({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:tm[e.difficulty],color:em[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(nm,{steps:e.steps}),t===`code`&&(0,G.jsx)(im,{code:e.code}),t===`concept`&&(0,G.jsx)(rm,{content:e.concept})]})}function sm({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:$p.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(am,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function cm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:Qp.length},{label:`Patterns`,value:$p.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function lm(){let[e,t]=(0,v.useState)(Qp[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(cm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(sm,{recipes:Qp,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(om,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var um=[{id:`sequential`,category:`Execution Patterns`,title:`Sequential`,difficulty:`Beginner`,time:`~10 min`,description:`Learn how AI agents execute tasks one after another in a predefined order.`,tags:[`sequential`,`workflow`,`execution`,`pipeline`,`agent`],concept:`# Sequential Execution Pattern\r
+\r
+## Overview\r
+\r
+Sequential Execution is the simplest execution pattern in Agentic AI where tasks are executed one after another in a predefined order. Each step begins only after the previous step has completed successfully.\r
+\r
+This pattern is ideal when later tasks depend on the outputs of earlier tasks. It is widely used in workflows that require strict ordering, such as data preprocessing, document generation, ETL pipelines, and business process automation.\r
+\r
+---\r
+\r
+## Why Sequential Execution?\r
+\r
+Some workflows require every task to finish before the next one can begin.\r
+\r
+Without Sequential Execution:\r
+\r
+\`\`\`text\r
+Tasks Execute Randomly\r
+\r
+↓\r
+\r
+Missing Dependencies\r
+\r
+↓\r
+\r
+Incorrect Results\r
+\`\`\`\r
+\r
+With Sequential Execution:\r
+\r
+\`\`\`text\r
+Task 1\r
+\r
+↓\r
+\r
+Task 2\r
+\r
+↓\r
+\r
+Task 3\r
+\r
+↓\r
+\r
+Task 4\r
+\r
+↓\r
+\r
+Final Output\r
+\`\`\`\r
+\r
+Every task receives the output from the previous step.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Ordered execution\r
+- One task at a time\r
+- Simple workflow\r
+- Easy debugging\r
+- Predictable behavior\r
+- Dependency-aware execution\r
+\r
+---\r
+\r
+## Sequential Architecture\r
+\r
+\`\`\`text\r
+          User Request\r
+                │\r
+                ▼\r
+         Execute Task 1\r
+                │\r
+                ▼\r
+         Execute Task 2\r
+                │\r
+                ▼\r
+         Execute Task 3\r
+                │\r
+                ▼\r
+         Execute Task 4\r
+                │\r
+                ▼\r
+          Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+      │\r
+      ▼\r
+Execute First Step\r
+      │\r
+      ▼\r
+Wait Until Completion\r
+      │\r
+      ▼\r
+Execute Next Step\r
+      │\r
+      ▼\r
+Repeat\r
+      │\r
+      ▼\r
+Return Result\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Task\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Generate Monthly Sales Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Collect Data\r
+\r
+\`\`\`text\r
+Read Sales Database\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Analyze Data\r
+\r
+\`\`\`text\r
+Calculate Revenue\r
+\r
+↓\r
+\r
+Calculate Profit\r
+\r
+↓\r
+\r
+Calculate Growth\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Generate Report\r
+\r
+\`\`\`text\r
+Create PDF Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Deliver Result\r
+\r
+\`\`\`text\r
+Email Report to Manager\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def collect_data():\r
+    print("Collecting data...")\r
+\r
+def analyze():\r
+    print("Analyzing data...")\r
+\r
+def generate_report():\r
+    print("Generating report...")\r
+\r
+collect_data()\r
+analyze()\r
+generate_report()\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Collecting data...\r
+Analyzing data...\r
+Generating report...\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Document Processing\r
+\r
+\`\`\`text\r
+Read PDF\r
+\r
+↓\r
+\r
+Extract Text\r
+\r
+↓\r
+\r
+Summarize\r
+\r
+↓\r
+\r
+Generate Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## AI Customer Support\r
+\r
+\`\`\`text\r
+Receive Question\r
+\r
+↓\r
+\r
+Retrieve Knowledge\r
+\r
+↓\r
+\r
+Generate Response\r
+\r
+↓\r
+\r
+Send Reply\r
+\`\`\`\r
+\r
+---\r
+\r
+## Machine Learning Pipeline\r
+\r
+\`\`\`text\r
+Load Dataset\r
+\r
+↓\r
+\r
+Clean Data\r
+\r
+↓\r
+\r
+Train Model\r
+\r
+↓\r
+\r
+Evaluate Model\r
+\`\`\`\r
+\r
+---\r
+\r
+## Software Deployment\r
+\r
+\`\`\`text\r
+Build\r
+\r
+↓\r
+\r
+Test\r
+\r
+↓\r
+\r
+Deploy\r
+\r
+↓\r
+\r
+Monitor\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- ETL Pipelines\r
+- Business Automation\r
+- Report Generation\r
+- AI Assistants\r
+- ML Pipelines\r
+- Document Processing\r
+- Financial Reporting\r
+- Healthcare Workflows\r
+- Software CI/CD\r
+- HR Automation\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Easy to understand\r
+- Predictable execution\r
+- Simple implementation\r
+- Handles task dependencies\r
+- Easy debugging\r
+- Reliable execution\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Slower than parallel execution.\r
+- Cannot utilize multiple resources simultaneously.\r
+- One failed step stops the workflow.\r
+- Poor scalability for large workloads.\r
+- Not suitable for independent tasks.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Use Sequential execution when tasks have dependencies.\r
+- Validate outputs before moving to the next step.\r
+- Log every execution stage.\r
+- Handle failures gracefully.\r
+- Combine with Retry or Fallback patterns for resilience.\r
+- Avoid unnecessary sequential processing for independent tasks.\r
+\r
+---\r
+\r
+# Sequential Execution in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Executes tool calls in order when later steps depend on previous outputs.\r
+\r
+### LangChain\r
+\r
+- Supports sequential chains where each component passes its output to the next.\r
+\r
+### LangGraph\r
+\r
+- Models sequential execution using directed graph edges between workflow nodes.\r
+\r
+### CrewAI\r
+\r
+- Coordinator assigns tasks in sequence when execution dependencies exist.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Sequential | Parallel |\r
+|------------|----------|\r
+| One task at a time | Multiple tasks simultaneously |\r
+| Simple workflow | Faster execution |\r
+| Dependency-aware | Independent tasks |\r
+| Easier debugging | Higher complexity |\r
+| Lower resource usage | Better resource utilization |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Sequential Execution is a workflow pattern in which AI Agents execute tasks one after another in a fixed order. Each task depends on the successful completion of the previous step, making this pattern ideal for structured workflows, business automation, document processing, and machine learning pipelines where execution order is critical.`,steps:[{label:`Receive Task`,icon:`📥`,detail:`Accept the overall objective.`},{label:`Execute Step 1`,icon:`1️⃣`,detail:`Complete the first task.`},{label:`Execute Step 2`,icon:`2️⃣`,detail:`Proceed only after the previous step finishes.`},{label:`Continue`,icon:`➡️`,detail:`Repeat until every task is completed.`},{label:`Return Result`,icon:`✅`,detail:`Produce the final output.`}],code:``},{id:`parallel`,category:`Execution Patterns`,title:`Parallel`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI agents execute multiple independent tasks simultaneously to reduce execution time.`,tags:[`parallel`,`concurrency`,`execution`,`multi-agent`,`workflow`],concept:`# Parallel Execution Pattern\r
+\r
+## Overview\r
+\r
+Parallel Execution is an execution pattern where multiple independent tasks are executed simultaneously instead of one after another. Since the tasks do not depend on each other, they can run concurrently, significantly reducing the overall execution time.\r
+\r
+Parallel execution is one of the most important execution patterns in Agentic AI and Multi-Agent Systems. It enables multiple agents, tools, or workflows to work independently and later combine their results.\r
+\r
+---\r
+\r
+## Why Parallel Execution?\r
+\r
+Some tasks are independent and do not need to wait for each other.\r
+\r
+Without Parallel Execution:\r
+\r
+\`\`\`text\r
+Task A\r
+\r
+↓\r
+\r
+Task B\r
+\r
+↓\r
+\r
+Task C\r
+\r
+↓\r
+\r
+Task D\r
+\r
+↓\r
+\r
+Complete\r
+\`\`\`\r
+\r
+Total execution time equals the sum of all task durations.\r
+\r
+With Parallel Execution:\r
+\r
+\`\`\`text\r
+          Start\r
+            │\r
+     ┌──────┼──────┐\r
+     ▼      ▼      ▼\r
+  Task A  Task B  Task C\r
+     │      │      │\r
+     └──────┼──────┘\r
+            ▼\r
+       Merge Results\r
+            │\r
+            ▼\r
+      Final Response\r
+\`\`\`\r
+\r
+Tasks execute simultaneously, reducing overall latency.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Concurrent execution\r
+- Independent tasks\r
+- High performance\r
+- Better resource utilization\r
+- Faster completion\r
+- Scalable architecture\r
+\r
+---\r
+\r
+## Parallel Architecture\r
+\r
+\`\`\`text\r
+             User Request\r
+                  │\r
+                  ▼\r
+          Split into Tasks\r
+      ┌────────┼─────────┐\r
+      ▼        ▼         ▼\r
+   Worker 1  Worker 2  Worker 3\r
+      │        │         │\r
+      ▼        ▼         ▼\r
+ Execute    Execute   Execute\r
+      └────────┼─────────┘\r
+               ▼\r
+        Merge Outputs\r
+               │\r
+               ▼\r
+        Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+       │\r
+       ▼\r
+Identify Independent Tasks\r
+       │\r
+       ▼\r
+Execute Concurrently\r
+       │\r
+       ▼\r
+Wait for Completion\r
+       │\r
+       ▼\r
+Merge Results\r
+       │\r
+       ▼\r
+Return Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Generate a Business Intelligence Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Split Tasks\r
+\r
+\`\`\`text\r
+Sales Analysis\r
+\r
+Inventory Analysis\r
+\r
+Customer Analysis\r
+\r
+Revenue Analysis\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Execute in Parallel\r
+\r
+\`\`\`text\r
+Worker 1\r
+\r
+↓\r
+\r
+Sales\r
+\r
+Worker 2\r
+\r
+↓\r
+\r
+Inventory\r
+\r
+Worker 3\r
+\r
+↓\r
+\r
+Customers\r
+\r
+Worker 4\r
+\r
+↓\r
+\r
+Revenue\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Collect Results\r
+\r
+\`\`\`text\r
+Sales Report\r
+\r
+Inventory Report\r
+\r
+Customer Report\r
+\r
+Revenue Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Merge Output\r
+\r
+\`\`\`text\r
+Enterprise Dashboard\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+from concurrent.futures import ThreadPoolExecutor\r
+\r
+def task(name):\r
+    print(f"Executing {name}")\r
+\r
+tasks = ["Sales", "Inventory", "Customers"]\r
+\r
+with ThreadPoolExecutor() as executor:\r
+    executor.map(task, tasks)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Executing Sales\r
+Executing Inventory\r
+Executing Customers\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Multi-Agent Research\r
+\r
+\`\`\`text\r
+Research Agent\r
+\r
+Fact Checker\r
+\r
+Summarizer\r
+\r
+↓\r
+\r
+Merge Results\r
+\`\`\`\r
+\r
+---\r
+\r
+## Enterprise Search\r
+\r
+\`\`\`text\r
+Search PDF\r
+\r
+Search Database\r
+\r
+Search Vector Store\r
+\r
+↓\r
+\r
+Combine Results\r
+\`\`\`\r
+\r
+---\r
+\r
+## AI Customer Support\r
+\r
+\`\`\`text\r
+Retrieve Orders\r
+\r
+Retrieve Customer Profile\r
+\r
+Retrieve Policies\r
+\r
+↓\r
+\r
+Generate Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Financial Analytics\r
+\r
+\`\`\`text\r
+Revenue\r
+\r
+Expenses\r
+\r
+Forecast\r
+\r
+↓\r
+\r
+Executive Dashboard\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Multi-Agent Systems\r
+- Enterprise Search\r
+- AI Research Assistants\r
+- Business Intelligence\r
+- Customer Support\r
+- Financial Reporting\r
+- Healthcare Analytics\r
+- Cloud Computing\r
+- Distributed AI\r
+- Data Processing Pipelines\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Faster execution\r
+- Better CPU utilization\r
+- Scales easily\r
+- Handles large workloads\r
+- Reduces latency\r
+- Improves overall system performance\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Tasks must be independent.\r
+- Synchronization adds complexity.\r
+- Error handling is more difficult.\r
+- Resource contention may occur.\r
+- Debugging concurrent workflows is more challenging.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Execute only independent tasks in parallel.\r
+- Limit the number of concurrent workers.\r
+- Handle worker failures gracefully.\r
+- Merge outputs after all tasks complete.\r
+- Monitor execution time and resource usage.\r
+- Combine with Fan-Out/Fan-In for large-scale workflows.\r
+\r
+---\r
+\r
+# Parallel Execution in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Multiple tool calls or specialized agents can execute concurrently when tasks are independent.\r
+\r
+### LangChain\r
+\r
+- Supports parallel chains and concurrent runnable execution for independent operations.\r
+\r
+### LangGraph\r
+\r
+- Allows multiple graph branches to execute simultaneously before converging into a merge node.\r
+\r
+### CrewAI\r
+\r
+- Worker agents perform different tasks concurrently while a coordinator aggregates their outputs.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Sequential | Parallel |\r
+|------------|----------|\r
+| One task at a time | Multiple tasks simultaneously |\r
+| Slower execution | Faster execution |\r
+| Simple workflow | Concurrent workflow |\r
+| Easier debugging | More complex synchronization |\r
+| Suitable for dependent tasks | Suitable for independent tasks |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Parallel Execution is an execution pattern in which multiple independent tasks are processed simultaneously to improve performance and reduce overall execution time. It is widely used in Multi-Agent AI systems, enterprise workflows, distributed computing, and AI applications that require high throughput and low latency. By leveraging concurrency, Parallel Execution enables faster, scalable, and more efficient Agentic AI systems.`,steps:[{label:`Split Tasks`,icon:`🧩`,detail:`Identify independent tasks.`},{label:`Execute Concurrently`,icon:`⚡`,detail:`Run tasks simultaneously.`},{label:`Monitor`,icon:`👀`,detail:`Track task completion.`},{label:`Merge Results`,icon:`📊`,detail:`Collect outputs.`},{label:`Return`,icon:`🚀`,detail:`Deliver the combined result.`}],code:``},{id:`pipeline`,category:`Execution Patterns`,title:`Pipeline`,difficulty:`Intermediate`,time:`~12 min`,description:`Understand pipeline execution where the output of one stage becomes the input of the next stage.`,tags:[`pipeline`,`workflow`,`stages`,`processing`,`execution`],concept:`# Pipeline Execution Pattern\r
+\r
+## Overview\r
+\r
+Pipeline is an execution pattern where a task is divided into multiple processing stages. Each stage performs a specific operation, and the output of one stage becomes the input for the next stage. Unlike simple sequential execution, pipelines emphasize modular processing, making workflows easier to maintain, scale, and optimize.\r
+\r
+Pipeline execution is widely used in Agentic AI systems, data processing, machine learning, document analysis, and enterprise workflows.\r
+\r
+---\r
+\r
+## Why Pipeline Execution?\r
+\r
+Complex tasks are easier to manage when divided into specialized stages.\r
+\r
+Without Pipeline:\r
+\r
+\`\`\`text\r
+Large Task\r
+\r
+↓\r
+\r
+Single Complex Process\r
+\r
+↓\r
+\r
+Final Output\r
+\`\`\`\r
+\r
+The workflow becomes difficult to manage and debug.\r
+\r
+With Pipeline:\r
+\r
+\`\`\`text\r
+Input\r
+\r
+↓\r
+\r
+Stage 1\r
+\r
+↓\r
+\r
+Stage 2\r
+\r
+↓\r
+\r
+Stage 3\r
+\r
+↓\r
+\r
+Stage 4\r
+\r
+↓\r
+\r
+Final Output\r
+\`\`\`\r
+\r
+Each stage performs one well-defined responsibility.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Stage-based execution\r
+- Modular workflow\r
+- Sequential data flow\r
+- Reusable components\r
+- Easy debugging\r
+- Scalable architecture\r
+\r
+---\r
+\r
+## Pipeline Architecture\r
+\r
+\`\`\`text\r
+             User Request\r
+                   │\r
+                   ▼\r
+          Input Processing\r
+                   │\r
+                   ▼\r
+        Data Preparation Stage\r
+                   │\r
+                   ▼\r
+        AI Processing Stage\r
+                   │\r
+                   ▼\r
+      Validation Stage\r
+                   │\r
+                   ▼\r
+      Output Generation Stage\r
+                   │\r
+                   ▼\r
+          Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Input\r
+      │\r
+      ▼\r
+Stage 1 Processing\r
+      │\r
+      ▼\r
+Pass Output\r
+      │\r
+      ▼\r
+Stage 2 Processing\r
+      │\r
+      ▼\r
+Repeat\r
+      │\r
+      ▼\r
+Generate Final Output\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Input\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Upload Invoice PDF\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Data Extraction\r
+\r
+\`\`\`text\r
+Extract Text\r
+\r
+↓\r
+\r
+Extract Tables\r
+\r
+↓\r
+\r
+Extract Images\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: AI Processing\r
+\r
+\`\`\`text\r
+Classify Document\r
+\r
+↓\r
+\r
+Identify Vendor\r
+\r
+↓\r
+\r
+Extract Amount\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Validation\r
+\r
+\`\`\`text\r
+Verify Fields\r
+\r
+↓\r
+\r
+Check Missing Values\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Generate Output\r
+\r
+\`\`\`text\r
+Store Results\r
+\r
+↓\r
+\r
+Generate Summary\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def extract(data):\r
+    return data.upper()\r
+\r
+def summarize(data):\r
+    return f"Summary: {data}"\r
+\r
+def save(result):\r
+    print("Saved:", result)\r
+\r
+document = "Invoice received"\r
+\r
+text = extract(document)\r
+summary = summarize(text)\r
+save(summary)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Saved: Summary: INVOICE RECEIVED\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Document Processing\r
+\r
+\`\`\`text\r
+Upload PDF\r
+\r
+↓\r
+\r
+OCR\r
+\r
+↓\r
+\r
+Text Extraction\r
+\r
+↓\r
+\r
+Summarization\r
+\r
+↓\r
+\r
+Storage\r
+\`\`\`\r
+\r
+---\r
+\r
+## Machine Learning Pipeline\r
+\r
+\`\`\`text\r
+Load Data\r
+\r
+↓\r
+\r
+Preprocessing\r
+\r
+↓\r
+\r
+Training\r
+\r
+↓\r
+\r
+Evaluation\r
+\r
+↓\r
+\r
+Deployment\r
+\`\`\`\r
+\r
+---\r
+\r
+## Customer Support\r
+\r
+\`\`\`text\r
+Receive Query\r
+\r
+↓\r
+\r
+Intent Detection\r
+\r
+↓\r
+\r
+Knowledge Retrieval\r
+\r
+↓\r
+\r
+LLM Generation\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Enterprise Search\r
+\r
+\`\`\`text\r
+User Query\r
+\r
+↓\r
+\r
+Search\r
+\r
+↓\r
+\r
+Ranking\r
+\r
+↓\r
+\r
+LLM\r
+\r
+↓\r
+\r
+Answer\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Document Intelligence\r
+- AI Assistants\r
+- Machine Learning\r
+- Data Engineering\r
+- Enterprise Search\r
+- ETL Pipelines\r
+- Healthcare Automation\r
+- Financial Processing\r
+- HR Automation\r
+- Software CI/CD\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Modular architecture\r
+- Easy maintenance\r
+- Reusable processing stages\r
+- Improved scalability\r
+- Simplified debugging\r
+- Better workflow organization\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Later stages depend on previous stages.\r
+- Failure in one stage can stop the pipeline.\r
+- Higher latency than parallel execution.\r
+- Difficult to optimize poorly designed pipelines.\r
+- Requires careful stage design.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Keep each stage focused on a single responsibility.\r
+- Validate outputs before passing them to the next stage.\r
+- Add logging at every stage.\r
+- Handle failures with retry or fallback mechanisms.\r
+- Design reusable pipeline components.\r
+- Monitor stage-level performance metrics.\r
+\r
+---\r
+\r
+# Pipeline in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Agents perform processing in ordered stages, where tool outputs feed subsequent reasoning steps.\r
+\r
+### LangChain\r
+\r
+- Supports sequential runnable pipelines that pass outputs between components.\r
+\r
+### LangGraph\r
+\r
+- Represents pipelines as directed graphs with stage-by-stage execution.\r
+\r
+### CrewAI\r
+\r
+- Multiple agents can form a processing pipeline where each specializes in one stage of the workflow.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Sequential | Pipeline |\r
+|------------|----------|\r
+| Executes tasks one after another | Executes processing stages |\r
+| General workflow | Stage-oriented workflow |\r
+| Limited modularity | Highly modular |\r
+| Harder to reuse tasks | Reusable pipeline stages |\r
+| Best for dependent tasks | Best for structured processing |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Pipeline is an execution pattern where work flows through a series of specialized processing stages, with each stage transforming the output of the previous one. This modular approach improves maintainability, scalability, and clarity, making Pipeline one of the most widely used execution patterns in Agentic AI, enterprise automation, machine learning, and document processing systems.`,steps:[{label:`Input`,icon:`📥`,detail:`Receive raw input.`},{label:`Stage Processing`,icon:`⚙️`,detail:`Execute each processing stage.`},{label:`Transfer`,icon:`➡️`,detail:`Pass output to the next stage.`},{label:`Validate`,icon:`✔️`,detail:`Ensure quality between stages.`},{label:`Output`,icon:`📤`,detail:`Generate the final result.`}],code:``},{id:`fan-out-fan-in`,category:`Execution Patterns`,title:`Fan-Out/Fan-In`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how tasks are distributed across multiple workers and later aggregated into one result.`,tags:[`fan out`,`fan in`,`parallel`,`aggregation`,`agents`],concept:`# Fan-Out/Fan-In Execution Pattern\r
+\r
+## Overview\r
+\r
+Fan-Out/Fan-In is an execution pattern where a large task is divided into multiple independent subtasks (Fan-Out), each subtask is executed in parallel, and finally all the individual results are collected and combined into a single output (Fan-In).\r
+\r
+This pattern is one of the most common execution models in Multi-Agent AI systems because it enables multiple agents to work simultaneously, significantly reducing execution time while improving scalability.\r
+\r
+---\r
+\r
+## Why Fan-Out/Fan-In?\r
+\r
+Many AI problems can be divided into independent subtasks.\r
+\r
+Without Fan-Out/Fan-In:\r
+\r
+\`\`\`text\r
+Large Task\r
+\r
+↓\r
+\r
+Worker 1\r
+\r
+↓\r
+\r
+Worker 2\r
+\r
+↓\r
+\r
+Worker 3\r
+\r
+↓\r
+\r
+Final Result\r
+\`\`\`\r
+\r
+Every worker waits for the previous one.\r
+\r
+With Fan-Out/Fan-In:\r
+\r
+\`\`\`text\r
+Large Task\r
+\r
+↓\r
+\r
+Split Tasks\r
+\r
+↓\r
+\r
+Worker A\r
+Worker B\r
+Worker C\r
+Worker D\r
+\r
+↓\r
+\r
+Merge Results\r
+\r
+↓\r
+\r
+Final Answer\r
+\`\`\`\r
+\r
+Multiple workers execute simultaneously.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Task decomposition\r
+- Parallel execution\r
+- Result aggregation\r
+- High scalability\r
+- Efficient resource utilization\r
+- Low overall latency\r
+\r
+---\r
+\r
+## Fan-Out/Fan-In Architecture\r
+\r
+\`\`\`text\r
+                User Request\r
+                     │\r
+                     ▼\r
+              Split Task (Fan-Out)\r
+          ┌────────┼────────┬────────┐\r
+          ▼        ▼        ▼        ▼\r
+      Worker 1 Worker 2 Worker 3 Worker 4\r
+          │        │        │        │\r
+          ▼        ▼        ▼        ▼\r
+      Execute   Execute   Execute  Execute\r
+          └────────┼────────┬────────┘\r
+                   ▼\r
+            Merge Results (Fan-In)\r
+                   │\r
+                   ▼\r
+             Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+       │\r
+       ▼\r
+Break into Subtasks\r
+       │\r
+       ▼\r
+Assign Workers\r
+       │\r
+       ▼\r
+Execute in Parallel\r
+       │\r
+       ▼\r
+Collect Results\r
+       │\r
+       ▼\r
+Merge Outputs\r
+       │\r
+       ▼\r
+Return Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Task\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Generate an Enterprise Business Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Fan-Out\r
+\r
+Split into independent tasks.\r
+\r
+\`\`\`text\r
+Sales Analysis\r
+\r
+Customer Analysis\r
+\r
+Inventory Analysis\r
+\r
+Financial Analysis\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Parallel Execution\r
+\r
+\`\`\`text\r
+Worker 1\r
+\r
+↓\r
+\r
+Sales Report\r
+\r
+Worker 2\r
+\r
+↓\r
+\r
+Customer Report\r
+\r
+Worker 3\r
+\r
+↓\r
+\r
+Inventory Report\r
+\r
+Worker 4\r
+\r
+↓\r
+\r
+Financial Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Fan-In\r
+\r
+Merge all reports.\r
+\r
+\`\`\`text\r
+Enterprise Dashboard\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Deliver Result\r
+\r
+\`\`\`text\r
+Business Intelligence Report Generated\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+from concurrent.futures import ThreadPoolExecutor\r
+\r
+tasks = [\r
+    "Sales",\r
+    "Inventory",\r
+    "Customers",\r
+    "Finance"\r
+]\r
+\r
+def worker(task):\r
+    return f"{task} Completed"\r
+\r
+with ThreadPoolExecutor() as executor:\r
+    results = list(executor.map(worker, tasks))\r
+\r
+print("Merged Results:")\r
+\r
+for result in results:\r
+    print(result)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Merged Results:\r
+\r
+Sales Completed\r
+Inventory Completed\r
+Customers Completed\r
+Finance Completed\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Multi-Agent Research\r
+\r
+\`\`\`text\r
+Research Question\r
+\r
+↓\r
+\r
+Split Topics\r
+\r
+↓\r
+\r
+Research Agents\r
+\r
+↓\r
+\r
+Merge Findings\r
+\r
+↓\r
+\r
+Research Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Enterprise Search\r
+\r
+\`\`\`text\r
+Search PDFs\r
+\r
+Search Database\r
+\r
+Search Emails\r
+\r
+Search Vector DB\r
+\r
+↓\r
+\r
+Merge Results\r
+\r
+↓\r
+\r
+Answer\r
+\`\`\`\r
+\r
+---\r
+\r
+## Customer Support\r
+\r
+\`\`\`text\r
+Order Lookup\r
+\r
+Profile Lookup\r
+\r
+Policy Lookup\r
+\r
+↓\r
+\r
+Merge Information\r
+\r
+↓\r
+\r
+Customer Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Healthcare\r
+\r
+\`\`\`text\r
+Blood Test\r
+\r
+MRI\r
+\r
+Medical History\r
+\r
+↓\r
+\r
+Doctor AI\r
+\r
+↓\r
+\r
+Diagnosis\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Multi-Agent AI Systems\r
+- Enterprise Search\r
+- AI Research Assistants\r
+- Business Intelligence\r
+- Healthcare Analytics\r
+- Financial Reporting\r
+- Customer Support\r
+- Fraud Detection\r
+- Cybersecurity Analysis\r
+- Large-scale Data Processing\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Very fast execution\r
+- Highly scalable\r
+- Excellent resource utilization\r
+- Supports distributed computing\r
+- Independent worker execution\r
+- Easy to extend with additional workers\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Requires independent subtasks.\r
+- Synchronization is needed before merging.\r
+- Worker failures must be handled.\r
+- Load balancing is important.\r
+- Aggregation logic can become complex.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Divide work into balanced subtasks.\r
+- Keep workers independent.\r
+- Handle worker failures with retries.\r
+- Validate outputs before merging.\r
+- Monitor execution time for each worker.\r
+- Combine with Parallel Execution and Retry patterns.\r
+\r
+---\r
+\r
+# Fan-Out/Fan-In in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Multiple specialized agents can process independent subtasks simultaneously before combining their outputs.\r
+\r
+### LangChain\r
+\r
+- Supports parallel runnable branches followed by output aggregation.\r
+\r
+### LangGraph\r
+\r
+- Models Fan-Out using parallel graph branches and Fan-In using merge nodes.\r
+\r
+### CrewAI\r
+\r
+- Coordinator distributes work to multiple worker agents and aggregates their responses into a unified result.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Parallel | Fan-Out/Fan-In |\r
+|----------|----------------|\r
+| Executes independent tasks | Splits one task into many subtasks |\r
+| No mandatory aggregation | Includes result aggregation |\r
+| Simpler workflow | Structured distributed workflow |\r
+| General concurrency | Distributed orchestration |\r
+| Good for independent jobs | Best for large complex tasks |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Fan-Out/Fan-In is a distributed execution pattern in which a large task is divided into multiple independent subtasks (Fan-Out), executed concurrently by multiple workers or AI agents, and then combined into a single final result (Fan-In). This pattern is fundamental to scalable Multi-Agent AI systems, enabling faster execution, efficient resource utilization, and improved performance for enterprise-scale workflows.`,steps:[{label:`Receive Task`,icon:`📥`,detail:`Accept the overall request.`},{label:`Fan-Out`,icon:`🌐`,detail:`Distribute subtasks to workers.`},{label:`Parallel Execution`,icon:`⚡`,detail:`Workers execute independently.`},{label:`Fan-In`,icon:`🧩`,detail:`Collect all outputs.`},{label:`Finalize`,icon:`✅`,detail:`Return the merged result.`}],code:``},{id:`map-reduce`,category:`Execution Patterns`,title:`Map Reduce`,difficulty:`Advanced`,time:`~15 min`,description:`Understand how large workloads are divided into map tasks and combined using reduce operations.`,tags:[`map reduce`,`distributed`,`parallel`,`big data`,`execution`],concept:`# Map Reduce Execution Pattern\r
+\r
+## Overview\r
+\r
+Map Reduce is a distributed execution pattern used to process large datasets efficiently by dividing the workload into smaller independent tasks (Map phase) and then combining the intermediate results into a final output (Reduce phase).\r
+\r
+Originally developed for large-scale distributed computing, Map Reduce has become an important execution pattern in Agentic AI, where multiple AI agents process different parts of a problem simultaneously before aggregating their results.\r
+\r
+---\r
+\r
+## Why Map Reduce?\r
+\r
+Large datasets or complex problems are difficult to process on a single machine or by a single AI agent.\r
+\r
+Without Map Reduce:\r
+\r
+\`\`\`text\r
+Large Dataset\r
+\r
+↓\r
+\r
+Single Worker\r
+\r
+↓\r
+\r
+Long Processing Time\r
+\r
+↓\r
+\r
+Final Result\r
+\`\`\`\r
+\r
+Processing becomes slow and resource-intensive.\r
+\r
+With Map Reduce:\r
+\r
+\`\`\`text\r
+Large Dataset\r
+\r
+↓\r
+\r
+Split Data\r
+\r
+↓\r
+\r
+Map Workers\r
+\r
+↓\r
+\r
+Intermediate Results\r
+\r
+↓\r
+\r
+Reduce\r
+\r
+↓\r
+\r
+Final Output\r
+\`\`\`\r
+\r
+Multiple workers process the data concurrently, significantly improving performance.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Distributed computation\r
+- Parallel processing\r
+- Data partitioning\r
+- Intermediate aggregation\r
+- High scalability\r
+- Fault tolerance\r
+\r
+---\r
+\r
+## Map Reduce Architecture\r
+\r
+\`\`\`text\r
+                 Large Dataset\r
+                       │\r
+                       ▼\r
+                Split into Chunks\r
+          ┌────────┼────────┬────────┐\r
+          ▼        ▼        ▼        ▼\r
+      Mapper1  Mapper2  Mapper3  Mapper4\r
+          │        │        │        │\r
+          ▼        ▼        ▼        ▼\r
+   Intermediate Results\r
+          └────────┼────────┬────────┘\r
+                   ▼\r
+              Shuffle & Sort\r
+                   │\r
+                   ▼\r
+              Reducer Process\r
+                   │\r
+                   ▼\r
+              Final Output\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Dataset\r
+      │\r
+      ▼\r
+Partition Data\r
+      │\r
+      ▼\r
+Execute Map Tasks\r
+      │\r
+      ▼\r
+Generate Intermediate Results\r
+      │\r
+      ▼\r
+Shuffle & Group Data\r
+      │\r
+      ▼\r
+Reduce Results\r
+      │\r
+      ▼\r
+Return Final Output\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Dataset\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Sales Transactions (10 Million Records)\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Split Dataset\r
+\r
+\`\`\`text\r
+Chunk 1\r
+\r
+Chunk 2\r
+\r
+Chunk 3\r
+\r
+Chunk 4\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Map Phase\r
+\r
+Each worker processes one partition.\r
+\r
+\`\`\`text\r
+Mapper 1\r
+\r
+↓\r
+\r
+Total Sales\r
+\r
+Mapper 2\r
+\r
+↓\r
+\r
+Total Sales\r
+\r
+Mapper 3\r
+\r
+↓\r
+\r
+Total Sales\r
+\r
+Mapper 4\r
+\r
+↓\r
+\r
+Total Sales\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Reduce Phase\r
+\r
+Combine all intermediate values.\r
+\r
+\`\`\`text\r
+Total Enterprise Sales\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Generate Final Output\r
+\r
+\`\`\`text\r
+Enterprise Sales Report\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+from collections import Counter\r
+\r
+words = [\r
+    "AI", "Agent", "AI",\r
+    "LLM", "Agent", "AI"\r
+]\r
+\r
+# Map Phase\r
+mapped = [(word, 1) for word in words]\r
+\r
+# Reduce Phase\r
+result = Counter(dict(mapped))\r
+result = Counter(words)\r
+\r
+print(result)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Counter({\r
+    'AI': 3,\r
+    'Agent': 2,\r
+    'LLM': 1\r
+})\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Word Count\r
+\r
+\`\`\`text\r
+Large Document\r
+\r
+↓\r
+\r
+Split Text\r
+\r
+↓\r
+\r
+Count Words\r
+\r
+↓\r
+\r
+Merge Counts\r
+\`\`\`\r
+\r
+---\r
+\r
+## Enterprise Analytics\r
+\r
+\`\`\`text\r
+Sales Data\r
+\r
+↓\r
+\r
+Regional Processing\r
+\r
+↓\r
+\r
+Aggregate Revenue\r
+\r
+↓\r
+\r
+Executive Dashboard\r
+\`\`\`\r
+\r
+---\r
+\r
+## AI Research\r
+\r
+\`\`\`text\r
+Research Papers\r
+\r
+↓\r
+\r
+Summarize Each Paper\r
+\r
+↓\r
+\r
+Merge Summaries\r
+\r
+↓\r
+\r
+Final Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Log Analysis\r
+\r
+\`\`\`text\r
+Server Logs\r
+\r
+↓\r
+\r
+Distributed Parsing\r
+\r
+↓\r
+\r
+Error Counts\r
+\r
+↓\r
+\r
+Analytics Dashboard\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Big Data Processing\r
+- Enterprise Analytics\r
+- AI Document Processing\r
+- Search Indexing\r
+- Log Processing\r
+- Recommendation Systems\r
+- Financial Reporting\r
+- Healthcare Analytics\r
+- Distributed AI Workloads\r
+- Scientific Computing\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Processes massive datasets efficiently\r
+- Highly scalable\r
+- Parallel execution\r
+- Fault tolerant\r
+- Efficient resource utilization\r
+- Suitable for distributed systems\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Not suitable for small datasets.\r
+- Shuffle phase can become a bottleneck.\r
+- Higher infrastructure complexity.\r
+- Requires data partitioning.\r
+- Additional overhead for coordination.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Partition data evenly across workers.\r
+- Keep Map functions independent.\r
+- Minimize data transferred during the shuffle phase.\r
+- Design efficient Reduce operations.\r
+- Monitor worker performance.\r
+- Handle worker failures gracefully.\r
+\r
+---\r
+\r
+# Map Reduce in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Multiple agents can independently process subsets of information before aggregating the results into a unified response.\r
+\r
+### LangChain\r
+\r
+- Supports distributed processing using parallel runnables followed by aggregation chains.\r
+\r
+### LangGraph\r
+\r
+- Models Map tasks as parallel branches and Reduce as a merge node in the execution graph.\r
+\r
+### CrewAI\r
+\r
+- Worker agents independently solve subtasks, while a coordinator agent combines outputs into a final solution.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Parallel Execution | Map Reduce |\r
+|--------------------|------------|\r
+| Executes independent tasks | Processes partitioned datasets |\r
+| General concurrency | Data-centric distributed computing |\r
+| Optional aggregation | Mandatory Reduce phase |\r
+| Suitable for workflows | Suitable for large-scale data processing |\r
+| Simpler architecture | More structured distributed architecture |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Map Reduce is a distributed execution pattern that processes large datasets by dividing them into smaller partitions during the **Map** phase and combining intermediate results during the **Reduce** phase. By leveraging parallel computation and structured aggregation, Map Reduce enables scalable, efficient, and fault-tolerant processing, making it a foundational execution pattern for enterprise AI, big data analytics, and modern Agentic AI systems.`,steps:[{label:`Split Data`,icon:`📂`,detail:`Partition the dataset.`},{label:`Map`,icon:`🗺️`,detail:`Process each partition independently.`},{label:`Shuffle`,icon:`🔄`,detail:`Group intermediate results.`},{label:`Reduce`,icon:`📊`,detail:`Aggregate processed outputs.`},{label:`Return`,icon:`🏁`,detail:`Produce the final result.`}],code:``},{id:`router`,category:`Execution Patterns`,title:`Router`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how Router patterns direct requests to the most appropriate AI agent or workflow.`,tags:[`router`,`routing`,`workflow`,`agents`,`decision`],concept:`# Router Execution Pattern\r
+\r
+## Overview\r
+\r
+The Router execution pattern is used to intelligently direct incoming requests to the most appropriate AI agent, tool, workflow, or model based on the characteristics of the task. Instead of sending every request through the same execution path, a Router analyzes the input and determines the optimal route.\r
+\r
+In Agentic AI, routing improves efficiency, reduces costs, enables specialization, and ensures that each request is handled by the component best suited for the job.\r
+\r
+---\r
+\r
+## Why Router Pattern?\r
+\r
+Different requests require different expertise.\r
+\r
+Without Router:\r
+\r
+\`\`\`text\r
+           User Request\r
+                 │\r
+                 ▼\r
+          Single AI Agent\r
+                 │\r
+                 ▼\r
+         Handles Everything\r
+\`\`\`\r
+\r
+Problems:\r
+\r
+- Poor specialization\r
+- Higher latency\r
+- Increased cost\r
+- Lower accuracy\r
+\r
+With Router:\r
+\r
+\`\`\`text\r
+           User Request\r
+                 │\r
+                 ▼\r
+          Router Decision\r
+      ┌────────┼─────────┐\r
+      ▼        ▼         ▼\r
+ Research  Coding    Finance\r
+   Agent     Agent      Agent\r
+      └────────┼─────────┘\r
+               ▼\r
+        Final Response\r
+\`\`\`\r
+\r
+The Router sends each request to the most suitable agent.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Intelligent request routing\r
+- Dynamic decision making\r
+- Specialized execution\r
+- Improved scalability\r
+- Lower execution cost\r
+- Better response quality\r
+\r
+---\r
+\r
+## Router Architecture\r
+\r
+\`\`\`text\r
+                User Request\r
+                      │\r
+                      ▼\r
+             Request Analyzer\r
+                      │\r
+                      ▼\r
+             Routing Decision\r
+          ┌────────┼─────────┐\r
+          ▼        ▼         ▼\r
+      Agent A   Agent B   Agent C\r
+          │        │         │\r
+          ▼        ▼         ▼\r
+        Execute  Execute  Execute\r
+              └─────┼─────┘\r
+                    ▼\r
+            Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+       │\r
+       ▼\r
+Analyze Intent\r
+       │\r
+       ▼\r
+Select Best Route\r
+       │\r
+       ▼\r
+Execute Agent\r
+       │\r
+       ▼\r
+Return Result\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Write Python code to sort a list.\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Analyze Intent\r
+\r
+\`\`\`text\r
+Category\r
+\r
+↓\r
+\r
+Programming\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Route Request\r
+\r
+\`\`\`text\r
+Coding Agent\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Execute\r
+\r
+\`\`\`text\r
+Generate Python Code\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Return Response\r
+\r
+\`\`\`text\r
+Python Program Delivered\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def router(query):\r
+    query = query.lower()\r
+\r
+    if "code" in query:\r
+        return "Coding Agent"\r
+\r
+    elif "finance" in query:\r
+        return "Finance Agent"\r
+\r
+    elif "research" in query:\r
+        return "Research Agent"\r
+\r
+    else:\r
+        return "General Assistant"\r
+\r
+question = "Write Python code"\r
+\r
+print(router(question))\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Coding Agent\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Enterprise Assistant\r
+\r
+\`\`\`text\r
+Employee Question\r
+\r
+↓\r
+\r
+Router\r
+\r
+↓\r
+\r
+HR Agent\r
+\r
+IT Agent\r
+\r
+Finance Agent\r
+\r
+↓\r
+\r
+Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Customer Support\r
+\r
+\`\`\`text\r
+Customer Query\r
+\r
+↓\r
+\r
+Router\r
+\r
+↓\r
+\r
+Billing Team\r
+\r
+Technical Team\r
+\r
+Shipping Team\r
+\`\`\`\r
+\r
+---\r
+\r
+## Healthcare\r
+\r
+\`\`\`text\r
+Patient Request\r
+\r
+↓\r
+\r
+Router\r
+\r
+↓\r
+\r
+Appointment Agent\r
+\r
+Diagnosis Agent\r
+\r
+Insurance Agent\r
+\`\`\`\r
+\r
+---\r
+\r
+## Multi-Agent Research\r
+\r
+\`\`\`text\r
+Research Question\r
+\r
+↓\r
+\r
+Router\r
+\r
+↓\r
+\r
+Search Agent\r
+\r
+Summarizer\r
+\r
+Citation Agent\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Multi-Agent AI Platforms\r
+- Customer Support Systems\r
+- Enterprise Assistants\r
+- Healthcare AI\r
+- Financial AI Assistants\r
+- Legal Document Processing\r
+- Coding Assistants\r
+- AI Research Platforms\r
+- Workflow Automation\r
+- Intelligent Chatbots\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Routes tasks intelligently\r
+- Improves response quality\r
+- Reduces execution cost\r
+- Enables specialized AI agents\r
+- Highly scalable\r
+- Simplifies workflow management\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Incorrect routing can reduce accuracy.\r
+- Requires well-defined routing rules or classifiers.\r
+- Adds an extra decision-making step.\r
+- May need continuous updates as new agents are added.\r
+- Complex routing logic can become difficult to maintain.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Keep routing rules simple and explainable.\r
+- Use intent classification for dynamic routing.\r
+- Monitor routing accuracy.\r
+- Implement fallback routes for unknown requests.\r
+- Log routing decisions for debugging.\r
+- Continuously evaluate and improve routing performance.\r
+\r
+---\r
+\r
+# Router Pattern in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Uses routing logic to select the appropriate agent or tool based on user intent and available capabilities.\r
+\r
+### LangChain\r
+\r
+- Provides Router Chains that dynamically choose the best prompt, chain, or model for a given request.\r
+\r
+### LangGraph\r
+\r
+- Uses conditional edges to direct execution to different graph nodes based on runtime decisions.\r
+\r
+### CrewAI\r
+\r
+- Coordinator agents act as routers by assigning tasks to specialized worker agents.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Sequential | Router |\r
+|------------|--------|\r
+| Fixed execution order | Dynamic execution path |\r
+| Same workflow for every request | Different workflows based on intent |\r
+| Simple implementation | Intelligent decision making |\r
+| Limited flexibility | Highly adaptable |\r
+| Suitable for fixed processes | Suitable for diverse AI tasks |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+The Router execution pattern enables Agentic AI systems to intelligently direct user requests to the most appropriate AI agent, workflow, or tool. By analyzing the intent of each request before execution, Routers improve specialization, reduce costs, increase scalability, and enhance response quality. This pattern is fundamental in enterprise AI systems, multi-agent architectures, and intelligent workflow automation.`,steps:[{label:`Receive Request`,icon:`📩`,detail:`Accept the incoming task.`},{label:`Analyze`,icon:`🔍`,detail:`Determine task type.`},{label:`Select Route`,icon:`🧭`,detail:`Choose the best agent.`},{label:`Execute`,icon:`⚙️`,detail:`Run the selected workflow.`},{label:`Respond`,icon:`📤`,detail:`Return the generated output.`}],code:``},{id:`reflection-loop`,category:`Execution Patterns`,title:`Reflection Loop`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how AI agents repeatedly evaluate and improve their own outputs before producing the final response.`,tags:[`reflection`,`loop`,`self review`,`reasoning`,`agents`],concept:`# Reflection Loop Execution Pattern\r
+\r
+## Overview\r
+\r
+Reflection Loop is an execution pattern in which an AI agent reviews, evaluates, and improves its own output before returning the final response. Instead of accepting the first generated answer, the agent performs one or more self-evaluation cycles to identify mistakes, improve reasoning, and enhance overall quality.\r
+\r
+Reflection Loops are widely used in advanced Agentic AI systems to reduce hallucinations, improve accuracy, and produce more reliable responses.\r
+\r
+---\r
+\r
+## Why Reflection Loop?\r
+\r
+The first answer generated by an AI model is not always the best.\r
+\r
+Without Reflection Loop:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+Generate Answer\r
+\r
+↓\r
+\r
+Return Response\r
+\`\`\`\r
+\r
+Errors or incomplete information may remain.\r
+\r
+With Reflection Loop:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+Generate Answer\r
+\r
+↓\r
+\r
+Review Answer\r
+\r
+↓\r
+\r
+Improve Answer\r
+\r
+↓\r
+\r
+Quality Check\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+The AI continuously improves its output before delivering it.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Self-evaluation\r
+- Iterative improvement\r
+- Quality assurance\r
+- Error correction\r
+- Better reasoning\r
+- Reduced hallucinations\r
+\r
+---\r
+\r
+## Reflection Loop Architecture\r
+\r
+\`\`\`text\r
+              User Request\r
+                    │\r
+                    ▼\r
+           Generate Initial Answer\r
+                    │\r
+                    ▼\r
+            Reflection Module\r
+                    │\r
+        ┌───────────┴───────────┐\r
+        ▼                       ▼\r
+ Identify Errors          Suggest Improvements\r
+        │                       │\r
+        └───────────┬───────────┘\r
+                    ▼\r
+            Regenerate Answer\r
+                    │\r
+                    ▼\r
+          Quality Validation\r
+                    │\r
+                    ▼\r
+             Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+       │\r
+       ▼\r
+Generate Initial Output\r
+       │\r
+       ▼\r
+Evaluate Output\r
+       │\r
+       ▼\r
+Improve Response\r
+       │\r
+       ▼\r
+Repeat Until Satisfied\r
+       │\r
+       ▼\r
+Return Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Explain Quantum Computing\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Generate Initial Answer\r
+\r
+\`\`\`text\r
+Initial Explanation Generated\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Self-Evaluate\r
+\r
+\`\`\`text\r
+Check Accuracy\r
+\r
+↓\r
+\r
+Check Completeness\r
+\r
+↓\r
+\r
+Check Logic\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Improve Response\r
+\r
+\`\`\`text\r
+Add Missing Details\r
+\r
+↓\r
+\r
+Correct Errors\r
+\r
+↓\r
+\r
+Improve Clarity\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Return Final Answer\r
+\r
+\`\`\`text\r
+High-Quality Response Delivered\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def generate():\r
+    return "AI is intelligence."\r
+\r
+def reflect(answer):\r
+    if len(answer) < 30:\r
+        return answer + " It enables machines to perform tasks that typically require human intelligence."\r
+    return answer\r
+\r
+response = generate()\r
+final_response = reflect(response)\r
+\r
+print(final_response)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+AI is intelligence. It enables machines to perform tasks that typically require human intelligence.\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## AI Writing Assistant\r
+\r
+\`\`\`text\r
+Draft Article\r
+\r
+↓\r
+\r
+Grammar Review\r
+\r
+↓\r
+\r
+Improve Writing\r
+\r
+↓\r
+\r
+Final Article\r
+\`\`\`\r
+\r
+---\r
+\r
+## Coding Assistant\r
+\r
+\`\`\`text\r
+Generate Code\r
+\r
+↓\r
+\r
+Review Code\r
+\r
+↓\r
+\r
+Fix Bugs\r
+\r
+↓\r
+\r
+Optimized Code\r
+\`\`\`\r
+\r
+---\r
+\r
+## Research Agent\r
+\r
+\`\`\`text\r
+Generate Summary\r
+\r
+↓\r
+\r
+Fact Check\r
+\r
+↓\r
+\r
+Improve Accuracy\r
+\r
+↓\r
+\r
+Final Report\r
+\`\`\`\r
+\r
+---\r
+\r
+## Customer Support\r
+\r
+\`\`\`text\r
+Draft Reply\r
+\r
+↓\r
+\r
+Policy Validation\r
+\r
+↓\r
+\r
+Improve Tone\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- AI Coding Assistants\r
+- Enterprise Chatbots\r
+- AI Research Platforms\r
+- Legal Document Review\r
+- Medical Report Generation\r
+- Financial Analysis\r
+- Content Generation\r
+- Proposal Writing\r
+- Customer Support\r
+- Knowledge Management\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Produces higher-quality responses\r
+- Reduces hallucinations\r
+- Improves reasoning\r
+- Corrects mistakes automatically\r
+- Increases user trust\r
+- Enhances response consistency\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Increases response latency.\r
+- Consumes additional LLM tokens.\r
+- Multiple reflection cycles increase cost.\r
+- May over-refine simple responses.\r
+- Requires well-designed evaluation criteria.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Limit the number of reflection iterations.\r
+- Define clear evaluation criteria.\r
+- Focus on factual accuracy and completeness.\r
+- Combine with external validation when necessary.\r
+- Log reflection decisions for analysis.\r
+- Stop reflecting once quality reaches the desired threshold.\r
+\r
+---\r
+\r
+# Reflection Loop in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Agents can evaluate tool outputs or generated responses before producing the final answer.\r
+\r
+### LangChain\r
+\r
+- Supports self-refinement chains where an LLM critiques and improves its previous output.\r
+\r
+### LangGraph\r
+\r
+- Models reflection as cyclic graph edges that loop until a quality condition is satisfied.\r
+\r
+### CrewAI\r
+\r
+- Reviewer agents validate worker outputs and request revisions before approval.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Standard Execution | Reflection Loop |\r
+|--------------------|-----------------|\r
+| One-pass generation | Multiple refinement cycles |\r
+| Faster | Higher quality |\r
+| Limited error checking | Self-evaluation and correction |\r
+| Lower cost | Higher computational cost |\r
+| Suitable for simple tasks | Suitable for complex reasoning |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Reflection Loop is an execution pattern in which an AI agent iteratively evaluates and improves its own outputs before delivering the final response. By incorporating self-review, error correction, and quality validation, Reflection Loops produce more accurate, reliable, and trustworthy results, making them an essential pattern in advanced Agentic AI systems.`,steps:[{label:`Generate`,icon:`✨`,detail:`Produce an initial response.`},{label:`Evaluate`,icon:`🔍`,detail:`Review the generated output.`},{label:`Improve`,icon:`🛠️`,detail:`Correct identified issues.`},{label:`Repeat`,icon:`🔄`,detail:`Continue until quality is acceptable.`},{label:`Deliver`,icon:`🚀`,detail:`Return the refined result.`}],code:``},{id:`retry-pattern`,category:`Execution Patterns`,title:`Retry Pattern`,difficulty:`Intermediate`,time:`~10 min`,description:`Understand how AI agents automatically retry failed operations before reporting an error.`,tags:[`retry`,`resilience`,`workflow`,`fault tolerance`,`execution`],concept:`# Retry Pattern\r
+\r
+## Overview\r
+\r
+The Retry Pattern is an execution pattern in which an AI agent automatically retries a failed operation before reporting an error. Temporary failures such as network issues, API timeouts, database locks, or service unavailability often resolve themselves after a short delay. Instead of failing immediately, the agent attempts the operation again based on predefined retry rules.\r
+\r
+Retry Pattern is widely used in enterprise AI systems to improve reliability, resilience, and fault tolerance.\r
+\r
+---\r
+\r
+## Why Retry Pattern?\r
+\r
+External services do not always succeed on the first attempt.\r
+\r
+Without Retry Pattern:\r
+\r
+\`\`\`text\r
+API Call\r
+\r
+↓\r
+\r
+Failure\r
+\r
+↓\r
+\r
+Workflow Stops\r
+\`\`\`\r
+\r
+Temporary failures immediately terminate the workflow.\r
+\r
+With Retry Pattern:\r
+\r
+\`\`\`text\r
+API Call\r
+\r
+↓\r
+\r
+Failure?\r
+\r
+↓\r
+\r
+Retry\r
+\r
+↓\r
+\r
+Success?\r
+\r
+↓\r
+\r
+Continue Workflow\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+The system automatically recovers from transient failures.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Automatic retries\r
+- Fault tolerance\r
+- Improved reliability\r
+- Configurable retry limits\r
+- Delay between retries\r
+- Better user experience\r
+\r
+---\r
+\r
+## Retry Pattern Architecture\r
+\r
+\`\`\`text\r
+             User Request\r
+                   │\r
+                   ▼\r
+            Execute Operation\r
+                   │\r
+            ┌──────┴──────┐\r
+            ▼             ▼\r
+         Success       Failure\r
+            │             │\r
+            │       Retry Counter\r
+            │             │\r
+            │       Retry Operation\r
+            │             │\r
+            └──────┬──────┘\r
+                   ▼\r
+            Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+      │\r
+      ▼\r
+Execute Task\r
+      │\r
+      ▼\r
+Did it Fail?\r
+      │\r
+ ┌────┴─────┐\r
+ │          │\r
+No         Yes\r
+ │          │\r
+ ▼          ▼\r
+Return    Retry\r
+             │\r
+             ▼\r
+      Success or Max Retries\r
+             │\r
+             ▼\r
+       Return Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Call Payment API\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Execute Operation\r
+\r
+\`\`\`text\r
+Send Payment Request\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Detect Failure\r
+\r
+\`\`\`text\r
+Timeout\r
+\r
+↓\r
+\r
+Retry Required\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Retry\r
+\r
+\`\`\`text\r
+Attempt 2\r
+\r
+↓\r
+\r
+Attempt 3\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Return Result\r
+\r
+\`\`\`text\r
+Payment Successful\r
+\r
+OR\r
+\r
+Maximum Retries Reached\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+import time\r
+\r
+MAX_RETRIES = 3\r
+\r
+for attempt in range(1, MAX_RETRIES + 1):\r
+    try:\r
+        print(f"Attempt {attempt}")\r
+\r
+        if attempt < 3:\r
+            raise Exception("Temporary Failure")\r
+\r
+        print("Operation Successful")\r
+        break\r
+\r
+    except Exception as e:\r
+        print(e)\r
+\r
+        if attempt == MAX_RETRIES:\r
+            print("Maximum retries reached.")\r
+        else:\r
+            time.sleep(1)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Attempt 1\r
+Temporary Failure\r
+\r
+Attempt 2\r
+Temporary Failure\r
+\r
+Attempt 3\r
+Operation Successful\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## API Integration\r
+\r
+\`\`\`text\r
+Call API\r
+\r
+↓\r
+\r
+Timeout\r
+\r
+↓\r
+\r
+Retry\r
+\r
+↓\r
+\r
+Receive Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Database Access\r
+\r
+\`\`\`text\r
+Query Database\r
+\r
+↓\r
+\r
+Connection Lost\r
+\r
+↓\r
+\r
+Reconnect\r
+\r
+↓\r
+\r
+Retrieve Data\r
+\`\`\`\r
+\r
+---\r
+\r
+## Cloud Storage\r
+\r
+\`\`\`text\r
+Upload File\r
+\r
+↓\r
+\r
+Network Error\r
+\r
+↓\r
+\r
+Retry Upload\r
+\r
+↓\r
+\r
+Upload Complete\r
+\`\`\`\r
+\r
+---\r
+\r
+## AI Tool Calling\r
+\r
+\`\`\`text\r
+Invoke Search Tool\r
+\r
+↓\r
+\r
+Temporary Failure\r
+\r
+↓\r
+\r
+Retry\r
+\r
+↓\r
+\r
+Return Search Results\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- API Integrations\r
+- Database Operations\r
+- Cloud Storage\r
+- Payment Systems\r
+- AI Tool Calling\r
+- Microservices\r
+- Enterprise Search\r
+- File Upload Services\r
+- Messaging Systems\r
+- Distributed Applications\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Increases reliability\r
+- Handles temporary failures\r
+- Improves user experience\r
+- Reduces manual intervention\r
+- Simple implementation\r
+- Supports resilient workflows\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Does not fix permanent failures.\r
+- Excessive retries increase latency.\r
+- Can overload external services.\r
+- Requires proper retry intervals.\r
+- Needs retry limits to avoid infinite loops.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Retry only transient failures.\r
+- Set a maximum retry count.\r
+- Use exponential backoff between retries.\r
+- Log every retry attempt.\r
+- Combine Retry with Fallback Pattern.\r
+- Stop retrying on permanent errors.\r
+\r
+---\r
+\r
+# Retry Pattern in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Retries tool calls when temporary failures such as rate limits or network issues occur.\r
+\r
+### LangChain\r
+\r
+- Provides retry mechanisms for LLM calls and external tool invocations.\r
+\r
+### LangGraph\r
+\r
+- Supports retry policies at the node level with configurable retry conditions.\r
+\r
+### CrewAI\r
+\r
+- Worker agents can automatically retry failed tasks before reporting failure to the coordinator.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Retry Pattern | Fallback Pattern |\r
+|---------------|------------------|\r
+| Repeats the same operation | Switches to an alternative operation |\r
+| Handles temporary failures | Handles permanent failures |\r
+| Same service is retried | Different service or workflow is used |\r
+| Simple recovery | Alternative execution strategy |\r
+| Best for transient errors | Best for unavailable services |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+The Retry Pattern is an execution pattern that automatically repeats failed operations to recover from temporary errors such as network issues, API timeouts, or service interruptions. By improving fault tolerance and system reliability, Retry is a fundamental building block for robust Agentic AI applications and enterprise workflows.`,steps:[{label:`Execute`,icon:`▶️`,detail:`Perform the operation.`},{label:`Failure?`,icon:`❓`,detail:`Detect execution failure.`},{label:`Retry`,icon:`🔄`,detail:`Attempt execution again.`},{label:`Success Check`,icon:`✔️`,detail:`Verify completion.`},{label:`Complete`,icon:`🏁`,detail:`Return success or final error.`}],code:``},{id:`fallback-pattern`,category:`Execution Patterns`,title:`Fallback Pattern`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how AI systems switch to backup strategies when the primary execution path fails.`,tags:[`fallback`,`backup`,`resilience`,`workflow`,`agents`],concept:`# Fallback Pattern\r
+\r
+## Overview\r
+\r
+The Fallback Pattern is an execution pattern in which an AI agent switches to an alternative strategy when the primary execution path fails. Instead of repeatedly attempting the same operation, the system intelligently selects another tool, model, workflow, or agent to complete the task.\r
+\r
+Fallback is an essential resilience pattern in Agentic AI because enterprise systems often depend on external APIs, LLMs, databases, or third-party services that may become unavailable.\r
+\r
+---\r
+\r
+## Why Fallback Pattern?\r
+\r
+Primary services may occasionally fail or become unavailable.\r
+\r
+Without Fallback Pattern:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+Primary Service\r
+\r
+↓\r
+\r
+Failure\r
+\r
+↓\r
+\r
+Workflow Stops\r
+\`\`\`\r
+\r
+The user receives an error.\r
+\r
+With Fallback Pattern:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+Primary Service\r
+\r
+↓\r
+\r
+Failure\r
+\r
+↓\r
+\r
+Fallback Service\r
+\r
+↓\r
+\r
+Success\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+The workflow continues using an alternative solution.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Alternative execution path\r
+- Automatic recovery\r
+- High availability\r
+- Improved resilience\r
+- Better user experience\r
+- Service redundancy\r
+\r
+---\r
+\r
+## Fallback Architecture\r
+\r
+\`\`\`text\r
+               User Request\r
+                     │\r
+                     ▼\r
+            Primary Execution\r
+                     │\r
+             ┌───────┴────────┐\r
+             ▼                ▼\r
+         Success          Failure\r
+             │                │\r
+             │         Select Fallback\r
+             │                │\r
+             │                ▼\r
+             │      Backup Agent / Tool\r
+             │                │\r
+             └────────┬───────┘\r
+                      ▼\r
+               Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+      │\r
+      ▼\r
+Execute Primary Service\r
+      │\r
+      ▼\r
+Did it Fail?\r
+      │\r
+ ┌────┴────┐\r
+ │         │\r
+No        Yes\r
+ │         │\r
+ ▼         ▼\r
+Return   Execute Fallback\r
+            │\r
+            ▼\r
+      Generate Response\r
+            │\r
+            ▼\r
+      Return Result\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Summarize a Research Paper\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: Execute Primary Model\r
+\r
+\`\`\`text\r
+GPT-4\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Detect Failure\r
+\r
+\`\`\`text\r
+API Unavailable\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Switch to Backup\r
+\r
+\`\`\`text\r
+Claude\r
+\r
+OR\r
+\r
+Local LLM\r
+\r
+OR\r
+\r
+Cached Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Return Response\r
+\r
+\`\`\`text\r
+Summary Generated Successfully\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def primary_service():\r
+    raise Exception("Primary service unavailable")\r
+\r
+def fallback_service():\r
+    return "Response generated using fallback model."\r
+\r
+try:\r
+    result = primary_service()\r
+except Exception:\r
+    result = fallback_service()\r
+\r
+print(result)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+Response generated using fallback model.\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## AI Chatbot\r
+\r
+\`\`\`text\r
+GPT-4\r
+\r
+↓\r
+\r
+Unavailable\r
+\r
+↓\r
+\r
+Claude\r
+\r
+↓\r
+\r
+Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Enterprise Search\r
+\r
+\`\`\`text\r
+Vector Database\r
+\r
+↓\r
+\r
+Unavailable\r
+\r
+↓\r
+\r
+Keyword Search\r
+\r
+↓\r
+\r
+Results\r
+\`\`\`\r
+\r
+---\r
+\r
+## Cloud Storage\r
+\r
+\`\`\`text\r
+Primary Storage\r
+\r
+↓\r
+\r
+Failure\r
+\r
+↓\r
+\r
+Backup Storage\r
+\r
+↓\r
+\r
+Download File\r
+\`\`\`\r
+\r
+---\r
+\r
+## Payment Processing\r
+\r
+\`\`\`text\r
+Payment Gateway A\r
+\r
+↓\r
+\r
+Failure\r
+\r
+↓\r
+\r
+Payment Gateway B\r
+\r
+↓\r
+\r
+Transaction Complete\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Multi-LLM Applications\r
+- Enterprise Search\r
+- Customer Support Systems\r
+- Payment Processing\r
+- Cloud Storage\r
+- Database Failover\r
+- AI Research Platforms\r
+- Financial Applications\r
+- Healthcare Systems\r
+- Disaster Recovery\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Improves system availability\r
+- Increases reliability\r
+- Enhances user experience\r
+- Supports business continuity\r
+- Reduces downtime\r
+- Enables graceful degradation\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Requires backup services.\r
+- Fallback responses may be lower quality.\r
+- Additional infrastructure increases cost.\r
+- Complex fallback logic can be difficult to manage.\r
+- Backup services must be continuously maintained.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Design multiple fallback levels.\r
+- Use health checks before switching services.\r
+- Log all fallback events.\r
+- Prioritize high-quality backup options.\r
+- Combine with Retry Pattern for transient failures.\r
+- Regularly test fallback workflows.\r
+\r
+---\r
+\r
+# Fallback Pattern in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Supports alternative tool execution or backup workflows when primary operations fail.\r
+\r
+### LangChain\r
+\r
+- Allows fallback LLMs, prompts, and chains to ensure uninterrupted execution.\r
+\r
+### LangGraph\r
+\r
+- Uses conditional graph edges to redirect execution to backup nodes after failures.\r
+\r
+### CrewAI\r
+\r
+- Coordinator agents can reassign failed tasks to backup worker agents or alternative workflows.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Retry Pattern | Fallback Pattern |\r
+|---------------|------------------|\r
+| Repeats the same operation | Switches to another operation |\r
+| Handles temporary failures | Handles permanent or extended failures |\r
+| Uses the same service | Uses backup services or agents |\r
+| Lower complexity | Higher flexibility |\r
+| Best for transient issues | Best for high availability |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+The Fallback Pattern is an execution pattern that automatically switches to an alternative service, tool, model, or workflow when the primary execution path fails. By ensuring continuous operation during failures, it improves system reliability, resilience, and availability, making it a critical pattern for enterprise Agentic AI systems and production-grade applications.`,steps:[{label:`Primary Execution`,icon:`🚀`,detail:`Attempt the preferred solution.`},{label:`Detect Failure`,icon:`⚠️`,detail:`Identify unsuccessful execution.`},{label:`Fallback`,icon:`🔁`,detail:`Switch to an alternative strategy.`},{label:`Validate`,icon:`✔️`,detail:`Verify fallback success.`},{label:`Return`,icon:`📤`,detail:`Deliver the best available result.`}],code:``},{id:`human-in-the-loop`,category:`Execution Patterns`,title:`Human-in-the-Loop`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI agents collaborate with humans by requesting approval, feedback, or decisions during execution.`,tags:[`human in the loop`,`approval`,`feedback`,`governance`,`agents`],concept:`# Human-in-the-Loop (HITL) Execution Pattern\r
+\r
+## Overview\r
+\r
+Human-in-the-Loop (HITL) is an execution pattern where AI agents collaborate with humans during task execution. Instead of making fully autonomous decisions, the AI requests human approval, feedback, or intervention at critical stages before continuing.\r
+\r
+This pattern is essential for high-risk applications where accuracy, compliance, ethics, or legal requirements demand human oversight. Human-in-the-Loop combines the speed of AI with human judgment, ensuring trustworthy and accountable decision-making.\r
+\r
+---\r
+\r
+## Why Human-in-the-Loop?\r
+\r
+Not every decision should be made entirely by AI.\r
+\r
+Without Human-in-the-Loop:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+AI Decision\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+Potential risks:\r
+\r
+- Incorrect decisions\r
+- Compliance violations\r
+- Ethical concerns\r
+- Lack of accountability\r
+\r
+With Human-in-the-Loop:\r
+\r
+\`\`\`text\r
+User Request\r
+\r
+↓\r
+\r
+AI Analysis\r
+\r
+↓\r
+\r
+Human Review\r
+\r
+↓\r
+\r
+Approval / Feedback\r
+\r
+↓\r
+\r
+Final Response\r
+\`\`\`\r
+\r
+Human experts validate important decisions before execution.\r
+\r
+---\r
+\r
+## Key Characteristics\r
+\r
+- Human supervision\r
+- AI-assisted decision making\r
+- Approval workflows\r
+- Risk reduction\r
+- Regulatory compliance\r
+- Improved trust and accountability\r
+\r
+---\r
+\r
+## Human-in-the-Loop Architecture\r
+\r
+\`\`\`text\r
+                 User Request\r
+                      │\r
+                      ▼\r
+                 AI Processing\r
+                      │\r
+                      ▼\r
+              Generate Proposal\r
+                      │\r
+                      ▼\r
+               Human Reviewer\r
+              ┌────────┴────────┐\r
+              ▼                 ▼\r
+          Approve            Reject\r
+              │                 │\r
+              ▼                 ▼\r
+      Execute Action      Revise Output\r
+              │                 │\r
+              └────────┬────────┘\r
+                       ▼\r
+                Final Response\r
+\`\`\`\r
+\r
+---\r
+\r
+## Workflow\r
+\r
+\`\`\`text\r
+Receive Request\r
+       │\r
+       ▼\r
+AI Generates Output\r
+       │\r
+       ▼\r
+Human Review\r
+       │\r
+ ┌─────┴─────┐\r
+ │           │\r
+Approve    Reject\r
+ │           │\r
+ ▼           ▼\r
+Execute    Revise\r
+ │           │\r
+ └─────┬─────┘\r
+       ▼\r
+Return Response\r
+\`\`\`\r
+\r
+---\r
+\r
+# Step-by-Step Process\r
+\r
+## Step 1: Receive Request\r
+\r
+Example\r
+\r
+\`\`\`text\r
+Approve a ₹50,00,000 Loan Application\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 2: AI Analysis\r
+\r
+\`\`\`text\r
+Evaluate Credit Score\r
+\r
+↓\r
+\r
+Risk Assessment\r
+\r
+↓\r
+\r
+Loan Recommendation\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 3: Human Review\r
+\r
+\`\`\`text\r
+Loan Officer Reviews Recommendation\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 4: Decision\r
+\r
+\`\`\`text\r
+Approve\r
+\r
+OR\r
+\r
+Reject\r
+\r
+OR\r
+\r
+Request Additional Information\r
+\`\`\`\r
+\r
+---\r
+\r
+## Step 5: Execute Action\r
+\r
+\`\`\`text\r
+Loan Approved\r
+\r
+OR\r
+\r
+Loan Rejected\r
+\`\`\`\r
+\r
+---\r
+\r
+# Python Example\r
+\r
+\`\`\`python\r
+def ai_decision():\r
+    return "Approve Loan"\r
+\r
+def human_review(decision):\r
+    print(f"AI Recommendation: {decision}")\r
+    approval = "Approved by Manager"\r
+    return approval\r
+\r
+recommendation = ai_decision()\r
+final_decision = human_review(recommendation)\r
+\r
+print(final_decision)\r
+\`\`\`\r
+\r
+### Output\r
+\r
+\`\`\`text\r
+AI Recommendation: Approve Loan\r
+Approved by Manager\r
+\`\`\`\r
+\r
+---\r
+\r
+# Real-World Examples\r
+\r
+## Healthcare\r
+\r
+\`\`\`text\r
+Patient Diagnosis\r
+\r
+↓\r
+\r
+AI Recommendation\r
+\r
+↓\r
+\r
+Doctor Review\r
+\r
+↓\r
+\r
+Treatment Plan\r
+\`\`\`\r
+\r
+---\r
+\r
+## Financial Services\r
+\r
+\`\`\`text\r
+Loan Request\r
+\r
+↓\r
+\r
+AI Risk Analysis\r
+\r
+↓\r
+\r
+Manager Approval\r
+\r
+↓\r
+\r
+Loan Processing\r
+\`\`\`\r
+\r
+---\r
+\r
+## Legal Document Review\r
+\r
+\`\`\`text\r
+Contract Analysis\r
+\r
+↓\r
+\r
+AI Suggestions\r
+\r
+↓\r
+\r
+Lawyer Review\r
+\r
+↓\r
+\r
+Final Contract\r
+\`\`\`\r
+\r
+---\r
+\r
+## Customer Support\r
+\r
+\`\`\`text\r
+Complex Customer Issue\r
+\r
+↓\r
+\r
+AI Draft Response\r
+\r
+↓\r
+\r
+Support Agent Review\r
+\r
+↓\r
+\r
+Customer Reply\r
+\`\`\`\r
+\r
+---\r
+\r
+# Enterprise Use Cases\r
+\r
+- Healthcare Diagnosis\r
+- Financial Loan Approval\r
+- Insurance Claim Processing\r
+- Legal Document Review\r
+- Government Services\r
+- Cybersecurity Incident Response\r
+- HR Recruitment\r
+- Medical Report Validation\r
+- AI Content Moderation\r
+- Enterprise Compliance\r
+\r
+---\r
+\r
+# Advantages\r
+\r
+- Improves decision accuracy\r
+- Reduces AI risks\r
+- Ensures regulatory compliance\r
+- Builds user trust\r
+- Supports ethical AI\r
+- Enables expert oversight\r
+\r
+---\r
+\r
+# Limitations\r
+\r
+- Slower execution due to manual review.\r
+- Increased operational cost.\r
+- Human reviewers can become bottlenecks.\r
+- Subjective decisions may introduce inconsistency.\r
+- Requires trained reviewers.\r
+\r
+---\r
+\r
+# Best Practices\r
+\r
+- Use HITL only for high-risk or sensitive decisions.\r
+- Clearly define approval criteria.\r
+- Maintain audit logs of human decisions.\r
+- Allow reviewers to provide detailed feedback.\r
+- Automate low-risk tasks while reserving humans for critical cases.\r
+- Continuously improve AI models using reviewer feedback.\r
+\r
+---\r
+\r
+# Human-in-the-Loop in Agentic AI Frameworks\r
+\r
+### OpenAI Agents SDK\r
+\r
+- Supports workflows where agents pause execution and wait for human approval before continuing.\r
+\r
+### LangChain\r
+\r
+- Integrates human feedback into chains, allowing reviewers to approve, edit, or reject AI-generated outputs.\r
+\r
+### LangGraph\r
+\r
+- Provides human checkpoint nodes where workflows pause until manual approval or input is received.\r
+\r
+### CrewAI\r
+\r
+- Coordinator agents can escalate tasks to human experts when confidence is low or approval is mandatory.\r
+\r
+---\r
+\r
+# Comparison\r
+\r
+| Autonomous AI | Human-in-the-Loop |\r
+|---------------|-------------------|\r
+| Fully automated | Human-assisted |\r
+| Faster execution | Slower but more reliable |\r
+| Minimal oversight | Human validation |\r
+| Higher automation | Higher accuracy and accountability |\r
+| Best for low-risk tasks | Best for high-risk tasks |\r
+\r
+---\r
+\r
+# Summary\r
+\r
+Human-in-the-Loop (HITL) is an execution pattern where AI agents collaborate with human experts during task execution. By incorporating human approval, feedback, and oversight into critical decision points, HITL improves accuracy, ensures regulatory compliance, reduces risk, and builds trust in enterprise AI systems. It is a foundational pattern for deploying responsible, reliable, and production-ready Agentic AI applications.`,steps:[{label:`Generate Output`,icon:`🤖`,detail:`AI prepares a proposed solution.`},{label:`Request Review`,icon:`🙋`,detail:`Send the result to a human reviewer.`},{label:`Receive Feedback`,icon:`💬`,detail:`Collect approval or corrections.`},{label:`Update`,icon:`✏️`,detail:`Modify the output if needed.`},{label:`Finalize`,icon:`✅`,detail:`Deliver the approved result.`}],code:``}],dm=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],fm={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},pm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function mm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function hm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function gm({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function _m({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:pm[e.difficulty],color:fm[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function vm({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:pm[e.difficulty],color:fm[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(mm,{steps:e.steps}),t===`code`&&(0,G.jsx)(gm,{code:e.code}),t===`concept`&&(0,G.jsx)(hm,{content:e.concept})]})}function ym({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:dm.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(_m,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function bm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:um.length},{label:`Patterns`,value:dm.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function xm(){let[e,t]=(0,v.useState)(um[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(bm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(ym,{recipes:um,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(vm,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var Sm=[{id:`multi-agent-architecture`,category:`Multi-Agent Systems`,title:`Multi-Agent Architecture`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how multiple AI agents collaborate, communicate, and coordinate to solve complex tasks efficiently.`,tags:[`multi agent`,`architecture`,`coordination`,`agent systems`,`collaboration`],concept:``,steps:[{label:`Define Agents`,icon:`🤖`,detail:`Identify specialized agents for different responsibilities.`},{label:`Communication`,icon:`📡`,detail:`Enable information exchange between agents.`},{label:`Coordination`,icon:`🎯`,detail:`Assign tasks and synchronize execution.`},{label:`Execution`,icon:`⚙️`,detail:`Agents perform assigned tasks independently.`},{label:`Aggregation`,icon:`📊`,detail:`Combine outputs into a final solution.`}],code:``},{id:`coordinator-agent`,category:`Multi-Agent Systems`,title:`Coordinator Agent`,difficulty:`Beginner`,time:`~12 min`,description:`Understand how a Coordinator Agent distributes work, manages communication, and orchestrates multiple AI agents.`,tags:[`coordinator`,`orchestration`,`task allocation`,`workflow`,`agents`],concept:``,steps:[{label:`Receive Task`,icon:`📥`,detail:`Accept the user's request.`},{label:`Split Tasks`,icon:`🧩`,detail:`Break work into smaller subtasks.`},{label:`Assign Agents`,icon:`🤝`,detail:`Allocate subtasks to specialized agents.`},{label:`Monitor`,icon:`👀`,detail:`Track execution progress.`},{label:`Merge Results`,icon:`📄`,detail:`Combine outputs into one response.`}],code:``},{id:`worker-agents`,category:`Multi-Agent Systems`,title:`Worker Agents`,difficulty:`Beginner`,time:`~10 min`,description:`Learn how Worker Agents execute specialized tasks assigned by a coordinator or supervisor.`,tags:[`worker agents`,`execution`,`specialization`,`tasks`,`multi-agent`],concept:``,steps:[{label:`Receive Task`,icon:`📩`,detail:`Accept assigned work.`},{label:`Process`,icon:`⚙️`,detail:`Perform specialized reasoning or tool execution.`},{label:`Validate`,icon:`✅`,detail:`Verify task completion.`},{label:`Return Result`,icon:`📤`,detail:`Send output back to coordinator.`},{label:`Wait`,icon:`⏳`,detail:`Remain idle until the next assignment.`}],code:``},{id:`supervisor-agent`,category:`Multi-Agent Systems`,title:`Supervisor Agent`,difficulty:`Intermediate`,time:`~12 min`,description:`Explore how Supervisor Agents oversee execution, validate outputs, and maintain workflow quality.`,tags:[`supervisor`,`quality control`,`validation`,`monitoring`,`agents`],concept:``,steps:[{label:`Observe`,icon:`👁️`,detail:`Monitor worker agent execution.`},{label:`Review`,icon:`📋`,detail:`Evaluate generated outputs.`},{label:`Detect Issues`,icon:`⚠️`,detail:`Identify failures or inconsistencies.`},{label:`Correct`,icon:`🔄`,detail:`Trigger retries or improvements.`},{label:`Approve`,icon:`✔️`,detail:`Approve final results.`}],code:``},{id:`hierarchical-agents`,category:`Multi-Agent Systems`,title:`Hierarchical Agents`,difficulty:`Intermediate`,time:`~15 min`,description:`Understand hierarchical agent structures where higher-level agents coordinate lower-level specialized agents.`,tags:[`hierarchy`,`manager`,`worker`,`coordination`,`agents`],concept:``,steps:[{label:`Top-Level Goal`,icon:`🎯`,detail:`Manager agent receives the objective.`},{label:`Delegate`,icon:`📤`,detail:`Assign work to subordinate agents.`},{label:`Execute`,icon:`⚙️`,detail:`Worker agents complete assigned tasks.`},{label:`Review`,icon:`📊`,detail:`Manager evaluates outputs.`},{label:`Deliver`,icon:`📦`,detail:`Return the integrated result.`}],code:``},{id:`swarm-agents`,category:`Multi-Agent Systems`,title:`Swarm Agents`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how decentralized AI agents cooperate collectively without a central controller.`,tags:[`swarm`,`distributed`,`collective`,`coordination`,`agents`],concept:``,steps:[{label:`Shared Goal`,icon:`🎯`,detail:`All agents pursue a common objective.`},{label:`Local Decisions`,icon:`🧠`,detail:`Each agent acts independently.`},{label:`Communication`,icon:`📡`,detail:`Exchange local information.`},{label:`Collective Behavior`,icon:`🐝`,detail:`Global intelligence emerges.`},{label:`Goal Achieved`,icon:`🏆`,detail:`Complete the shared objective.`}],code:``},{id:`peer-to-peer-agents`,category:`Multi-Agent Systems`,title:`Peer-to-Peer Agents`,difficulty:`Intermediate`,time:`~12 min`,description:`Explore decentralized agent communication where every agent communicates as an equal without central control.`,tags:[`peer to peer`,`distributed`,`communication`,`decentralized`,`agents`],concept:``,steps:[{label:`Discover Peers`,icon:`🔍`,detail:`Identify available agents.`},{label:`Exchange Messages`,icon:`💬`,detail:`Communicate directly.`},{label:`Share Knowledge`,icon:`📚`,detail:`Exchange intermediate results.`},{label:`Coordinate`,icon:`🤝`,detail:`Collaboratively solve the task.`},{label:`Finalize`,icon:`✅`,detail:`Produce the final outcome.`}],code:``},{id:`agent-collaboration`,category:`Multi-Agent Systems`,title:`Agent Collaboration`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI agents cooperate, exchange knowledge, and jointly solve complex tasks.`,tags:[`collaboration`,`teamwork`,`agents`,`coordination`,`communication`],concept:``,steps:[{label:`Share Goal`,icon:`🎯`,detail:`Establish a common objective.`},{label:`Assign Roles`,icon:`👥`,detail:`Define responsibilities.`},{label:`Communicate`,icon:`📨`,detail:`Exchange information.`},{label:`Integrate`,icon:`🧩`,detail:`Combine intermediate outputs.`},{label:`Deliver`,icon:`🚀`,detail:`Return the collaborative solution.`}],code:``},{id:`agent-negotiation`,category:`Multi-Agent Systems`,title:`Agent Negotiation`,difficulty:`Advanced`,time:`~15 min`,description:`Understand how AI agents negotiate resources, priorities, and decisions to achieve shared objectives.`,tags:[`negotiation`,`decision making`,`coordination`,`multi-agent`,`consensus`],concept:``,steps:[{label:`Propose`,icon:`💡`,detail:`Suggest possible solutions.`},{label:`Evaluate`,icon:`⚖️`,detail:`Assess proposals.`},{label:`Negotiate`,icon:`🤝`,detail:`Resolve conflicts.`},{label:`Agree`,icon:`✅`,detail:`Reach mutual agreement.`},{label:`Execute`,icon:`🚀`,detail:`Implement the negotiated plan.`}],code:``},{id:`agent-consensus`,category:`Multi-Agent Systems`,title:`Agent Consensus`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how multiple AI agents reach a common decision through voting, agreement, or consensus algorithms.`,tags:[`consensus`,`voting`,`agreement`,`decision`,`multi-agent`],concept:``,steps:[{label:`Collect Opinions`,icon:`📝`,detail:`Gather responses from all agents.`},{label:`Compare`,icon:`📊`,detail:`Evaluate different viewpoints.`},{label:`Vote`,icon:`🗳️`,detail:`Determine the preferred solution.`},{label:`Consensus`,icon:`🤝`,detail:`Reach a common agreement.`},{label:`Finalize`,icon:`🏁`,detail:`Publish the agreed result.`}],code:``}],Cm=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],wm={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},Tm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function Em({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function Dm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function Om({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function km({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:Tm[e.difficulty],color:wm[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function Am({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:Tm[e.difficulty],color:wm[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(Em,{steps:e.steps}),t===`code`&&(0,G.jsx)(Om,{code:e.code}),t===`concept`&&(0,G.jsx)(Dm,{content:e.concept})]})}function jm({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:Cm.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(km,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function Mm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:Sm.length},{label:`Patterns`,value:Cm.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function Nm(){let[e,t]=(0,v.useState)(Sm[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(Mm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(jm,{recipes:Sm,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(Am,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var Pm=[{id:`prompt-injection`,category:`Safety`,title:`Prompt Injection`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how Prompt Injection attacks manipulate AI Agents through malicious instructions and explore techniques to detect, prevent, and mitigate these attacks.`,tags:[`prompt injection`,`security`,`llm`,`guardrails`,`malicious prompts`,`validation`,`safety`],concept:``,steps:[{label:`Identify Input`,icon:`📥`,detail:`Receive user prompts from conversations, APIs, documents, or external sources.`},{label:`Inspect Content`,icon:`🔍`,detail:`Analyze the prompt for suspicious instructions, hidden commands, or attempts to override system behavior.`},{label:`Validate Prompt`,icon:`✔️`,detail:`Apply security filters and validation rules before processing the request.`},{label:`Apply Guardrails`,icon:`🛡️`,detail:`Enforce system policies to ignore or block malicious instructions.`},{label:`Execute Safely`,icon:`⚡`,detail:`Process only validated instructions while protecting system prompts and sensitive information.`},{label:`Monitor Attacks`,icon:`📊`,detail:`Log suspicious activities and continuously improve prompt security mechanisms.`}],code:``},{id:`jailbreak-attacks`,category:`Safety`,title:`Jailbreak Attacks`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how Jailbreak Attacks attempt to bypass AI safety restrictions, manipulate model behavior, and generate unauthorized or unsafe responses, along with techniques to defend against them.`,tags:[`jailbreak`,`security`,`prompt attack`,`guardrails`,`llm safety`,`policy`,`ai security`],concept:``,steps:[{label:`Recognize Jailbreak Attempts`,icon:`🚨`,detail:`Identify prompts designed to bypass system instructions, safety rules, or content policies.`},{label:`Analyze User Intent`,icon:`🧠`,detail:`Evaluate whether the user's request is legitimate or attempts to manipulate the agent into unsafe behavior.`},{label:`Enforce Safety Policies`,icon:`🛡️`,detail:`Apply predefined safety rules and content policies before generating a response.`},{label:`Block Unsafe Requests`,icon:`⛔`,detail:`Reject or safely refuse requests that violate security, ethical, or organizational policies.`},{label:`Provide Safe Alternatives`,icon:`✅`,detail:`Offer helpful responses or guidance that remain within approved safety boundaries.`},{label:`Monitor & Improve`,icon:`📈`,detail:`Continuously monitor jailbreak attempts, update detection mechanisms, and strengthen guardrails based on emerging attack patterns.`}],code:``},{id:`tool-security`,category:`Safety`,title:`Tool Security`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI Agents securely access and use external tools, APIs, databases, and enterprise systems while protecting sensitive data, enforcing permissions, and preventing unauthorized actions.`,tags:[`tool security`,`api security`,`authorization`,`permissions`,`validation`,`enterprise security`,`safe tool usage`],concept:``,steps:[{label:`Identify Required Tool`,icon:`🛠️`,detail:`Determine which external tool or service is required to complete the requested task.`},{label:`Verify Permissions`,icon:`🔐`,detail:`Ensure the agent and user have the necessary authorization before accessing the selected tool.`},{label:`Validate Inputs`,icon:`✔️`,detail:`Check all input parameters for correctness, completeness, and security before invoking the tool.`},{label:`Execute Securely`,icon:`⚡`,detail:`Invoke the tool using secure communication, authenticated requests, and protected credentials.`},{label:`Verify Results`,icon:`📊`,detail:`Validate tool responses for accuracy, integrity, and compliance before using the results.`},{label:`Audit & Monitor`,icon:`📈`,detail:`Record tool usage, monitor security events, and detect unauthorized or abnormal activities.`}],code:``},{id:`authorization`,category:`Safety`,title:`Authorization`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how Authorization ensures AI Agents and users can access only the resources, tools, and operations they are permitted to use based on roles, permissions, and organizational policies.`,tags:[`authorization`,`access control`,`permissions`,`roles`,`security`,`rbac`,`least privilege`],concept:``,steps:[{label:`Identify User`,icon:`👤`,detail:`Determine the identity of the authenticated user or AI Agent requesting access.`},{label:`Check Roles`,icon:`🪪`,detail:`Identify the assigned roles and responsibilities associated with the user or agent.`},{label:`Verify Permissions`,icon:`🔐`,detail:`Evaluate whether the requested resource, tool, or action is permitted based on access policies.`},{label:`Grant or Deny Access`,icon:`⚖️`,detail:`Allow authorized operations while blocking requests that exceed assigned permissions.`},{label:`Execute Securely`,icon:`⚡`,detail:`Perform the approved action while maintaining security controls and least-privilege access.`},{label:`Log Access Events`,icon:`📊`,detail:`Record authorization decisions for auditing, compliance, monitoring, and security analysis.`}],code:``},{id:`authentication`,category:`Safety`,title:`Authentication`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how Authentication verifies the identity of users, AI Agents, and systems before granting access to applications, tools, APIs, and enterprise resources.`,tags:[`authentication`,`identity`,`login`,`mfa`,`security`,`credentials`,`access`],concept:``,steps:[{label:`Receive Credentials`,icon:`📥`,detail:`Collect authentication information such as usernames, passwords, API keys, tokens, or certificates.`},{label:`Verify Identity`,icon:`🪪`,detail:`Validate the provided credentials against a trusted identity provider or authentication service.`},{label:`Apply Multi-Factor Authentication`,icon:`📱`,detail:`Strengthen security by requiring additional verification methods such as OTPs, authenticator apps, or biometric authentication.`},{label:`Generate Secure Session`,icon:`🔑`,detail:`Create a secure session or access token for authenticated users and AI Agents.`},{label:`Grant Access`,icon:`✅`,detail:`Allow access to protected applications, APIs, or enterprise resources after successful authentication.`},{label:`Monitor Authentication`,icon:`📊`,detail:`Track login attempts, detect suspicious activities, and maintain audit logs for security and compliance.`}],code:``},{id:`data-privacy`,category:`Safety`,title:`Data Privacy`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI Agents protect sensitive information by collecting, processing, storing, and sharing data securely while complying with privacy regulations and organizational policies.`,tags:[`data privacy`,`privacy`,`pii`,`data protection`,`encryption`,`compliance`,`security`],concept:``,steps:[{label:`Identify Sensitive Data`,icon:`🔍`,detail:`Recognize personally identifiable information (PII), confidential business data, financial records, and other sensitive information.`},{label:`Minimize Data Collection`,icon:`📉`,detail:`Collect only the information necessary to complete the requested task and avoid unnecessary data retention.`},{label:`Protect Data`,icon:`🔐`,detail:`Secure sensitive information using encryption, masking, tokenization, and controlled access mechanisms.`},{label:`Control Data Access`,icon:`🛡️`,detail:`Restrict access to authorized users, AI Agents, and applications based on organizational policies.`},{label:`Comply with Regulations`,icon:`📜`,detail:`Follow applicable privacy regulations, industry standards, and internal governance policies when processing data.`},{label:`Monitor & Audit`,icon:`📊`,detail:`Track data access, maintain audit logs, detect privacy violations, and continuously improve data protection practices.`}],code:``},{id:`guardrails`,category:`Safety`,title:`Guardrails`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how Guardrails help AI Agents operate safely by enforcing predefined rules, validating inputs and outputs, restricting unsafe actions, and ensuring compliance with organizational policies.`,tags:[`guardrails`,`ai safety`,`policy enforcement`,`validation`,`security`,`compliance`,`responsible ai`],concept:``,steps:[{label:`Define Safety Rules`,icon:`📋`,detail:`Establish policies, constraints, and acceptable behaviors that the AI Agent must follow during execution.`},{label:`Validate Inputs`,icon:`🔍`,detail:`Inspect user requests and external inputs to detect malicious, unsafe, or policy-violating content before processing.`},{label:`Control Agent Actions`,icon:`🛡️`,detail:`Restrict access to sensitive tools, APIs, and operations while preventing unauthorized or risky actions.`},{label:`Verify Outputs`,icon:`✔️`,detail:`Review generated responses to ensure they are accurate, safe, compliant, and free from sensitive information leakage.`},{label:`Handle Violations`,icon:`⛔`,detail:`Block, modify, or safely refuse requests that violate security policies, ethical guidelines, or business rules.`},{label:`Monitor & Improve`,icon:`📊`,detail:`Continuously evaluate guardrail effectiveness, analyze policy violations, and update safeguards to address emerging risks.`}],code:``},{id:`policy-enforcement`,category:`Safety`,title:`Policy Enforcement`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI Agents enforce organizational policies, regulatory requirements, and security rules to ensure every action complies with defined governance standards.`,tags:[`policy enforcement`,`governance`,`compliance`,`security`,`business rules`,`guardrails`,`risk management`],concept:``,steps:[{label:`Define Policies`,icon:`📜`,detail:`Establish organizational rules, compliance requirements, security standards, and business constraints that the AI Agent must follow.`},{label:`Validate Requests`,icon:`🔍`,detail:`Evaluate user inputs, tool requests, and workflow actions against the defined policies before execution.`},{label:`Apply Policy Rules`,icon:`🛡️`,detail:`Enforce access controls, business logic, compliance requirements, and operational constraints throughout the workflow.`},{label:`Handle Violations`,icon:`⛔`,detail:`Reject, modify, or escalate requests that violate organizational policies, legal regulations, or security requirements.`},{label:`Record Decisions`,icon:`📝`,detail:`Maintain audit logs of policy evaluations, enforcement decisions, and exceptions for governance and compliance purposes.`},{label:`Review & Update Policies`,icon:`📈`,detail:`Continuously improve policy definitions based on new regulations, business requirements, security threats, and operational feedback.`}],code:``},{id:`human-approval`,category:`Safety`,title:`Human Approval`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how Human Approval enables AI Agents to involve people in critical decisions, ensuring high-risk actions are reviewed, validated, and approved before execution.`,tags:[`human approval`,`human in the loop`,`approval workflow`,`validation`,`governance`,`risk management`,`oversight`],concept:``,steps:[{label:`Identify Critical Actions`,icon:`⚠️`,detail:`Detect tasks that involve sensitive data, financial transactions, regulatory compliance, or high business impact.`},{label:`Pause Execution`,icon:`⏸️`,detail:`Temporarily stop the workflow before performing high-risk operations that require manual review.`},{label:`Request Approval`,icon:`📩`,detail:`Notify the appropriate reviewer with all relevant context, recommendations, and supporting information.`},{label:`Review Decision`,icon:`👤`,detail:`Allow the human reviewer to verify the request, assess potential risks, and approve or reject the proposed action.`},{label:`Execute or Cancel`,icon:`✅`,detail:`Continue the workflow if approved or safely terminate, modify, or redirect the process if rejected.`},{label:`Record Approval`,icon:`📝`,detail:`Store approval decisions, reviewer details, timestamps, and audit logs for compliance and future reference.`}],code:``},{id:`risk-mitigation`,category:`Safety`,title:`Risk Mitigation`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how AI Agents identify, assess, prioritize, and reduce potential risks by implementing preventive controls, monitoring systems, and continuous improvement practices.`,tags:[`risk mitigation`,`risk assessment`,`ai safety`,`security`,`monitoring`,`governance`,`compliance`],concept:``,steps:[{label:`Identify Risks`,icon:`🔍`,detail:`Recognize potential risks such as hallucinations, security threats, privacy violations, tool failures, and compliance issues.`},{label:`Assess Impact`,icon:`📊`,detail:`Evaluate the likelihood and potential business impact of each identified risk to determine its priority.`},{label:`Implement Controls`,icon:`🛡️`,detail:`Apply preventive measures such as guardrails, access controls, validation, monitoring, and fallback mechanisms to reduce risk.`},{label:`Monitor Continuously`,icon:`📈`,detail:`Track agent behavior, tool usage, security events, and system performance to detect emerging risks in real time.`},{label:`Respond to Incidents`,icon:`🚨`,detail:`Take corrective actions when risks materialize by containing issues, recovering services, and minimizing business impact.`},{label:`Improve Risk Strategy`,icon:`🔄`,detail:`Review incidents, analyze lessons learned, and continuously strengthen risk management processes and safety controls.`}],code:``}],Fm=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],Im={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},Lm={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function Rm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function zm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function Bm({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function Vm({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:Lm[e.difficulty],color:Im[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function Hm({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:Lm[e.difficulty],color:Im[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(Rm,{steps:e.steps}),t===`code`&&(0,G.jsx)(Bm,{code:e.code}),t===`concept`&&(0,G.jsx)(zm,{content:e.concept})]})}function Um({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:Fm.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(Vm,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function Wm(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:Pm.length},{label:`Patterns`,value:Fm.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function Gm(){let[e,t]=(0,v.useState)(Pm[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(Wm,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(Um,{recipes:Pm,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(Hm,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var Km=[{id:`logging`,category:`Observability`,title:`Logging`,difficulty:`Beginner`,time:`~10 min`,description:`Learn how logging captures AI Agent events, tool executions, errors, and workflow activities to simplify debugging, auditing, and system analysis.`,tags:[`logging`,`logs`,`debugging`,`monitoring`,`events`,`audit`,`observability`],concept:``,steps:[{label:`Capture Events`,icon:`📝`,detail:`Record important events such as user requests, agent decisions, tool calls, and workflow execution.`},{label:`Store Logs`,icon:`💾`,detail:`Save logs in a centralized location for future analysis and auditing.`},{label:`Track Errors`,icon:`⚠️`,detail:`Log failures, exceptions, retries, and unexpected behaviors during execution.`},{label:`Analyze Activity`,icon:`🔍`,detail:`Review logs to understand execution flow and identify operational issues.`},{label:`Support Debugging`,icon:`🛠️`,detail:`Use logs to diagnose problems and improve workflow reliability.`},{label:`Maintain Audit Trail`,icon:`📊`,detail:`Keep historical records for compliance, governance, and production support.`}],code:``},{id:`metrics`,category:`Observability`,title:`Metrics`,difficulty:`Intermediate`,time:`~10 min`,description:`Learn how metrics quantify AI Agent performance by measuring response time, success rate, resource utilization, costs, and overall system health.`,tags:[`metrics`,`performance`,`monitoring`,`kpis`,`analytics`,`observability`,`measurement`],concept:``,steps:[{label:`Define Metrics`,icon:`📋`,detail:`Identify key performance indicators such as latency, throughput, success rate, token usage, and cost.`},{label:`Collect Data`,icon:`📥`,detail:`Gather metrics from agent executions, tool calls, APIs, and infrastructure components.`},{label:`Analyze Trends`,icon:`📊`,detail:`Monitor changes in performance over time to identify improvements or degradation.`},{label:`Detect Anomalies`,icon:`🚨`,detail:`Identify unusual spikes, failures, or unexpected behavior using metric thresholds.`},{label:`Generate Dashboards`,icon:`📈`,detail:`Visualize important metrics through charts and dashboards for operational visibility.`},{label:`Optimize Performance`,icon:`⚙️`,detail:`Use metric insights to improve reliability, efficiency, and user experience.`}],code:``},{id:`langfuse`,category:`Observability`,title:`Langfuse`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how Langfuse provides observability for LLM applications by tracking prompts, traces, token usage, costs, evaluations, and user feedback to improve AI Agent performance.`,tags:[`langfuse`,`observability`,`tracing`,`prompt management`,`evaluation`,`cost tracking`,`llmops`],concept:``,steps:[{label:`Capture Traces`,icon:`🔍`,detail:`Track every request, reasoning step, tool invocation, and response generated by the AI Agent.`},{label:`Monitor Prompts`,icon:`💬`,detail:`Record prompts, model inputs, and outputs to analyze prompt quality and model behavior.`},{label:`Measure Usage`,icon:`📊`,detail:`Collect metrics such as token consumption, latency, request volume, and API costs.`},{label:`Evaluate Responses`,icon:`⭐`,detail:`Assess response quality using automated evaluations, human feedback, and custom scoring methods.`},{label:`Debug Workflows`,icon:`🛠️`,detail:`Investigate failures, identify bottlenecks, and analyze execution traces for troubleshooting.`},{label:`Optimize AI Systems`,icon:`📈`,detail:`Use observability insights to improve prompts, workflows, model selection, and production performance.`}],code:``},{id:`langsmith`,category:`Observability`,title:`LangSmith`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how LangSmith helps build, debug, evaluate, and monitor AI Agents by providing execution tracing, prompt inspection, testing, evaluation, and production observability.`,tags:[`langsmith`,`langchain`,`observability`,`tracing`,`evaluation`,`debugging`,`llmops`],concept:``,steps:[{label:`Capture Executions`,icon:`📥`,detail:`Record every workflow execution including prompts, model responses, tool calls, chains, and agent interactions.`},{label:`Visualize Traces`,icon:`🔗`,detail:`View end-to-end execution traces to understand how the AI Agent processes requests and makes decisions.`},{label:`Evaluate Responses`,icon:`📊`,detail:`Measure response quality using automated evaluations, custom metrics, and human feedback.`},{label:`Debug Workflows`,icon:`🐞`,detail:`Identify prompt issues, reasoning failures, tool errors, and workflow bottlenecks through detailed execution analysis.`},{label:`Monitor Production`,icon:`📈`,detail:`Track latency, failures, token usage, user interactions, and overall application performance in production.`},{label:`Optimize Applications`,icon:`⚙️`,detail:`Improve prompts, workflows, retrieval pipelines, and agent behavior using insights collected from LangSmith.`}],code:``},{id:`opentelemetry`,category:`Observability`,title:`OpenTelemetry`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how OpenTelemetry provides a standard framework for collecting logs, metrics, and traces from AI Agents to monitor, debug, and optimize distributed AI applications.`,tags:[`opentelemetry`,`otel`,`logging`,`metrics`,`tracing`,`monitoring`,`observability`],concept:``,steps:[{label:`Instrument Applications`,icon:`🔧`,detail:`Integrate OpenTelemetry SDKs into AI Agent applications to automatically collect telemetry data.`},{label:`Collect Telemetry`,icon:`📊`,detail:`Capture logs, metrics, and traces from agent workflows, APIs, databases, and external services.`},{label:`Export Data`,icon:`📤`,detail:`Send telemetry data to observability platforms such as Jaeger, Grafana, Prometheus, Azure Monitor, or Datadog.`},{label:`Analyze Performance`,icon:`🔍`,detail:`Examine execution traces, latency, resource utilization, and system health to identify operational issues.`},{label:`Detect Problems`,icon:`🚨`,detail:`Identify bottlenecks, failures, service interruptions, and abnormal system behavior using telemetry insights.`},{label:`Optimize Operations`,icon:`📈`,detail:`Continuously improve application reliability, scalability, and performance using observability data.`}],code:``},{id:`cost-tracking`,category:`Observability`,title:`Cost Tracking`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how Cost Tracking helps monitor AI Agent expenses by measuring token usage, model inference costs, API consumption, infrastructure utilization, and overall operational spending.`,tags:[`cost tracking`,`token usage`,`llm cost`,`api cost`,`monitoring`,`observability`,`optimization`],concept:``,steps:[{label:`Track Resource Usage`,icon:`📊`,detail:`Monitor token consumption, model invocations, API requests, tool executions, compute resources, and storage utilization.`},{label:`Measure Costs`,icon:`💰`,detail:`Calculate operational expenses associated with LLM inference, external services, cloud infrastructure, and supporting tools.`},{label:`Identify Cost Drivers`,icon:`🔍`,detail:`Determine which prompts, models, workflows, or tools contribute the most to overall spending.`},{label:`Analyze Trends`,icon:`📈`,detail:`Monitor cost patterns over time to identify unexpected spikes, budget overruns, or optimization opportunities.`},{label:`Optimize Spending`,icon:`⚙️`,detail:`Reduce costs through prompt optimization, caching, efficient model selection, and workflow improvements.`},{label:`Generate Reports`,icon:`📝`,detail:`Create dashboards and reports that provide visibility into operational costs for stakeholders and engineering teams.`}],code:``},{id:`debugging`,category:`Observability`,title:`Debugging`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how Debugging helps identify, investigate, and resolve issues in AI Agent workflows by analyzing logs, traces, prompts, tool calls, and execution results.`,tags:[`debugging`,`troubleshooting`,`logs`,`traces`,`errors`,`observability`,`diagnostics`],concept:``,steps:[{label:`Detect the Issue`,icon:`🚨`,detail:`Identify incorrect responses, workflow failures, tool errors, performance issues, or unexpected agent behavior.`},{label:`Collect Diagnostics`,icon:`📋`,detail:`Gather logs, traces, prompts, metrics, and execution details needed for troubleshooting.`},{label:`Analyze Root Cause`,icon:`🔍`,detail:`Determine whether the issue originates from prompts, models, retrieval, tools, APIs, or infrastructure.`},{label:`Apply Fixes`,icon:`🛠️`,detail:`Correct configurations, improve prompts, update workflows, or resolve integration problems.`},{label:`Validate the Solution`,icon:`✔️`,detail:`Re-test the workflow to confirm that the issue has been resolved and no new problems have been introduced.`},{label:`Document Learnings`,icon:`📚`,detail:`Record the root cause, resolution, and best practices to simplify future debugging efforts.`}],code:``},{id:`production-monitoring`,category:`Observability`,title:`Production Monitoring`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how Production Monitoring continuously observes AI Agent health, performance, reliability, security, and user experience in live production environments.`,tags:[`production monitoring`,`monitoring`,`operations`,`alerts`,`observability`,`performance`,`production`],concept:``,steps:[{label:`Monitor System Health`,icon:`❤️`,detail:`Continuously monitor service availability, agent status, infrastructure health, and workflow execution.`},{label:`Track Performance`,icon:`📊`,detail:`Measure latency, throughput, success rate, token usage, cost, and resource utilization in real time.`},{label:`Detect Incidents`,icon:`🚨`,detail:`Identify failures, service degradation, security events, and abnormal agent behavior as they occur.`},{label:`Generate Alerts`,icon:`🔔`,detail:`Notify operations teams when predefined thresholds, SLAs, or business rules are violated.`},{label:`Investigate Problems`,icon:`🔍`,detail:`Use logs, traces, metrics, and dashboards to diagnose issues and determine their root causes.`},{label:`Continuously Improve`,icon:`📈`,detail:`Use production insights to optimize reliability, scalability, security, cost, and overall AI Agent performance.`}],code:``}],qm=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],Jm={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},Ym={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function Xm({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function Zm({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function Qm({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function $m({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:Ym[e.difficulty],color:Jm[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function eh({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:Ym[e.difficulty],color:Jm[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(Xm,{steps:e.steps}),t===`code`&&(0,G.jsx)(Qm,{code:e.code}),t===`concept`&&(0,G.jsx)(Zm,{content:e.concept})]})}function th({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:qm.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)($m,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function nh(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:Km.length},{label:`Patterns`,value:qm.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function rh(){let[e,t]=(0,v.useState)(Km[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(nh,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(th,{recipes:Km,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(eh,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var ih=[{id:`react-pattern`,category:`Agent Design Patterns`,title:`ReAct`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how the ReAct (Reasoning and Acting) pattern enables AI Agents to combine reasoning with tool usage by iteratively thinking, taking actions, observing results, and improving decisions.`,tags:[`react`,`reasoning`,`action`,`tool usage`,`agent workflow`,`llm`,`design pattern`],concept:``,steps:[{label:`Understand User Goal`,icon:`🎯`,detail:`Analyze the user request, identify the objective, and determine the information required to solve the task.`},{label:`Reason About Problem`,icon:`🧠`,detail:`Evaluate the problem, decide possible approaches, and determine whether external tools or knowledge are required.`},{label:`Select Action`,icon:`⚡`,detail:`Choose the appropriate action such as calling an API, searching information, querying databases, or generating content.`},{label:`Execute Tool`,icon:`🛠️`,detail:`Interact with external tools and systems to gather information or perform required operations.`},{label:`Observe Results`,icon:`👀`,detail:`Analyze tool outputs and update the understanding of the current task based on new information.`},{label:`Generate Final Response`,icon:`✅`,detail:`Combine reasoning and observations to provide an accurate and context-aware final response.`}],code:``},{id:`planner-pattern`,category:`Agent Design Patterns`,title:`Planner Pattern`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how the Planner Pattern enables AI Agents to break complex goals into smaller tasks, create execution strategies, and coordinate actions to achieve desired outcomes.`,tags:[`planner pattern`,`planning`,`task decomposition`,`reasoning`,`workflow orchestration`,`agent design`,`execution`],concept:``,steps:[{label:`Understand Goal`,icon:`🎯`,detail:`Analyze the user objective and understand the desired outcome before starting execution.`},{label:`Decompose Tasks`,icon:`🧩`,detail:`Break complex objectives into smaller manageable tasks that can be executed independently or sequentially.`},{label:`Create Execution Plan`,icon:`📋`,detail:`Generate a structured plan defining task order, dependencies, required tools, and expected outcomes.`},{label:`Execute Tasks`,icon:`⚡`,detail:`Execute planned tasks using available tools, agents, APIs, databases, or external systems.`},{label:`Monitor Progress`,icon:`📊`,detail:`Track task completion, evaluate intermediate results, and adjust the plan when required.`},{label:`Complete Objective`,icon:`✅`,detail:`Combine completed tasks and generate the final result that satisfies the original goal.`}],code:``},{id:`reflection-pattern`,category:`Agent Design Patterns`,title:`Reflection Pattern`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how the Reflection Pattern enables AI Agents to improve their own outputs by generating responses, critically reviewing them, identifying issues, and refining results through iterative self-improvement.`,tags:[`reflection pattern`,`self critique`,`self improvement`,`evaluation`,`reasoning`,`agent design`,`iterative refinement`],concept:``,steps:[{label:`Generate Initial Output`,icon:`🤖`,detail:`The AI Agent creates an initial response, solution, or action based on the given task and available context.`},{label:`Review Output`,icon:`🔍`,detail:`The agent evaluates its own output for correctness, completeness, quality, and alignment with the objective.`},{label:`Identify Issues`,icon:`⚠️`,detail:`Detect errors, missing information, incorrect reasoning, or areas where the response can be improved.`},{label:`Refine Response`,icon:`✏️`,detail:`Update the original output by applying improvements based on the identified issues and feedback.`},{label:`Validate Result`,icon:`✅`,detail:`Check whether the refined output meets the required quality standards and task objectives.`},{label:`Deliver Final Output`,icon:`📤`,detail:`Provide the improved response after completing the reflection and refinement process.`}],code:``},{id:`router-pattern`,category:`Agent Design Patterns`,title:`Router Pattern`,difficulty:`Intermediate`,time:`~12 min`,description:`Learn how the Router Pattern enables AI Agents to classify incoming requests and route them to the most appropriate model, tool, workflow, or specialized agent for efficient execution.`,tags:[`router pattern`,`routing`,`classification`,`workflow orchestration`,`agent selection`,`task delegation`,`design pattern`],concept:``,steps:[{label:`Receive Request`,icon:`📥`,detail:`Capture the user request and analyze the intent, context, and required outcome.`},{label:`Classify Intent`,icon:`🧠`,detail:`Determine the category, complexity, and type of task that needs to be handled.`},{label:`Select Route`,icon:`🛣️`,detail:`Choose the appropriate agent, model, tool, workflow, or processing path based on the request.`},{label:`Execute Workflow`,icon:`⚡`,detail:`Send the request to the selected component for processing and task execution.`},{label:`Validate Response`,icon:`🔍`,detail:`Review the generated result to ensure it satisfies the original user requirement.`},{label:`Return Output`,icon:`✅`,detail:`Deliver the final response generated by the selected route or specialized agent.`}],code:``},{id:`evaluator-pattern`,category:`Agent Design Patterns`,title:`Evaluator Pattern`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how the Evaluator Pattern enables AI Agents to assess generated outputs, measure quality against predefined criteria, and provide feedback for improving accuracy and reliability.`,tags:[`evaluator pattern`,`evaluation`,`quality assessment`,`feedback loop`,`validation`,`agent design`,`optimization`],concept:``,steps:[{label:`Generate Output`,icon:`🤖`,detail:`The AI Agent produces an initial response, solution, or action based on the given task.`},{label:`Define Evaluation Criteria`,icon:`📋`,detail:`Establish quality standards such as accuracy, relevance, completeness, safety, and task requirements.`},{label:`Evaluate Result`,icon:`🔍`,detail:`Analyze the generated output against the defined criteria to determine its quality and correctness.`},{label:`Generate Feedback`,icon:`💬`,detail:`Provide improvement suggestions, identify errors, and highlight areas requiring refinement.`},{label:`Apply Improvements`,icon:`⚙️`,detail:`Use evaluation feedback to modify prompts, reasoning steps, workflows, or generated responses.`},{label:`Approve Final Output`,icon:`✅`,detail:`Validate that the improved output meets quality expectations before delivering the final response.`}],code:``},{id:`generator-reviewer`,category:`Agent Design Patterns`,title:`Generator-Reviewer`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how the Generator-Reviewer Pattern improves AI Agent outputs by separating content creation from quality evaluation, where one component generates results and another reviews and refines them.`,tags:[`generator reviewer`,`review loop`,`quality improvement`,`evaluation`,`feedback`,`agent design`,`iterative refinement`],concept:``,steps:[{label:`Generate Initial Output`,icon:`✍️`,detail:`The Generator Agent creates an initial response, solution, document, or action based on the user request.`},{label:`Review Generated Output`,icon:`🔍`,detail:`The Reviewer Agent evaluates the output for correctness, quality, completeness, and alignment with requirements.`},{label:`Identify Improvements`,icon:`⚠️`,detail:`The Reviewer identifies errors, missing information, inconsistencies, or areas that require enhancement.`},{label:`Provide Feedback`,icon:`💬`,detail:`The Reviewer generates actionable feedback that guides the Generator Agent toward a better result.`},{label:`Regenerate Output`,icon:`🔄`,detail:`The Generator Agent updates the response using reviewer feedback and produces an improved version.`},{label:`Approve Final Result`,icon:`✅`,detail:`The final output is validated against quality criteria before being delivered to the user.`}],code:``},{id:`rag-agent`,category:`Agent Design Patterns`,title:`RAG Agent`,difficulty:`Advanced`,time:`~15 min`,description:`Learn how RAG Agents combine retrieval systems with AI Agents to access external knowledge, improve factual accuracy, and generate context-aware responses using enterprise data sources.`,tags:[`rag agent`,`retrieval augmented generation`,`vector database`,`knowledge retrieval`,`grounding`,`agent design`,`llm`],concept:``,steps:[{label:`Receive User Query`,icon:`📥`,detail:`The agent receives a user request and analyzes the intent, context, and required information.`},{label:`Retrieve Knowledge`,icon:`🔎`,detail:`The agent searches external knowledge sources such as vector databases, documents, APIs, or enterprise repositories.`},{label:`Process Context`,icon:`🧠`,detail:`The retrieved information is analyzed and combined with the user query to create relevant context.`},{label:`Generate Response`,icon:`🤖`,detail:`The LLM generates a response using retrieved knowledge to improve accuracy and reduce hallucinations.`},{label:`Validate Output`,icon:`✅`,detail:`The agent checks response quality, relevance, and alignment with retrieved information before delivery.`},{label:`Learn and Improve`,icon:`📈`,detail:`Feedback, usage patterns, and evaluation results are used to improve retrieval strategies and agent performance.`}],code:``},{id:`multi-agent-pattern`,category:`Agent Design Patterns`,title:`Multi-Agent Pattern`,difficulty:`Advanced`,time:`~20 min`,description:`Learn how the Multi-Agent Pattern enables multiple specialized AI Agents to collaborate, communicate, and coordinate tasks to solve complex problems more effectively.`,tags:[`multi-agent`,`agent collaboration`,`agent communication`,`orchestration`,`specialized agents`,`workflow`,`agent design`],concept:``,steps:[{label:`Define Agent Roles`,icon:`👥`,detail:`Identify specialized agents based on capabilities, responsibilities, and the tasks they need to perform.`},{label:`Assign Tasks`,icon:`📋`,detail:`Break down complex objectives and distribute tasks to the most suitable agents.`},{label:`Agent Communication`,icon:`🔗`,detail:`Enable agents to exchange information, share results, and coordinate their activities.`},{label:`Execute Collaboration`,icon:`⚡`,detail:`Allow multiple agents to work sequentially or in parallel to complete assigned tasks.`},{label:`Aggregate Results`,icon:`📊`,detail:`Combine outputs from different agents and resolve conflicts to create a unified solution.`},{label:`Deliver Final Outcome`,icon:`✅`,detail:`Provide the final response after successful coordination and validation of all agent outputs.`}],code:``},{id:`human-in-the-loop`,category:`Agent Design Patterns`,title:`Human-in-the-Loop`,difficulty:`Intermediate`,time:`~15 min`,description:`Learn how the Human-in-the-Loop Pattern enables AI Agents to involve human experts for approval, validation, decision-making, and handling complex or high-risk scenarios.`,tags:[`human in the loop`,`human approval`,`oversight`,`validation`,`governance`,`agent safety`,`workflow`],concept:``,steps:[{label:`Identify Human Intervention`,icon:`👤`,detail:`Determine situations where human review is required due to complexity, risk, compliance, or business requirements.`},{label:`Pause Agent Execution`,icon:`⏸️`,detail:`Temporarily stop the workflow before critical decisions or high-impact actions are performed.`},{label:`Request Human Review`,icon:`📩`,detail:`Provide relevant context, recommendations, and supporting information to the human reviewer.`},{label:`Receive Feedback`,icon:`💬`,detail:`Collect human decisions, corrections, approvals, or additional instructions.`},{label:`Continue Workflow`,icon:`▶️`,detail:`Resume execution based on human feedback, approval, or modified instructions.`},{label:`Improve Agent Behavior`,icon:`📈`,detail:`Use human feedback to improve prompts, workflows, policies, and future agent decisions.`}],code:``},{id:`autonomous-agent-pattern`,category:`Agent Design Patterns`,title:`Autonomous Agent Pattern`,difficulty:`Advanced`,time:`~20 min`,description:`Learn how the Autonomous Agent Pattern enables AI Agents to independently plan, reason, execute tasks, use tools, adapt to feedback, and achieve goals with minimal human intervention.`,tags:[`autonomous agent`,`self-directed execution`,`planning`,`reasoning`,`tool usage`,`adaptation`,`agent design`],concept:``,steps:[{label:`Define Goal`,icon:`🎯`,detail:`Provide the agent with a high-level objective that defines the desired outcome without specifying every individual step.`},{label:`Analyze Environment`,icon:`🌐`,detail:`The agent gathers information from available sources, tools, systems, and context to understand the current situation.`},{label:`Create Plan`,icon:`📋`,detail:`The agent decomposes the goal into smaller tasks and creates an execution strategy to achieve the objective.`},{label:`Execute Actions`,icon:`⚡`,detail:`The agent independently performs actions using tools, APIs, databases, and external systems.`},{label:`Evaluate Results`,icon:`🔍`,detail:`The agent reviews outcomes, checks progress toward the goal, and determines whether additional actions are required.`},{label:`Adapt and Improve`,icon:`📈`,detail:`The agent learns from feedback, updates its approach, and improves future decision-making and execution.`}],code:``}],ah=[`All`,`Core Concepts`,`Planning`,`Tools & Actions`,`Memory`,`Multi-Agent`,`Advanced`],oh={Beginner:`#0F6E56`,Intermediate:`#185FA5`,Advanced:`#993C1D`},sh={Beginner:`#E1F5EE`,Intermediate:`#E6F1FB`,Advanced:`#FAECE7`};function ch({steps:e}){let[t,n]=(0,v.useState)(null);return(0,G.jsxs)(`div`,{style:{marginTop:16},children:[(0,G.jsx)(`div`,{style:{display:`flex`,flexWrap:`wrap`,gap:8,alignItems:`center`},children:e.map((r,i)=>(0,G.jsxs)(`div`,{style:{display:`flex`,alignItems:`center`,gap:6},children:[(0,G.jsxs)(`button`,{onClick:()=>n(t===i?null:i),style:{display:`flex`,alignItems:`center`,gap:6,padding:`6px 12px`,borderRadius:20,border:t===i?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:t===i?`#E6F1FB`:`var(--color-background-primary)`,color:t===i?`#185FA5`:`var(--color-text-primary)`,cursor:`pointer`,fontSize:13,fontWeight:t===i?500:400,transition:`all 0.15s`},children:[(0,G.jsx)(`span`,{children:r.icon}),(0,G.jsx)(`span`,{children:r.label})]}),i<e.length-1&&(0,G.jsx)(`span`,{style:{color:`var(--color-text-tertiary)`,fontSize:12},children:`→`})]},i))}),t!==null&&(0,G.jsxs)(`div`,{style:{marginTop:10,padding:`10px 14px`,borderRadius:8,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.6},children:[(0,G.jsxs)(`span`,{style:{fontWeight:500,color:`var(--color-text-primary)`},children:[e[t].label,`: `]}),e[t].detail]})]})}function lh({content:e}){return(0,G.jsx)(`div`,{className:`prose max-w-none h-[75vh] overflow-y-auto p-6`,children:(0,G.jsx)(wl,{remarkPlugins:[xf],children:e})})}function uh({code:e}){let[t,n]=(0,v.useState)(!1);return(0,G.jsxs)(`div`,{style:{position:`relative`,marginTop:16},children:[(0,G.jsx)(`button`,{onClick:()=>{navigator.clipboard.writeText(e),n(!0),setTimeout(()=>n(!1),1800)},style:{position:`absolute`,top:8,right:8,padding:`4px 10px`,borderRadius:6,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,cursor:`pointer`,fontSize:12,color:`var(--color-text-secondary)`,zIndex:1},children:t?`✓ Copied`:`Copy`}),(0,G.jsx)(`pre`,{style:{margin:0,padding:`14px 16px`,borderRadius:10,overflowX:`auto`,background:`var(--color-background-secondary)`,border:`0.5px solid var(--color-border-tertiary)`,fontSize:12,lineHeight:1.65,fontFamily:`var(--font-mono)`,color:`var(--color-text-primary)`,whiteSpace:`pre`},children:(0,G.jsx)(`code`,{children:e})})]})}function dh({recipe:e,onSelect:t,selected:n}){return(0,G.jsxs)(`div`,{onClick:()=>t(e),style:{padding:`16px 18px`,borderRadius:12,cursor:`pointer`,border:n?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:n?`#061320`:`var(--color-background-primary)`,transition:`all 0.15s`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:6},children:[(0,G.jsx)(`span`,{style:{fontSize:13,color:`var(--color-text-secondary)`,fontWeight:400},children:e.category}),(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,fontWeight:500,background:sh[e.difficulty],color:oh[e.difficulty]},children:e.difficulty})]}),(0,G.jsx)(`div`,{style:{fontWeight:500,fontSize:15,marginBottom:4,color:`var(--color-text-primary)`},children:e.title}),(0,G.jsx)(`div`,{style:{fontSize:13,color:`var(--color-text-secondary)`,lineHeight:1.5},children:e.description}),(0,G.jsx)(`div`,{style:{marginTop:10,display:`flex`,gap:6,flexWrap:`wrap`},children:e.tags.map(e=>(0,G.jsx)(`span`,{style:{fontSize:11,padding:`2px 8px`,borderRadius:20,background:`var(--color-background-tertiary)`,color:`var(--color-text-secondary)`,border:`0.5px solid var(--color-border-tertiary)`},children:e},e))})]})}function fh({recipe:e}){let[t,n]=(0,v.useState)(`steps`);return(0,G.jsxs)(`div`,{style:{padding:`24px`,borderRadius:14,background:`var(--color-background-primary)`,border:`0.5px solid var(--color-border-tertiary)`},children:[(0,G.jsxs)(`div`,{style:{display:`flex`,justifyContent:`space-between`,alignItems:`flex-start`,marginBottom:4},children:[(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:e.category}),(0,G.jsx)(`h2`,{style:{margin:`4px 0 6px`,fontSize:22,fontWeight:500},children:e.title})]}),(0,G.jsxs)(`div`,{style:{display:`flex`,gap:8,alignItems:`center`,paddingTop:4},children:[(0,G.jsx)(`span`,{style:{fontSize:12,padding:`3px 10px`,borderRadius:20,fontWeight:500,background:sh[e.difficulty],color:oh[e.difficulty]},children:e.difficulty}),(0,G.jsxs)(`span`,{style:{fontSize:12,color:`var(--color-text-tertiary)`},children:[`⏱ `,e.time]})]})]}),(0,G.jsx)(`p`,{style:{margin:`0 0 20px`,color:`var(--color-text-secondary)`,fontSize:14,lineHeight:1.6},children:e.description}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:4,marginBottom:18,borderBottom:`0.5px solid var(--color-border-tertiary)`,paddingBottom:0},children:[`steps`,`code`,`concept`].map(e=>(0,G.jsx)(`button`,{onClick:()=>n(e),style:{padding:`8px 16px`,border:`none`,background:`none`,cursor:`pointer`,fontSize:14,fontWeight:t===e?500:400,color:t===e?`var(--color-text-primary)`:`var(--color-text-secondary)`,borderBottom:t===e?`2px solid #185FA5`:`2px solid transparent`,marginBottom:-1,transition:`all 0.12s`},children:e===`steps`?`Pipeline Steps`:e===`code`?`Code`:`Concept`},e))}),t===`steps`&&(0,G.jsx)(ch,{steps:e.steps}),t===`code`&&(0,G.jsx)(uh,{code:e.code}),t===`concept`&&(0,G.jsx)(lh,{content:e.concept})]})}function ph({recipes:e,selected:t,onSelect:n,category:r,setCategory:i,search:a,setSearch:o}){let s=e.filter(e=>{let t=r===`All`||e.category===r,n=e.title.toLowerCase().includes(a.toLowerCase())||e.tags.some(e=>e.toLowerCase().includes(a.toLowerCase()));return t&&n});return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100%`,gap:0},children:[(0,G.jsx)(`div`,{style:{padding:`0 0 16px`},children:(0,G.jsx)(`input`,{type:`text`,placeholder:`Search recipes…`,value:a,onChange:e=>o(e.target.value),style:{width:`100%`,boxSizing:`border-box`,padding:`8px 12px`,borderRadius:8,border:`0.5px solid var(--color-border-secondary)`,background:`var(--color-background-secondary)`,color:`var(--color-text-primary)`,fontSize:13}})}),(0,G.jsx)(`div`,{style:{display:`flex`,gap:6,flexWrap:`wrap`,marginBottom:16},children:ah.map(e=>(0,G.jsx)(`button`,{onClick:()=>i(e),style:{padding:`4px 12px`,borderRadius:20,fontSize:12,cursor:`pointer`,border:r===e?`1.5px solid #185FA5`:`0.5px solid var(--color-border-tertiary)`,background:r===e?`#E6F1FB`:`var(--color-background-primary)`,color:r===e?`#185FA5`:`var(--color-text-secondary)`,fontWeight:r===e?500:400},children:e},e))}),(0,G.jsx)(`div`,{style:{display:`flex`,flexDirection:`column`,gap:10,overflowY:`auto`,flex:1},children:s.length===0?(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,fontSize:13,padding:`12px 0`},children:`No recipes found.`}):s.map(e=>(0,G.jsx)(dh,{recipe:e,onSelect:n,selected:t?.id===e.id},e.id))})]})}function mh(){return(0,G.jsxs)(`div`,{style:{padding:`20px 32px 16px`,borderBottom:`0.5px solid var(--color-border-tertiary)`,display:`flex`,alignItems:`center`,gap:16},children:[(0,G.jsx)(`div`,{style:{width:40,height:40,borderRadius:10,background:`#E6F1FB`,display:`flex`,alignItems:`center`,justifyContent:`center`,fontSize:20},children:`📚`}),(0,G.jsxs)(`div`,{children:[(0,G.jsx)(`h1`,{style:{margin:0,fontSize:20,fontWeight:500,letterSpacing:`-0.3px`},children:`AgenticAI Cookbook`}),(0,G.jsx)(`p`,{style:{margin:0,fontSize:13,color:`var(--color-text-secondary)`},children:`End-to-end Agentic AI   `})]}),(0,G.jsx)(`div`,{style:{marginLeft:`auto`,display:`flex`,gap:20},children:[{label:`Recipes`,value:ih.length},{label:`Patterns`,value:ah.length-1}].map(({label:e,value:t})=>(0,G.jsxs)(`div`,{style:{textAlign:`center`},children:[(0,G.jsx)(`div`,{style:{fontSize:18,fontWeight:500},children:t}),(0,G.jsx)(`div`,{style:{fontSize:11,color:`var(--color-text-tertiary)`},children:e})]},e))})]})}function hh(){let[e,t]=(0,v.useState)(ih[0]),[n,r]=(0,v.useState)(`All`),[i,a]=(0,v.useState)(``);return(0,G.jsxs)(`div`,{style:{display:`flex`,flexDirection:`column`,height:`100vh`,fontFamily:`var(--font-sans, system-ui, sans-serif)`,background:`var(--color-background-tertiary, radial-gradient(circle at top, #0f172a, #020617);)`,color:`var(--color-text-primary)`},children:[(0,G.jsx)(mh,{}),(0,G.jsxs)(`div`,{style:{display:`flex`,flex:1,overflow:`hidden`},children:[(0,G.jsx)(`div`,{style:{width:320,minWidth:260,padding:`20px 20px`,borderRight:`0.5px solid var(--color-border-tertiary)`,background:`var(--color-background-primary)`,overflowY:`auto`},children:(0,G.jsx)(ph,{recipes:ih,selected:e,onSelect:t,category:n,setCategory:r,search:i,setSearch:a})}),(0,G.jsx)(`div`,{style:{flex:1,overflowY:`auto`,padding:`24px 28px`},children:e?(0,G.jsx)(fh,{recipe:e}):(0,G.jsx)(`div`,{style:{color:`var(--color-text-tertiary)`,padding:40,textAlign:`center`},children:`Select a recipe to get started`})})]})]})}var gh=`/AgenticAI-knowledge-tutor/assets/logo-DfeCIHVX.png`;function _h(){return(0,G.jsxs)(`nav`,{className:`navbar`,children:[(0,G.jsxs)(`div`,{className:`logo`,children:[(0,G.jsx)(`img`,{src:gh,alt:`IC Logo`,className:`logo-icon`}),(0,G.jsxs)(Pn,{to:`/`,className:`logo-text`,children:[(0,G.jsx)(`span`,{className:`logo-white`,children:`IntelliCatalyst`}),(0,G.jsx)(`span`,{className:`logo-blue`,children:`AI Labs`})]})]}),(0,G.jsxs)(`div`,{className:`menu`,children:[(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/`,children:`Home`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/projects`,children:`Projects`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/books`,children:`Books`}),(0,G.jsx)(`a`,{href:`https://pooja-ai.github.io/IntelliCatalyst-Labs/#/about`,children:`About`})]})]})}function vh(){return(0,G.jsxs)(Mn,{children:[(0,G.jsx)(_h,{}),(0,G.jsxs)(Wt,{children:[(0,G.jsx)(Ht,{path:`/`,element:(0,G.jsx)(Nf,{})}),(0,G.jsx)(Ht,{path:`/AgenticAICookbook`,element:(0,G.jsx)(Gf,{})}),(0,G.jsx)(Ht,{path:`/AgenticAIPlanning`,element:(0,G.jsx)(rp,{})}),(0,G.jsx)(Ht,{path:`/AgenticAIMemory`,element:(0,G.jsx)(hp,{})}),(0,G.jsx)(Ht,{path:`/AgentToolUsage`,element:(0,G.jsx)(Dp,{})}),(0,G.jsx)(Ht,{path:`/AgentReasoingTechniques`,element:(0,G.jsx)(zp,{})}),(0,G.jsx)(Ht,{path:`/AgentCommunication`,element:(0,G.jsx)(Zp,{})}),(0,G.jsx)(Ht,{path:`/AgentContextEngineering`,element:(0,G.jsx)(lm,{})}),(0,G.jsx)(Ht,{path:`/MultiAgent`,element:(0,G.jsx)(Nm,{})}),(0,G.jsx)(Ht,{path:`/AgentSafety`,element:(0,G.jsx)(Gm,{})}),(0,G.jsx)(Ht,{path:`/AgentObservability`,element:(0,G.jsx)(rh,{})}),(0,G.jsx)(Ht,{path:`/AgentDesignPatterns`,element:(0,G.jsx)(hh,{})}),(0,G.jsx)(Ht,{path:`/ExecutionPatterns`,element:(0,G.jsx)(xm,{})})]})]})}(0,y.createRoot)(document.getElementById(`root`)).render((0,G.jsx)(v.StrictMode,{children:(0,G.jsx)(vh,{})}));
