@@ -31,6 +31,7 @@ function App() {
         <Route path="/AgentContextEngineering" element={<AgentContextEngineering/>} />   
         <Route path="/MultiAgent" element={<MultiAgent />} />
         <Route path="/AgentSafety" element={<AgentSafety/>} />
+        <Route path="/AgentEvaluation" element={<AgentEvaluation />} />
         <Route path="/AgentObservability" element={<AgentObservability/>} />
         <Route path="/AgentDesignPatterns" element={<AgentDesignPatterns/>} />
         <Route path="/ExecutionPatterns" element={<ExecutionPatterns/>} />
