@@ -8,7 +8,12 @@ import AgentToolUsage from "./pages/AgentToolUsage"
 import AgentReasoingTechniques from "./pages/AgentReasoningTechniques"
 import AgentCommunication from "./pages/AgentCommunication"
 import AgentContextEngineering from "./pages/AgentContextEngineering"
+import ExecutionPatterns from "./pages/ExecutionPatterns"
 import MultiAgent from "./pages/MultiAgent"
+import AgentSafety from "./pages/AgentSafety"
+import AgentEvaluation from "./pages/AgentEvaluation"
+import AgentObservability from "./pages/AgentObservability"
+import AgentDesignPatterns from "./pages/AgentDesignPatterns"
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -25,6 +30,13 @@ function App() {
         <Route path="/AgentCommunication" element={<AgentCommunication/>} />
         <Route path="/AgentContextEngineering" element={<AgentContextEngineering/>} />   
         <Route path="/MultiAgent" element={<MultiAgent />} />
+        <Route path="/AgentSafety" element={<AgentSafety/>} />
+        <Route path="/AgentObservability" element={<AgentObservability/>} />
+        <Route path="/AgentDesignPatterns" element={<AgentDesignPatterns/>} />
+        <Route path="/ExecutionPatterns" element={<ExecutionPatterns/>} />
+        
+
+
 
          
 
