@@ -867,7 +867,7 @@ export default function App() {
             overflowY: "auto",
         }}>
             <Sidebar
-            recipes={AgentObservability}
+            recipes={AgentFrameworks}
             selected={selected}
             onSelect={setSelected}
             category={category}
