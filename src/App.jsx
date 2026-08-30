@@ -14,6 +14,7 @@ import AgentSafety from "./pages/AgentSafety"
 import AgentEvaluation from "./pages/AgentEvaluation"
 import AgentObservability from "./pages/AgentObservability"
 import AgentDesignPatterns from "./pages/AgentDesignPatterns"
+import AgentFrameworks from "./pages/AgentFrameworks"
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/AgentObservability" element={<AgentObservability/>} />
         <Route path="/AgentDesignPatterns" element={<AgentDesignPatterns/>} />
         <Route path="/ExecutionPatterns" element={<ExecutionPatterns/>} />
+        <Route path="/AgentFrameworks" element={<AgentFrameworks/>} />
         
       </Routes>
     </HashRouter>

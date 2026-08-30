@@ -2,6 +2,17 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+import LangChain from "../assets/docs/AgentFrameworks/LangChain.md?raw";
+import LangGraph from "../assets/docs/AgentFrameworks/LangGraph.md?raw";
+import CrewAI from "../assets/docs/AgentFrameworks/crewai.md?raw";
+import AutoGen from "../assets/docs/AgentFrameworks/autogen.md?raw";
+import SemanticKernel from "../assets/docs/AgentFrameworks/semantic-kernel.md?raw";
+import LlamaIndex from "../assets/docs/AgentFrameworks/llamaindex.md?raw";
+import Haystack from "../assets/docs/AgentFrameworks/haystack.md?raw";
+import PydanticAI from "../assets/docs/AgentFrameworks/pydantic-ai.md?raw";
+import OpenAIAgentsSDK from "../assets/docs/AgentFrameworks/openai-agents-sdk.md?raw";
+import GoogleADK from "../assets/docs/AgentFrameworks/google-adk.md?raw";
+
 
 
 const AgentFrameworks=[ 
